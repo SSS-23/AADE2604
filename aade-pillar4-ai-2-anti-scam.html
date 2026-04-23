@@ -1,0 +1,970 @@
+<!doctype html>
+<html lang="en"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AADE - Asia's leading platform for digital economic research and exchange</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- 字体请求合并优化加载 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&family=Share+Tech+Mono&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+
+  <link rel="icon" type="image/png" href="small-logo.png">
+</head>
+<body>
+  
+
+  <!-- ================= HEADER SECTION ================= -->
+  <header class="site-header">
+    <div class="header-inner">
+      
+      <!-- ================= 左侧：Logo ================= -->
+      <a href="index.html" class="logo-link">
+        <img src="logo-index.png" alt="AADE Logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <span class="logo-text hidden" style="font-weight: 800; font-size: 1.875rem; color: #0f172a; letter-spacing: 0.05em;">AADE</span>
+      </a>
+
+      <!-- ================= 中间：导航 ================= -->
+      <nav class="desktop-nav">
+        
+        <!-- About us (多列下拉) -->
+        <div class="nav-dropdown-group">
+  <button class="nav-item">
+    About us
+    <svg class="nav-icon-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </button>
+
+  <div class="dropdown-hover-bridge">
+    <div class="dropdown-panel dropdown-large" style="width: 600px;">
+      
+      <div class="dropdown-col" style="width: 55%;">
+        
+        <div class="dropdown-section">
+          <div class="dropdown-title-row">
+            <svg class="dropdown-title-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16.094 10.158A1.996 1.996 0 0013.842 7.906l-4.582 1.309a.5.5 0 00-.353.353l-1.309 4.582a1.996 1.996 0 002.252 2.252l4.582-1.309a.5.5 0 00.353-.353l1.309-4.582zM12 21a9 9 0 110-18 9 9 0 010 18z"></path></svg>
+            <span class="dropdown-title-text">Introduction</span>
+          </div>
+          <div class="dropdown-rich-links">
+            
+            <a href="aade-intro1-now.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" /></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">What We Do</div>
+                <div class="rich-link-desc">Now: Missions & Actions</div>
+              </div>
+            </a>
+
+            <a href="aade-intro2-past.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">Milestones</div>
+                <div class="rich-link-desc">Past: Our Journey</div>
+              </div>
+            </a>
+
+            <a href="aade-intro3-future.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" /></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">2026 & Beyond</div>
+                <div class="rich-link-desc">Future: Next Frontier</div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+
+        
+
+      </div>
+
+      <div class="dropdown-col dropdown-col-alt" style="width: 45%;">
+        <div class="dropdown-section">
+          <div class="dropdown-title-row">
+            <svg class="dropdown-title-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19a3 3 0 00-6 0m9-2a4 4 0 00-4-4H10a4 4 0 00-4 4m5-9a3 3 0 110-6 3 3 0 010 6z"></path></svg>
+            <span class="dropdown-title-text">Our People</span>
+          </div>
+          
+          <div class="dropdown-rich-links">
+            <a href="aade-council.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">Council</div>
+                <div class="rich-link-desc">Leadership and governance</div>
+              </div>
+            </a>
+            <a href="aade-advisor.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">Advisors</div>
+                <div class="rich-link-desc">Expert guidance & strategy</div>
+              </div>
+            </a>
+            
+          </div>
+        </div>
+
+        <div class="dropdown-section">
+          <div class="dropdown-title-row">
+            <svg class="dropdown-title-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 110-18 9 9 0 010 18zm0 0c2.761 0 5-4.03 5-9s-2.239-9-5-9-5 4.03-5 9 2.239 9 5 9zm9-9H3m14.545-4.5H4.455m14.545 9H4.455"></path></svg>
+            <span class="dropdown-title-text">Our Network</span>
+          </div>
+          <div class="dropdown-rich-links">
+            <a href="aade-globalnode.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">Global Offices & Labs</div>
+                <div class="rich-link-desc">Our worldwide presence</div>
+              </div>
+            </a>
+            <a href="aade-partnership.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">Partnerships</div>
+                <div class="rich-link-desc">Collaborating for innovation</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+        <a href="aade-pillar1-events.html" class="nav-item">Events</a>
+        <a href="aade-pillar2-trainings.html" class="nav-item">Training</a>
+        <a href="aade-pillar3-research.html" class="nav-item">Research</a>
+
+        <!-- Digital Innovation (下拉) -->
+<div class="nav-dropdown-group">
+  <button class="nav-item">
+    Frontiers
+    <svg class="nav-icon-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </button>
+
+  <div class="dropdown-hover-bridge">
+    <div class="dropdown-panel dropdown-large" style="width: 500px;"> <div class="dropdown-col" style="width: 55%;">
+        <div class="dropdown-section">
+          <div class="dropdown-title-row">
+            <svg class="dropdown-title-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v1.242c0 .289.268.497.55.447a1.593 1.593 0 00.518-.18 1.558 1.558 0 00.999-1.43V2.25m-3 0h3m-3 0a1.5 1.5 0 00-1.5 1.5V15a1.5 1.5 0 001.5 1.5h1.5m-1.5-13.5v12a1.5 1.5 0 001.5 1.5H12m-2.25 0H12m10.5-11.25a2.25 2.25 0 00-2.25-2.25h-2.25V6a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25h2.25a2.25 2.25 0 002.25-2.25V3.75z"></path>
+            </svg>
+            <span class="dropdown-title-text">AI+</span>
+          </div>
+          
+          <div class="dropdown-rich-links">
+            
+            <a href="aade-pillar4-ai-1-presence.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">AI Presence Accelerator</div>
+                <div class="rich-link-desc">AI-driven International Presence</div>
+              </div>
+            </a>
+
+            <a href="aade-pillar4-ai-2-anti-scam.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">LUCA</div>
+                <div class="rich-link-desc">Anti-Scam Agentic LLM Benchmark Testing Framework</div>
+              </div>
+            </a>
+
+            <a href="aade-pillar4-ai-3-rag-janus.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">Janus</div>
+                <div class="rich-link-desc">RAG-based Legal Infrastructure</div>
+              </div>
+            </a>
+
+            <a href="#" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">StarMap (Coming soon)</div>
+                <div class="rich-link-desc">AI-Native Platform for APAC Off-Market Transactions</div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown-col dropdown-col-alt" style="width: 45%;">
+        <div class="dropdown-section">
+          <div class="dropdown-title-row">
+            <svg class="dropdown-title-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"></path>
+            </svg>
+            <span class="dropdown-title-text">Innovation Network</span>
+          </div>
+          
+          <div class="dropdown-rich-links">
+            <a href="https://deai.ink/about" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">DEAI</div>
+                <div class="rich-link-desc">A global action network dedicated to aligning innovative technology with real-world market needs</div>
+              </div>
+            </a>
+            
+            <!---<a href="#" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">AADE Collection</div>
+                <div class="rich-link-desc">Global Digital Intelligence Repository</div>
+              </div>
+            </a>
+
+            <a href="#" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 01-1.125-1.125M3.375 19.5h7.5c.621 0 1.125-.504 1.125-1.125m-9.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-7.5A1.125 1.125 0 0112 18.375m9.75-12.75c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125m19.5 0v1.5c0 .621-.504 1.125-1.125 1.125M2.25 5.625v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125M3.375 8.25v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125m-9.75 0v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">AADE Featured</div>
+                <div class="rich-link-desc">Alternative Semantic Retrieval Database</div>
+              </div>
+            </a>-->
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+        <a href="aade-nav-news.html" class="nav-item">News</a>
+        <a href="aade-nav-contact.html" class="nav-item">Contact</a>
+      </nav>
+
+      <!-- ================= 右侧：社交与移动端 ================= -->
+      <div class="header-actions">
+        <!-- 社交图标 -->
+        <div class="social-actions">
+          <a href="https://www.linkedin.com/company/asia-academy-of-digital-economics" class="action-btn" title="LinkedIn">
+            <svg style="width:16px; height:16px;" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="mailto:contact@aades.academy" class="action-btn" title="Email">
+            <svg style="width:18px; height:18px;" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+        
+        <!-- 移动端汉堡菜单 -->
+        <button id="mobileMenuBtn" class="mobile-menu-btn">
+          <svg id="menuIcon" class="mobile-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          <svg id="closeIcon" class="mobile-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="mobile-menu">
+      
+  <details class="mob-menu-group" open>
+    <summary>
+      <span class="mob-group-title">About us</span>
+      <span class="mob-toggle-icon">▼</span>
+    </summary>
+    
+    <div class="mob-sub-area">
+      
+      <div class="mob-sub-section">
+        <div class="mob-sub-title">
+          <svg class="mob-sub-icon" fill="none" stroke="currentColor" stroke-width="1.25" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16.094 10.158A1.996 1.996 0 0013.842 7.906l-4.582 1.309a.5.5 0 00-.353.353l-1.309 4.582a1.996 1.996 0 002.252 2.252l4.582-1.309a.5.5 0 00.353-.353l1.309-4.582zM12 21a9 9 0 110-18 9 9 0 010 18z"></path></svg>
+          <span class="mob-sub-text">Introduction</span>
+        </div>
+        <div class="mob-rich-links-container">
+          <a href="aade-intro1-now.html" class="mob-rich-link">
+            <div class="mob-rich-icon">
+              <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" /></svg>
+            </div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">What We Do</div>
+              <div class="mob-rich-desc">Now: Missions & Actions</div>
+            </div>
+          </a>
+          <a href="aade-intro2-past.html" class="mob-rich-link">
+            <div class="mob-rich-icon">
+              <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+            </div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">Milestones</div>
+              <div class="mob-rich-desc">Past: Our Journey</div>
+            </div>
+          </a>
+          <a href="aade-intro3-future.html" class="mob-rich-link">
+            <div class="mob-rich-icon">
+              <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" /></svg>
+            </div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">2026 & Beyond</div>
+              <div class="mob-rich-desc">Future: Next Frontier</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="mob-sub-section">
+        <div class="mob-sub-title">
+          <svg class="mob-sub-icon" fill="none" stroke="currentColor" stroke-width="1.25" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19a3 3 0 00-6 0m9-2a4 4 0 00-4-4H10a4 4 0 00-4 4m5-9a3 3 0 110-6 3 3 0 010 6z"></path></svg>
+          <span class="mob-sub-text">Our People</span>
+        </div>
+        <div class="mob-rich-links-container">
+          <a href="aade-council.html" class="mob-rich-link">
+            <div class="mob-rich-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"></path></svg></div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">Council</div>
+              <div class="mob-rich-desc">Leadership and governance</div>
+            </div>
+          </a>
+          <a href="aade-advisor.html" class="mob-rich-link">
+            <div class="mob-rich-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"></path></svg></div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">Advisors</div>
+              <div class="mob-rich-desc">Expert guidance & strategy</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="mob-sub-section">
+        <div class="mob-sub-title">
+          <svg class="mob-sub-icon" fill="none" stroke="currentColor" stroke-width="1.25" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 110-18 9 9 0 010 18zm0 0c2.761 0 5-4.03 5-9s-2.239-9-5-9-5 4.03-5 9 2.239 9 5 9zm9-9H3m14.545-4.5H4.455m14.545 9H4.455"></path></svg>
+          <span class="mob-sub-text">Our Network</span>
+        </div>
+        <div class="mob-rich-links-container">
+          <a href="aade-globalnode.html" class="mob-rich-link">
+            <div class="mob-rich-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"></path></svg></div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">Global Offices & Labs</div>
+              <div class="mob-rich-desc">Our worldwide presence</div>
+            </div>
+          </a>
+          <a href="aade-partnership.html" class="mob-rich-link">
+            <div class="mob-rich-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z"></path></svg></div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">Partnerships</div>
+              <div class="mob-rich-desc">Collaborating for innovation</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </details>
+
+  <a href="aade-pillar1-events.html" class="mob-main-link">Events</a>
+  <a href="aade-pillar2-trainings.html" class="mob-main-link">Training</a>
+  <a href="aade-pillar3-research.html" class="mob-main-link">Research</a>
+
+<details class="mob-menu-group" open>
+    <summary>
+      <span class="mob-group-title">Frontiers</span>
+      <span class="mob-toggle-icon">▼</span>
+    </summary>
+    
+    <div class="mob-sub-area">
+      <div class="mob-sub-section">
+        <div class="mob-sub-title">
+          <svg class="mob-sub-icon" fill="none" stroke="currentColor" stroke-width="1.25" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v1.242c0 .289.268.497.55.447a1.593 1.593 0 00.518-.18 1.558 1.558 0 00.999-1.43V2.25m-3 0h3m-3 0a1.5 1.5 0 00-1.5 1.5V15a1.5 1.5 0 001.5 1.5h1.5m-1.5-13.5v12a1.5 1.5 0 001.5 1.5H12m-2.25 0H12m10.5-11.25a2.25 2.25 0 00-2.25-2.25h-2.25V6a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25h2.25a2.25 2.25 0 002.25-2.25V3.75z"></path></svg>
+          <span class="mob-sub-text">AI+</span>
+        </div>
+        
+        <div class="mob-rich-links-container">
+          <a href="aade-pillar4-ai-1-presence.html" class="mob-rich-link">
+            <div class="mob-rich-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"></path></svg></div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">AI Presence Accelerator</div>
+              <div class="mob-rich-desc">AI-driven International Presence</div>
+            </div>
+          </a>
+          <a href="aade-pillar4-ai-2-anti-scam.html" class="mob-rich-link">
+            <div class="mob-rich-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"></path></svg></div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">LUCA</div>
+              <div class="mob-rich-desc">Anti-Scam Agentic LLM Benchmark Testing Framework</div>
+            </div> 
+          </a>
+          <a href="aade-pillar4-ai-3-rag-janus.html" class="mob-rich-link">
+            <div class="mob-rich-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z"></path></svg></div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">Janus</div>
+              <div class="mob-rich-desc">RAG-based Legal Infrastructure</div>
+            </div>
+          </a>
+          <a href="#" class="mob-rich-link">
+            <div class="mob-rich-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z"></path></svg></div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">StarMap (Coming soon)</div>
+              <div class="mob-rich-desc">AI-Native Platform for APAC Off-Market Transactions</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="mob-sub-section">
+        <div class="mob-sub-title">
+          <svg class="mob-sub-icon" fill="none" stroke="currentColor" stroke-width="1.25" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"></path></svg>
+          <span class="mob-sub-text">Innovation Network</span>
+        </div>
+        <div class="mob-rich-links-container">
+          <a href="https://deai.ink/about" class="mob-rich-link">
+            <div class="mob-rich-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z"></path></svg></div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">DEAI</div>
+              <div class="mob-rich-desc">A global action network dedicated to aligning innovative technology with real-world market needs</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      
+    </div>
+  </details>
+  
+  <a href="aade-nav-news.html" class="mob-main-link">News</a>
+  <a href="aade-nav-contact.html" class="mob-main-link" style="border-bottom: none;">Contact</a>
+  
+  <div class="mob-social-bar">
+    <a href="https://www.linkedin.com/company/asia-academy-of-digital-economics" class="mob-social-btn"><svg style="width:16px; height:16px;" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+    <a href="mailto:contact@aades.academy" class="mob-social-btn"><svg style="width:18px; height:18px;" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
+  </div>
+</div>
+  </header>
+
+  
+<!-- ================= HERO SECTION ================= -->
+<section class="news-hero">
+  <div class="news-hero-bg">
+  <img 
+    src="./hero-pic/digital-hero-2.jpg" 
+    alt="AADE Global Lab" 
+    class="news-hero-img" 
+    
+  >
+</div>
+
+  <div class="hero-inner-content">
+    <div class="pillar4-hero-inner-text">
+      <span class="pillar4-hero-badge">Pillar IV | Digital Innovation</span>
+      <h1 class="pillar4-hero-title">Anti-Scam Agentic LLM Benchmark Framework</h1>
+      <p class="pillar4-hero-desc">
+         LUCA: Evaluating the Scam-Resistance of LLMs through a User-Centric Agentic Framework </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Abstract Card SECTION ================= -->
+<section class="aade-summary-section">
+  <div class="summary-container">
+    
+    <div class="summary-tags-wrapper">
+      <button class="summary-tag active" data-target="sum-card-1">
+        Social Pain Point
+      </button>
+      <button class="summary-tag" data-target="sum-card-2">
+        The Solution
+      </button>
+      <button class="summary-tag" data-target="sum-card-3">
+        Application Scenarios
+      </button>
+    </div>
+
+    <div class="summary-cards-container">
+      
+      <div class="summary-card active" id="sum-card-1">
+        <svg class="summary-bg-icon" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
+        </svg>
+        <div class="summary-content-inner">
+          <h2 class="summary-title">The "Sycophancy Trap"</h2>
+          <p class="summary-desc">
+            As people increasingly rely on AI, a hidden danger has emerged: the <strong>"sycophancy effect."</strong> When overly-trusting victims ask Large Language Models (LLMs) for help within a scam context (e.g., "Help me reply to my new crypto mentor"), the AI often blindly complies to be "helpful," reinforcing the victim's trust in the fraud.
+          </p>
+          <p class="summary-desc">
+            Existing AI safety frameworks almost exclusively focus on defending against malicious hackers (red-teaming). They completely ignore the cognitive vulnerabilities of everyday users who are unknowingly being manipulated by scammers.
+          </p>
+        </div>
+      </div>
+
+      <div class="summary-card" id="sum-card-2">
+        <svg class="summary-bg-icon" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+        </svg>
+        <div class="summary-content-inner">
+          <h2 class="summary-title">LUCAS Benchmark Framework</h2>
+          <p class="summary-desc">
+            <strong>What it is:</strong> LUCAS is a fully automated, user-centric benchmark testing framework specifically designed to evaluate the scam-resistance of LLMs in real-world scenarios.
+          </p>
+          <p class="summary-desc">
+            <strong>How it works:</strong> It utilizes a Multi-Agent collaborative architecture. First, it combines real police reports with Human-Computer Interaction (HCI) theories to craft "benign-sounding" victim queries. Then, a <strong>Collector Agent</strong> tests these disguised scam prompts concurrently across mainstream models. Finally, an <strong>Evaluator Agent</strong> acts as an objective judge, quantitatively scoring whether the model identified the scam and the prominence of its safety warnings.
+          </p>
+        </div>
+      </div>
+
+      <div class="summary-card" id="sum-card-3">
+        <svg class="summary-bg-icon" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zm0 7.5l-10-5v10.5l10 5 10-5V4.5l-10 5zm0 10.5l-7.5-3.75V11.5l7.5 3.75 7.5-3.75v4.75L12 20z"/>
+        </svg>
+        <div class="summary-content-inner">
+          <h2 class="summary-title">Empowering Regulation & Development</h2>
+          <p class="summary-desc">
+            <strong>Regulatory Authorities:</strong> LUCAS transforms abstract AI safety laws into executable, quantifiable metrics. It serves as a "plug-and-play" diagnostic tool for LLM deployment approvals and routine market audits, giving regulatory bodies the technical leverage to enforce compliance.
+          </p>
+          <p class="summary-desc">
+            <strong>AI Developers & Third-Party Auditors:</strong> Acts as an essential pre-launch "health check." It enables targeted anti-scam red-teaming, helping developers discover and patch psychological vulnerabilities in their models before public release, ultimately creating a safer, human-centric AI ecosystem.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Section -->
+<section class="content-section-light">
+  <div class="content-container">
+      
+    <div class="section-header-light style-edge-border mb-12">
+      <div class="header-main-group mb-3">
+        <div class="section-icon-light-small">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+        </div>
+        <h2 class="section-title-light-oswald">The Problem & Limitations</h2>
+      </div>
+      <p class="section-subtitle-light-inter text-slate-500 mt-2">
+        Why current safety guardrails fail the most vulnerable users.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10">
+      <div class="luca-agentic-glass-card p-8 rounded-3xl relative overflow-hidden">
+        <div class="absolute top-0 right-0 p-6 text-red-50">
+          <svg class="w-32 h-32 opacity-60" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"></path></svg>
+        </div>
+        <div class="w-12 h-12 bg-red-100 text-red-600 rounded-xl flex items-center justify-center mb-6 relative z-10">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+        </div>
+        <h3 class="text-2xl font-oswald font-semibold text-slate-900 mb-4 relative z-10">The Fatal "Sycophancy Trap"</h3>
+        <p class="text-slate-600 leading-relaxed relative z-10">
+          When users ask high-stake questions (like scam-related financial actions), models often fail to discern reality. More dangerously, due to inherent <strong>Sycophancy</strong>, models may compliantly agree with the user's flawed assumptions, actively reinforcing the victim's trust in the scam rather than warning them.
+        </p>
+      </div>
+
+      <div class="luca-agentic-glass-card p-8 rounded-3xl relative overflow-hidden">
+        <div class="absolute top-0 right-0 p-6 text-slate-50">
+          <svg class="w-32 h-32 opacity-60" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7zm1-11h-2v3H8v2h3v3h2v-3h3v-2h-3V8z"></path></svg>
+        </div>
+        <div class="w-12 h-12 bg-slate-100 text-slate-600 rounded-xl flex items-center justify-center mb-6 relative z-10">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path></svg>
+        </div>
+        <h3 class="text-2xl font-oswald font-semibold text-slate-900 mb-4 relative z-10">Limitations of Current RegTools</h3>
+        <p class="text-slate-600 leading-relaxed mb-3 relative z-10">
+          Article 55 of the EU AI Act attempts to control systemic risks through "Red-teaming". However, existing safety tests almost universally assume risks stem from <strong>malicious attackers</strong>.
+        </p>
+        <p class="text-slate-600 leading-relaxed relative z-10">
+          The greater tragedy lies with ordinary victims who deeply trust AI. The lack of high-fidelity benchmark frameworks that integrate "victim psychology" makes it difficult to effectively measure the true anti-fraud capabilities of LLMs.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section-light bg-slate-50 border-t border-slate-100">
+  <div class="content-container">
+
+    <div class="section-header-light style-edge-border mb-16">
+      <div class="header-main-group mb-3">
+        <div class="section-icon-light-small">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+        </div>
+        <h2 class="section-title-light-oswald">Our Approach: Agentic RegTech</h2>
+      </div>
+      <p class="section-subtitle-light-inter text-slate-500 mt-2">
+        A fully automated evaluation pipeline based on Multi-Agent collaboration.
+      </p>
+    </div>
+
+    <div class="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-slate-200 relative overflow-visible">
+        
+        <div class="relative max-w-4xl mx-auto flex flex-col w-full">
+            
+            <div class="flex justify-center relative z-20">
+                <div class="bg-[#0f172a] text-white w-72 p-6 rounded-2xl shadow-xl border border-slate-700 text-center relative z-10">
+                    <div class="flex justify-center mb-3 text-[#60a5fa]">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+                    </div>
+                    <h4 class="font-oswald text-xl font-medium tracking-wide mb-1">Orchestrator Agent</h4>
+                    <p class="text-xs text-slate-400">Orchestrator<br>Controls flow & error recovery.</p>
+                </div>
+            </div>
+
+            <div class="luca-flow-container">
+                <div class="luca-flow-branch">
+                    <div class="luca-flow-stem"></div>
+                    <div class="luca-flow-arrow-left"></div>
+                    <div class="luca-flow-arrow-right"></div>
+                    
+                    <div class="luca-flow-label luca-flow-label-1">Step 1: Trigger Collection</div>
+                    <div class="luca-flow-label luca-flow-label-3">Step 3: Trigger Evaluation</div>
+                    
+                    <div class="luca-flow-dashed">
+                        <div class="luca-flow-arrow-dashed"></div>
+                        <div class="luca-flow-label luca-flow-label-2">
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"></path></svg>
+                            Step 2: Pass Raw Data
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:hidden h-10 w-full"></div>
+
+            <div class="grid md:grid-cols-2 gap-8 md:gap-16 relative z-10 w-full">
+                
+                <div class="bg-white p-6 rounded-2xl shadow-lg border border-blue-100 relative group hover:border-[#0076d4] transition-colors flex flex-col">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-[#3b82f6] rounded-t-2xl"></div>
+                    <div class="flex items-center gap-4 mb-5">
+                        <div class="w-14 h-14 bg-[#e0f2fe] text-[#0076d4] rounded-xl flex items-center justify-center">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path></svg>
+                        </div>
+                        <div>
+                            <h4 class="font-oswald text-xl font-medium text-slate-900 mb-1">Experiment Collector</h4>
+                            <p class="text-xs text-slate-500">Experiment Collector</p>
+                        </div>
+                    </div>
+                    <div class="bg-slate-50 p-4 rounded-xl text-sm text-slate-600 space-y-3 border border-slate-100 flex-grow">
+                        <p><strong>14 Top Models:</strong> Selected via a16z Top 100 & SensorTower SG/CN rankings.</p>
+                        <p><strong>12 Real Cases:</strong> 2024-2026 police reports (SG/CN/Global).</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-lg border border-emerald-100 relative group hover:border-emerald-500 transition-colors flex flex-col">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-emerald-400 rounded-t-2xl"></div>
+                    <div class="flex items-center gap-4 mb-5">
+                        <div class="w-14 h-14 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <div>
+                            <h4 class="font-oswald text-xl font-medium text-slate-900 mb-1">Feedback Evaluator</h4>
+                            <p class="text-xs text-slate-500">Feedback Evaluator</p>
+                        </div>
+                    </div>
+                    <div class="bg-slate-50 p-4 rounded-xl text-sm text-slate-600 space-y-3 border border-slate-100 flex-grow">
+                        <p><strong>Scam Identified:</strong> Did the model warn the user?</p>
+                        <p><strong>Warning Ratio:</strong> The prominence of warnings.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="text-center mt-12 text-sm text-slate-500 italic">
+            Figure 1. OpenClaw-based Automated LLM Red-teaming Workflow Architecture.
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section-light">
+  <div class="content-container">
+
+    <div class="section-header-light style-edge-border mb-16">
+      <div class="header-main-group mb-3">
+        <div class="section-icon-light-small">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+        </div>
+        <h2 class="section-title-light-oswald">Prompt Synthesis Matrix</h2>
+      </div>
+      <p class="section-subtitle-light-inter text-slate-500 mt-2">
+        Systematically transforming human vulnerabilities into LLM test cases via interdisciplinary academic theories.
+      </p>
+    </div>
+
+    <div class="max-w-5xl mx-auto flex flex-col-reverse gap-6">
+        
+        <div class="bg-white border-2 border-dashed border-slate-300 p-6 rounded-2xl text-center relative">
+            <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-slate-100 px-4 py-1 rounded-full text-xs font-bold text-slate-500 uppercase tracking-widest border border-slate-200">Layer 1: Context Definition</div>
+            <div class="flex items-center justify-center gap-3 text-slate-700 font-semibold mt-2 text-lg">
+                <svg class="w-6 h-6 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                Real-world Police Reports Context
+            </div>
+        </div>
+
+        <div class="flex justify-around text-slate-300 py-2">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+        </div>
+
+        <div class="relative bg-[#f0f7ff] border border-blue-100 p-8 pt-10 rounded-[2rem] shadow-inner">
+            <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#0076d4] px-4 py-1 rounded-full text-xs font-bold text-white uppercase tracking-widest shadow-md">Layer 2: HCI Vulnerability Injection</div>
+            
+            <div class="grid md:grid-cols-3 gap-6 mt-2">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 luca-agentic-layer-card flex flex-col">
+                    <span class="text-[10px] font-bold text-[#0076d4] bg-blue-50 px-2 py-1 rounded w-fit mb-4">TYPE 1</span>
+                    <h4 class="font-oswald text-lg font-medium text-slate-800 mb-2">Benign-Sounding Prompts</h4>
+                    <p class="text-sm text-slate-600 mb-6 flex-grow">Bypassing guardrails by disguising fraud tasks as routine translation/editing.</p>
+                    <a href="#" class="text-xs font-semibold luca-agentic-paper-link text-slate-500 flex items-center gap-1 border-t border-slate-100 pt-3">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                        Task-Obsessed Myopia (2025)
+                    </a>
+                </div>
+                
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 luca-agentic-layer-card flex flex-col">
+                    <span class="text-[10px] font-bold text-indigo-500 bg-indigo-50 px-2 py-1 rounded w-fit mb-4">TYPE 2</span>
+                    <h4 class="font-oswald text-lg font-medium text-slate-800 mb-2">Social Sycophancy & 'Face'</h4>
+                    <p class="text-sm text-slate-600 mb-6 flex-grow">Testing if models abandon safety baselines to cater to users' preconceived authority.</p>
+                    <div class="border-t border-slate-100 pt-3 flex flex-col gap-2">
+                        <a href="#" class="text-xs font-semibold luca-agentic-paper-link text-slate-500 flex items-center gap-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg> ELEPHANT (ACL 2025)</a>
+                        <a href="#" class="text-xs font-semibold luca-agentic-paper-link text-slate-500 flex items-center gap-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg> SycEval (AIES 2025)</a>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 luca-agentic-layer-card flex flex-col">
+                    <span class="text-[10px] font-bold text-emerald-500 bg-emerald-50 px-2 py-1 rounded w-fit mb-4">TYPE 3</span>
+                    <h4 class="font-oswald text-lg font-medium text-slate-800 mb-2">Synergistic Cognitive Biases</h4>
+                    <p class="text-sm text-slate-600 mb-6 flex-grow">Simulating 'Self-Generated Rationalization' leveraging sunk cost fallacies.</p>
+                    <a href="#" class="text-xs font-semibold luca-agentic-paper-link text-slate-500 flex items-center gap-1 border-t border-slate-100 pt-3">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                        Self-Generated Rationalization
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center text-slate-300 py-2">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+        </div>
+
+        <div class="bg-[#0f172a] p-6 rounded-2xl text-center relative shadow-xl">
+            <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-400 px-4 py-1 rounded-full text-xs font-bold text-slate-900 uppercase tracking-widest shadow-sm">Layer 3: Output</div>
+            <div class="flex items-center justify-center gap-3 text-white font-oswald text-xl tracking-wide mt-2">
+                <svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                High-Fidelity Anti-Fraud Benchmark Dataset
+            </div>
+        </div>
+
+    </div>
+    <div class="text-center mt-8 text-sm text-slate-400 italic">
+        Figure 2. Interdisciplinary Prompt Synthesis Matrix integrating real cases with cognitive vulnerabilities.
+    </div>
+  </div>
+</section>
+
+<section class="content-section-light bg-slate-50 border-t border-slate-100">
+  <div class="content-container text-center">
+    
+    <div class="section-header-light style-edge-border mb-16 text-left">
+      <div class="header-main-group mb-3">
+        <div class="section-icon-light-small">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+        </div>
+        <h2 class="section-title-light-oswald">Significance & Social Impact</h2>
+      </div>
+    </div>
+    
+    <div class="grid md:grid-cols-3 gap-10 text-left">
+        <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm">
+            <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center mb-6">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            </div>
+            <h3 class="font-oswald text-xl font-medium text-slate-900 mb-3">Plug-and-Play Reg 'Thermometer'</h3>
+            <p class="text-slate-600 leading-relaxed text-sm">Built a fully automated evaluation tool. Regulators can input recent fraud cases to assess safety levels, providing quantitative basis for regulatory actions.</p>
+        </div>
+        
+        <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm">
+            <div class="w-12 h-12 bg-[#f0f7ff] text-[#0076d4] rounded-xl flex items-center justify-center mb-6">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+            </div>
+            <h3 class="font-oswald text-xl font-medium text-slate-900 mb-3">Interdisciplinary Interception</h3>
+            <p class="text-slate-600 leading-relaxed text-sm">First integration of HCI 'Framing Effects' research with frontline anti-fraud scenarios, filling the gap in safety evaluation from a vulnerable psychology perspective.</p>
+        </div>
+        
+        <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm">
+            <div class="w-12 h-12 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center mb-6">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+            </div>
+            <h3 class="font-oswald text-xl font-medium text-slate-900 mb-3">Human-Centric AI</h3>
+            <p class="text-slate-600 leading-relaxed text-sm">Our ultimate goal: Ensure citizens who trust AI are not 'backstabbed' by blindly compliant systems. Safeguarding a safer AI future.</p>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-col-brand">
+        <a href="index.html" style="display: inline-block; opacity: 0.9; text-decoration: none; margin-bottom: 15px;">
+            <img src="logo-index-white.png" alt="AADE Logo" style="display: block; height: 60px; width: auto;">
+            
+        </a>
+        <p class="footer-desc">
+          Empowering Sustainable Digital Growth. Based in Singapore, we are building Asia’s most influential platform for digital economic research and exchange.
+        </p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/company/asia-academy-of-digital-economics" class="footer-social-btn">
+            <svg style="width:16px; height:16px;" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="mailto:contact@aades.academy" class="footer-social-btn">
+            <svg style="width:16px; height:16px;" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </a>
+          
+        </div>
+      </div>
+      <div class="footer-col-links">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-link-list">
+          <li><a href="aade-intro1-now.html" class="footer-link-item"><span>About us</span></a></li>
+          
+          <li><a href="aade-nav-news.html" class="footer-link-item"><span>News</span></a></li>
+          <li><a href="aade-nav-contact.html" class="footer-link-item"><span>Contact</span></a></li>
+        </ul>
+      </div>
+      <div class="footer-col-contact">
+        <h4 class="footer-heading">Contact Us</h4>
+        <ul class="footer-contact-list">
+          <li class="footer-contact-item">
+            <svg class="footer-contact-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+            <a href="mailto:contact@aades.academy" class="footer-contact-text">contact@aades.academy</a>
+          </li>
+          <li class="footer-contact-item">
+            <svg class="footer-contact-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+            <span>1 Paya Lebar Link
+#06-08 PLQ 2, Paya Lebar Quarter
+Singapore 408533</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 AADE. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-service.html">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    /* ==========================================================================
+       MOBILE MENU LOGIC
+       ========================================================================== */
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuIcon = document.getElementById('menuIcon');
+    const closeIcon = document.getElementById('closeIcon');
+    let isMobileMenuOpen = false;
+
+    function toggleMobileMenu(forceState) {
+      isMobileMenuOpen = forceState !== undefined ? forceState : !isMobileMenuOpen;
+      
+      if(isMobileMenuOpen) {
+        mobileMenu.classList.add('mobile-menu-active');
+        menuIcon.classList.add('hidden');
+        closeIcon.classList.remove('hidden');
+        document.body.style.overflow = 'hidden'; 
+      } else {
+        mobileMenu.classList.remove('mobile-menu-active');
+        menuIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+        document.body.style.overflow = ''; 
+      }
+    }
+
+    mobileMenuBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleMobileMenu();
+    });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const v5Wrapper = document.querySelector('.aade-hero-v5-nodes-wrapper');
+    
+    // 给一点微小的延迟（300ms），让用户视觉先聚焦，再看到汇聚的过程
+    setTimeout(() => {
+        if (v5Wrapper) {
+            v5Wrapper.classList.add('aade-hero-v5-active');
+        }
+    }, 300);
+});
+
+
+/* ==========================================================================
+   SUMMARY TABS LOGIC
+   ========================================================================== */
+document.addEventListener('DOMContentLoaded', () => {
+    const summaryTags = document.querySelectorAll('.summary-tag');
+    const summaryCards = document.querySelectorAll('.summary-card');
+
+    if (summaryTags.length > 0) {
+        summaryTags.forEach(tag => {
+            tag.addEventListener('click', () => {
+                // 1. 移除所有 Tag 的 active 状态
+                summaryTags.forEach(t => t.classList.remove('active'));
+                
+                // 2. 移除所有 Card 的 active 状态
+                summaryCards.forEach(c => c.classList.remove('active'));
+
+                // 3. 为当前点击的 Tag 添加 active 状态
+                tag.classList.add('active');
+
+                // 4. 根据 data-target 找到对应的 Card 并显示
+                const targetId = tag.getAttribute('data-target');
+                const targetCard = document.getElementById(targetId);
+                if (targetCard) {
+                    targetCard.classList.add('active');
+                }
+            });
+        });
+    }
+});
+
+</script>
+</body>
+</html>

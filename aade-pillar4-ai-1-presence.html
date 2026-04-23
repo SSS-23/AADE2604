@@ -1,0 +1,2075 @@
+<!doctype html>
+<html lang="en"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AADE - Asia's leading platform for digital economic research and exchange</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- 字体请求合并优化加载 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&family=Share+Tech+Mono&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --blue: #1B3BD6;
+    --blue-dark: #1430b0;
+    --blue-mid: #2A4FE8;
+    --orange: #F5A623;
+    --orange-dark: #e08e0b;
+    --white: #ffffff;
+    --off-white: #F6F7FD;
+    --card-bg: #EEF1FA;
+    --text-main: #0d1a5c;
+    --text-muted: #5561a0;
+    --border: #c8d0ef;
+    --tag-bg: #1B3BD6;
+    --tag-text: #ffffff;
+    --phase-label: #8ba0e8;
+    --checker-bg: #F5A623;
+    --blue-light: #EBF0FC;
+    --orange-lt:  #FEF3E0;
+    --muted:      #5561a0;
+    --text:       #0d1a5c;
+  }
+
+  html { font-size: 16px; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--off-white);
+    color: var(--text-main);
+    line-height: 1.6;
+  }
+
+  /* ─── HERO ─── */
+  .hero {
+    background: var(--blue);
+    padding: 72px 48px 64px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    right: -60px; bottom: -80px;
+    width: 380px; height: 380px;
+    border-radius: 50%;
+    border: 48px solid var(--orange);
+    opacity: 0.18;
+  }
+  .hero-eyebrow {
+    font-size: 13px; font-weight: 500; letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 16px;
+  }
+  .hero h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    color: var(--white);
+    line-height: 1.15;
+    max-width: 640px;
+    margin-bottom: 20px;
+  }
+  .hero-sub {
+    color: rgba(255,255,255,.65);
+    font-size: 15px;
+    max-width: 520px;
+  }
+
+  /* ─── SECTION WRAPPER ─── */
+  .phase-section {
+    padding: 64px 48px;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  .phase-section + .phase-section {
+    padding-top: 0;
+  }
+
+  /* Phase header pill */
+  .phase-eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--blue);
+    color: var(--white);
+    font-size: 11px; font-weight: 600; letter-spacing: .1em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 4px;
+    margin-bottom: 6px;
+  }
+  .phase-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2rem;
+    color: var(--blue);
+    margin-bottom: 36px;
+  }
+
+  /* ─── TAG labels ─── */
+  .tag {
+    display: inline-block;
+    background: var(--blue);
+    color: #fff;
+    font-size: 12px; font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+
+  /* ─── PHASE I  ─── */
+  .p1-outer {
+    border: 1.5px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--white);
+  }
+
+  /* Narrative row */
+  .p1-row {
+    display: flex; gap: 0;
+    border-bottom: 1.5px solid var(--border);
+  }
+  .p1-tag-cell {
+    width: 130px; min-width: 130px;
+    background: var(--card-bg);
+    padding: 20px 16px;
+    display: flex; align-items: flex-start;
+    border-right: 1.5px solid var(--border);
+  }
+  .p1-row-body {
+    padding: 20px 24px;
+    flex: 1;
+  }
+  .p1-row-body p {
+    font-size: 14px; color: var(--text-muted);
+    margin-top: 8px;
+  }
+  .p1-row-body h4 {
+    font-size: 14px; font-weight: 600; color: var(--text-main);
+    margin-bottom: 6px;
+  }
+
+  /* Flow diagram row */
+  .p1-flow-row {
+    padding: 20px 24px;
+    border-bottom: 1.5px solid var(--border);
+    display: flex; flex-direction: column; gap: 12px;
+  }
+  .p1-flow-label {
+    font-size: 12px; color: var(--text-muted); font-weight: 500;
+    text-align: center; letter-spacing: .05em;
+  }
+  .flow-boxes {
+    display: flex; align-items: center; gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .flow-box {
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 13px; font-weight: 500; color: var(--text-main);
+    background: var(--white);
+    text-align: center;
+    min-width: 140px;
+  }
+  .flow-box.center {
+    background: var(--blue);
+    color: #fff;
+    border-color: var(--blue);
+    min-width: 180px;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .flow-arrow {
+    font-size: 20px; color: var(--text-muted); line-height: 1;
+    flex-shrink: 0;
+  }
+  .flow-double {
+    display: flex; flex-direction: column; align-items: center; gap: 2px;
+  }
+  .flow-double .flow-arrow { font-size: 16px; }
+
+  /* Three pillars */
+  .pillars {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+  .pillar {
+    padding: 18px 20px;
+    border-right: 1.5px solid var(--border);
+  }
+  .pillar:last-child { border-right: none; }
+  .pillar h5 {
+    font-size: 13px; font-weight: 700; color: var(--text-main);
+    margin-bottom: 6px;
+  }
+  .pillar p {
+    font-size: 12.5px; color: var(--text-muted); line-height: 1.55;
+  }
+
+  /* Footer banner */
+  .p1-footer {
+    background: var(--card-bg);
+    padding: 14px 24px;
+    font-size: 13px; font-weight: 600; color: var(--text-main);
+    text-align: center;
+    border-top: 1.5px solid var(--border);
+  }
+
+  /* ─── AUTHORITATIVE LAUNCH (sub-section) ─── */
+  .p1-sub {
+    margin-top: 28px;
+    border: 1.5px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--white);
+  }
+  .p1-sub-row {
+    display: flex; gap: 0;
+    border-bottom: 1.5px solid var(--border);
+  }
+  .p1-sub-row:last-child { border-bottom: none; }
+  .p1-sub-row .tag-cell {
+    width: 130px; min-width: 130px;
+    background: var(--card-bg);
+    padding: 20px 16px;
+    border-right: 1.5px solid var(--border);
+    display: flex; align-items: flex-start;
+  }
+  .p1-sub-row .body {
+    padding: 18px 24px;
+    flex: 1;
+  }
+  .p1-sub-row .body h4 {
+    font-size: 14px; font-weight: 700; color: var(--text-main);
+    margin-bottom: 6px;
+  }
+  .p1-sub-row .body ul {
+    padding-left: 18px;
+    font-size: 13.5px; color: var(--text-muted);
+    line-height: 1.7;
+  }
+
+  /* ─── PHASE II ─── */
+  .p2-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  /* Local calibration card */
+  .p2-card {
+    border: 1.5px solid var(--border);
+    border-radius: 12px;
+    background: var(--white);
+    overflow: hidden;
+  }
+  .p2-card-header {
+    display: flex; align-items: center; gap: 12px;
+    padding: 16px 20px;
+    border-bottom: 1.5px solid var(--border);
+    background: var(--card-bg);
+  }
+  .p2-card-body {
+    padding: 16px 20px;
+  }
+  .p2-card-body p {
+    font-size: 13.5px; color: var(--text-muted); margin-bottom: 14px;
+  }
+
+  /* Checker rows */
+  .checker-list { display: flex; flex-direction: column; gap: 10px; }
+  .checker-item {
+    display: flex; align-items: flex-start; gap: 10px;
+    font-size: 13.5px; color: var(--text-muted);
+  }
+  .checker-badge {
+    flex-shrink: 0;
+    background: var(--orange);
+    color: #fff;
+    font-size: 11px; font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-top: 2px;
+    letter-spacing: .04em;
+  }
+
+  /* StarMap card */
+  .starmap-card {
+    border: 1.5px solid var(--border);
+    border-radius: 12px;
+    background: var(--white);
+    overflow: hidden;
+  }
+  .starmap-header {
+    padding: 16px 20px;
+    background: var(--blue);
+    color: #fff;
+  }
+  .starmap-header h3 {
+    font-size: 18px; font-weight: 700;
+    letter-spacing: .02em;
+  }
+  .starmap-header .star { color: var(--orange); }
+  .starmap-header p {
+    font-size: 12.5px; color: rgba(255,255,255,.7); margin-top: 4px;
+  }
+  .starmap-layers {
+    padding: 16px 20px;
+    display: flex; flex-direction: column; gap: 8px;
+  }
+  .sm-layer {
+    display: flex; align-items: center; gap: 10px;
+    font-size: 12.5px;
+  }
+  .sm-layer-label {
+    font-size: 10px; font-weight: 600; letter-spacing: .07em;
+    text-transform: uppercase;
+    color: var(--white);
+    background: var(--blue-mid);
+    padding: 2px 8px; border-radius: 3px;
+    white-space: nowrap; width: 116px; text-align: center;
+  }
+  .sm-layer-label.app { background: #2A4FE8; }
+  .sm-layer-label.plat { background: #1B3BD6; }
+  .sm-layer-label.comp { background: #1430b0; }
+  .sm-layer-label.data { background: #0d1a5c; }
+  .sm-layer-desc {
+    font-size: 12px; color: var(--text-muted);
+  }
+
+  /* Diffusion (分层扩散) full-width card */
+  .p2-diffusion {
+    margin-top: 20px;
+    border: 1.5px solid var(--border);
+    border-radius: 12px;
+    background: var(--white);
+    overflow: hidden;
+  }
+  .p2-diffusion-header {
+    display: flex; align-items: center; gap: 12px;
+    padding: 16px 20px;
+    border-bottom: 1.5px solid var(--border);
+    background: var(--card-bg);
+  }
+  .diff-body { padding: 20px; }
+  .diff-tagline {
+    font-size: 13px; font-weight: 600; color: var(--text-main);
+    margin-bottom: 16px;
+  }
+  .diff-cols {
+    display: grid; grid-template-columns: 1fr 1px 1fr;
+    gap: 0;
+  }
+  .diff-divider {
+    background: var(--border);
+    margin: 0 16px;
+  }
+  .diff-col h5 {
+    font-size: 11px; font-weight: 700; letter-spacing: .09em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+  }
+  .diff-item {
+    font-size: 13px; color: var(--text-muted);
+    padding: 5px 0;
+    border-bottom: 0.5px solid var(--border);
+    display: flex; align-items: center; gap: 7px;
+  }
+  .diff-item:last-child { border-bottom: none; }
+  .diff-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--blue);
+    flex-shrink: 0;
+  }
+  .diff-dot.orange { background: var(--orange); }
+
+  /* Dynamic row */
+  .diff-dynamic {
+    margin-top: 16px;
+    border-top: 1.5px solid var(--border);
+    padding-top: 14px;
+  }
+  .diff-dynamic h5 {
+    font-size: 11px; font-weight: 700; letter-spacing: .09em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+  }
+  .diff-dynamic-pills {
+    display: flex; gap: 8px; flex-wrap: wrap;
+  }
+  .dyn-pill {
+    background: var(--card-bg);
+    border: 1.5px solid var(--border);
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 12.5px; color: var(--text-main); font-weight: 500;
+  }
+
+  /* ─── PHASE III ─── */
+  .p3-grid {
+    display: flex; flex-direction: column; gap: 20px;
+  }
+  .p3-card {
+    border: 1.5px solid var(--border);
+    border-radius: 12px;
+    background: var(--white);
+    display: flex;
+    overflow: hidden;
+  }
+  .p3-icon-col {
+    width: 64px; min-width: 64px;
+    background: var(--card-bg);
+    border-right: 1.5px solid var(--border);
+    display: flex; align-items: flex-start;
+    justify-content: center;
+    padding-top: 22px;
+  }
+  .p3-check {
+    width: 28px; height: 28px;
+    border: 2px solid var(--blue);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .p3-check svg { width: 14px; height: 14px; }
+  .p3-body { padding: 18px 24px; flex: 1; }
+  .p3-body h3 {
+    font-size: 15px; font-weight: 700; color: var(--blue);
+    margin-bottom: 4px;
+  }
+  .p3-body .subtitle {
+    font-size: 12.5px; color: var(--text-muted); margin-bottom: 12px;
+    font-style: italic;
+  }
+  .p3-body ul {
+    padding-left: 18px;
+    font-size: 13.5px; color: var(--text-muted); line-height: 1.7;
+  }
+
+  /* Phase III tagline banner */
+  .p3-tagline {
+    background: var(--blue);
+    color: #fff;
+    border-radius: 12px;
+    padding: 24px 32px;
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    position: relative;
+    overflow: hidden;
+  }
+  .p3-tagline::after {
+    content: '';
+    position: absolute; right: -30px; top: -30px;
+    width: 140px; height: 140px;
+    border-radius: 50%;
+    border: 24px solid var(--orange);
+    opacity: 0.25;
+  }
+  .p3-tagline span { color: var(--orange); }
+
+  /* ─── FOOTER ─── */
+  footer {
+    background: var(--blue);
+    color: rgba(255,255,255,.5);
+    font-size: 12px;
+    text-align: center;
+    padding: 20px 48px;
+  }
+  footer strong { color: #fff; }
+
+  /* ─── DIVIDER between phases ─── */
+  .phase-divider {
+    border: none;
+    border-top: 1.5px solid var(--border);
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+
+  @media(max-width: 700px) {
+    .hero { padding: 48px 20px; }
+    .phase-section { padding: 40px 20px; }
+    .p2-grid { grid-template-columns: 1fr; }
+    .pillars { grid-template-columns: 1fr; }
+    .pillar { border-right: none; border-bottom: 1.5px solid var(--border); }
+    .pillar:last-child { border-bottom: none; }
+    .diff-cols { grid-template-columns: 1fr; }
+    .diff-divider { display: none; }
+    .p1-tag-cell, .p1-sub-row .tag-cell { width: 100px; min-width: 100px; }
+    .p3-card { flex-direction: column; }
+    .p3-icon-col { width: 100%; min-width: unset; height: 48px; align-items: center; padding-top: 0; border-right: none; border-bottom: 1.5px solid var(--border); flex-direction: row; gap: 10px; padding-left: 20px; }
+  }
+/* ── MAIN CONTENT ── */
+.page { max-width: 1060px; margin: 0 auto; padding: 64px 48px; }
+
+/* Section label */
+.section-label {
+  font-size: 11px; font-weight: 700; letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 8px;
+}
+  /* ── CHALLENGE BLOCK ── */
+.challenge-block {
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  gap: 20px;
+  margin-bottom: 52px;
+}
+.challenge-main {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  padding: 32px 36px;
+}
+.challenge-main h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.5rem;
+  color: var(--blue);
+  margin-bottom: 16px;
+}
+.challenge-main p {
+  font-size: 14px; color: var(--muted);
+  line-height: 1.75;
+}
+.challenge-tags {
+  display: flex; flex-direction: column; gap: 12px;
+}
+.ctag {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  padding: 16px 20px;
+  display: flex; align-items: flex-start; gap: 12px;
+}
+.ctag-icon {
+  width: 32px; height: 32px; border-radius: 6px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  font-size: 15px;
+}
+.ctag-icon.red   { background: #FDECEA; }
+.ctag-icon.amber { background: var(--orange-lt); }
+.ctag-icon.blue  { background: var(--blue-light); }
+.ctag h4 { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 2px; }
+.ctag p  { font-size: 12px; color: var(--muted); line-height: 1.5; }
+
+/* ── PHASE PIPELINE ── */
+.pipeline-wrap {
+  margin-bottom: 52px;
+}
+.pipeline-wrap h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.5rem;
+  color: var(--blue);
+  margin-bottom: 28px;
+}
+.pipeline {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.phase-col {
+  border-right: 1.5px solid var(--border);
+  position: relative;
+  overflow: hidden;
+}
+.phase-col:last-child { border-right: none; }
+
+/* large background deco icon */
+.phase-deco {
+  position: absolute;
+  bottom: -22px; right: -22px;
+  width: 148px; height: 148px;
+  opacity: 0.07;
+  color: var(--blue);
+  pointer-events: none;
+}
+.phase-deco svg { width: 100%; height: 100%; }
+
+/* social icon matrix */
+.social-matrix {
+  display: flex; gap: 6px;
+  margin-top: auto;
+  padding-top: 16px;
+}
+.soc-pill {
+  width: 28px; height: 28px;
+  border: 1px solid rgba(27,59,214,.18);
+  border-radius: 7px;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(255,255,255,.65);
+  flex-shrink: 0;
+}
+.soc-pill svg { width: 13px; height: 13px; color: var(--blue); }
+.phase-head {
+  padding: 18px 20px;
+  border-bottom: 1.5px solid var(--border);
+}
+.phase-head .phase-num {
+  font-size: 10px; font-weight: 700; letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 4px;
+}
+.phase-head h3 {
+  font-size: 14px; font-weight: 600; color: var(--blue);
+}
+.phase-head .phase-sub {
+  font-size: 11.5px; color: var(--muted); margin-top: 2px;
+}
+.phase-items {
+  padding: 16px 20px;
+  background: var(--white);
+  display: flex; flex-direction: column; gap: 14px;
+  min-height: 280px;
+}
+.phase-item {
+  font-size: 13px; color: var(--muted); line-height: 1.6;
+  padding-left: 14px;
+  position: relative;
+}
+.phase-item::before {
+  content: '';
+  position: absolute;
+  left: 2px; top: 8px;
+  width: 5px; height: 5px; border-radius: 50%;
+  background: var(--blue);
+}
+.phase-item strong { color: var(--text); font-weight: 600; }
+
+/* delivery tag */
+.delivery {
+  margin: 0 20px 20px;
+  background: var(--blue-light);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 11.5px; color: var(--blue); font-weight: 500;
+}
+.delivery span { color: var(--muted); font-weight: 400; }
+
+/* ── RESULTS ── */
+.results-wrap {
+  margin-bottom: 52px;
+}
+.results-wrap h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.5rem;
+  color: var(--blue);
+  margin-bottom: 28px;
+}
+.results-grid {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 20px;
+}
+
+/* big number card */
+.result-numbers {
+  background: var(--blue);
+  border-radius: 12px;
+  padding: 36px 32px;
+  display: flex; flex-direction: column; gap: 0;
+  position: relative; overflow: hidden;
+}
+.result-numbers::after {
+  content: '';
+  position: absolute; right: -50px; top: -50px;
+  width: 200px; height: 200px;
+  border-radius: 50%;
+  border: 32px solid var(--orange);
+  opacity: .15;
+}
+.rn-item {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+  position: relative; z-index: 2;
+}
+.rn-item:last-child { border-bottom: none; padding-bottom: 0; }
+.rn-item:first-child { padding-top: 0; }
+.rn-num {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2.8rem;
+  color: var(--orange);
+  line-height: 1;
+}
+.rn-label {
+  font-size: 12.5px;
+  color: rgba(255,255,255,.6);
+  margin-top: 4px;
+}
+
+/* result narrative */
+.result-narrative {
+  display: flex; flex-direction: column; gap: 14px;
+}
+.rn-card {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  padding: 18px 22px;
+  display: flex; align-items: flex-start; gap: 14px;
+  flex: 1;
+}
+.rn-card-accent {
+  width: 4px; border-radius: 4px;
+  flex-shrink: 0; align-self: stretch;
+}
+.rn-card-accent.blue   { background: var(--blue); }
+.rn-card-accent.orange { background: var(--orange); }
+.rn-card-accent.teal   { background: #1D9E75; }
+.rn-card-body h4 {
+  font-size: 13.5px; font-weight: 600; color: var(--text);
+  margin-bottom: 4px;
+}
+.rn-card-body p {
+  font-size: 13px; color: var(--muted); line-height: 1.6;
+}
+
+/* ── TAKEAWAY banner ── */
+.takeaway {
+  background: var(--blue);
+  border-radius: 12px;
+  padding: 32px 40px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 32px;
+  position: relative; overflow: hidden;
+}
+.takeaway::before {
+  content: '';
+  position: absolute; left: -60px; bottom: -60px;
+  width: 220px; height: 220px;
+  border-radius: 50%;
+  border: 40px solid var(--orange);
+  opacity: .1;
+}
+.takeaway p {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.25rem;
+  color: var(--white);
+  line-height: 1.45;
+  position: relative; z-index: 2;
+  max-width: 580px;
+}
+.takeaway p em { color: var(--orange); font-style: normal; }
+.takeaway-label {
+  font-size: 11px; font-weight: 700; letter-spacing: .12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.45);
+  white-space: nowrap;
+  position: relative; z-index: 2;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+/* ── MATERIALS SHOWCASE ── */
+.materials-showcase {
+  margin-bottom: 52px;
+}
+.materials-showcase h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.5rem;
+  color: var(--blue);
+  margin-bottom: 28px;
+}
+.materials-pair {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 0 28px;
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  padding: 28px 32px;
+  align-items: start;
+}
+.material-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.material-img-wrap {
+  height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: #f5f6fa;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.material-img-wrap img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+.material-label {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-align: center;
+}
+.lang-tag {
+  display: inline-block;
+  font-size: 10px; font-weight: 700; letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: var(--blue-light);
+  color: var(--blue);
+}
+.lang-tag.zh {
+  background: var(--orange-lt);
+  color: var(--orange);
+}
+.material-desc {
+  font-size: 12px; color: var(--muted); line-height: 1.5;
+  max-width: 220px;
+}
+.material-vsbar {
+  width: 1px;
+  background: var(--border);
+  align-self: stretch;
+  position: relative;
+}
+.material-vsbar::after {
+  content: 'vs';
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--white);
+  padding: 4px 7px;
+  font-size: 10px; font-weight: 700; letter-spacing: .1em;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+}
+
+/* ── REACH STRIP ── */
+.reach-strip {
+  margin-top: 24px;
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.reach-strip-label {
+  padding: 10px 20px;
+  background: var(--blue);
+  font-size: 11px; font-weight: 700; letter-spacing: .12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.75);
+}
+.reach-strip img {
+  width: 100%;
+  display: block;
+}
+
+</style>
+
+
+  <link rel="icon" type="image/png" href="small-logo.png">
+</head>
+<body>
+  
+
+  <!-- ================= HEADER SECTION ================= -->
+  <header class="site-header">
+    <div class="header-inner">
+      
+      <!-- ================= 左侧：Logo ================= -->
+      <a href="index.html" class="logo-link">
+        <img src="logo-index.png" alt="AADE Logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <span class="logo-text hidden" style="font-weight: 800; font-size: 1.875rem; color: #0f172a; letter-spacing: 0.05em;">AADE</span>
+      </a>
+
+      <!-- ================= 中间：导航 ================= -->
+      <nav class="desktop-nav">
+        
+        <!-- About us (多列下拉) -->
+        <div class="nav-dropdown-group">
+  <button class="nav-item">
+    About us
+    <svg class="nav-icon-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </button>
+
+  <div class="dropdown-hover-bridge">
+    <div class="dropdown-panel dropdown-large" style="width: 600px;">
+      
+      <div class="dropdown-col" style="width: 55%;">
+        
+        <div class="dropdown-section">
+          <div class="dropdown-title-row">
+            <svg class="dropdown-title-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16.094 10.158A1.996 1.996 0 0013.842 7.906l-4.582 1.309a.5.5 0 00-.353.353l-1.309 4.582a1.996 1.996 0 002.252 2.252l4.582-1.309a.5.5 0 00.353-.353l1.309-4.582zM12 21a9 9 0 110-18 9 9 0 010 18z"></path></svg>
+            <span class="dropdown-title-text">Introduction</span>
+          </div>
+          <div class="dropdown-rich-links">
+            
+            <a href="aade-intro1-now.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" /></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">What We Do</div>
+                <div class="rich-link-desc">Now: Missions & Actions</div>
+              </div>
+            </a>
+
+            <a href="aade-intro2-past.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">Milestones</div>
+                <div class="rich-link-desc">Past: Our Journey</div>
+              </div>
+            </a>
+
+            <a href="aade-intro3-future.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" /></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">2026 & Beyond</div>
+                <div class="rich-link-desc">Future: Next Frontier</div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+
+        
+
+      </div>
+
+      <div class="dropdown-col dropdown-col-alt" style="width: 45%;">
+        <div class="dropdown-section">
+          <div class="dropdown-title-row">
+            <svg class="dropdown-title-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19a3 3 0 00-6 0m9-2a4 4 0 00-4-4H10a4 4 0 00-4 4m5-9a3 3 0 110-6 3 3 0 010 6z"></path></svg>
+            <span class="dropdown-title-text">Our People</span>
+          </div>
+          
+          <div class="dropdown-rich-links">
+            <a href="aade-council.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">Council</div>
+                <div class="rich-link-desc">Leadership and governance</div>
+              </div>
+            </a>
+            <a href="aade-advisor.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">Advisors</div>
+                <div class="rich-link-desc">Expert guidance & strategy</div>
+              </div>
+            </a>
+            
+          </div>
+        </div>
+
+        <div class="dropdown-section">
+          <div class="dropdown-title-row">
+            <svg class="dropdown-title-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 110-18 9 9 0 010 18zm0 0c2.761 0 5-4.03 5-9s-2.239-9-5-9-5 4.03-5 9 2.239 9 5 9zm9-9H3m14.545-4.5H4.455m14.545 9H4.455"></path></svg>
+            <span class="dropdown-title-text">Our Network</span>
+          </div>
+          <div class="dropdown-rich-links">
+            <a href="aade-globalnode.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">Global Offices & Labs</div>
+                <div class="rich-link-desc">Our worldwide presence</div>
+              </div>
+            </a>
+            <a href="aade-partnership.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">Partnerships</div>
+                <div class="rich-link-desc">Collaborating for innovation</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+        <a href="aade-pillar1-events.html" class="nav-item">Events</a>
+        <a href="aade-pillar2-trainings.html" class="nav-item">Training</a>
+        <a href="aade-pillar3-research.html" class="nav-item">Research</a>
+
+        <!-- Digital Innovation (下拉) -->
+<div class="nav-dropdown-group">
+  <button class="nav-item">
+    Frontiers
+    <svg class="nav-icon-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </button>
+
+  <div class="dropdown-hover-bridge">
+    <div class="dropdown-panel dropdown-large" style="width: 500px;"> <div class="dropdown-col" style="width: 55%;">
+        <div class="dropdown-section">
+          <div class="dropdown-title-row">
+            <svg class="dropdown-title-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v1.242c0 .289.268.497.55.447a1.593 1.593 0 00.518-.18 1.558 1.558 0 00.999-1.43V2.25m-3 0h3m-3 0a1.5 1.5 0 00-1.5 1.5V15a1.5 1.5 0 001.5 1.5h1.5m-1.5-13.5v12a1.5 1.5 0 001.5 1.5H12m-2.25 0H12m10.5-11.25a2.25 2.25 0 00-2.25-2.25h-2.25V6a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25h2.25a2.25 2.25 0 002.25-2.25V3.75z"></path>
+            </svg>
+            <span class="dropdown-title-text">AI+</span>
+          </div>
+          
+          <div class="dropdown-rich-links">
+            
+            <a href="aade-pillar4-ai-1-presence.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">AI Presence Accelerator</div>
+                <div class="rich-link-desc">AI-driven International Presence</div>
+              </div>
+            </a>
+
+            <a href="aade-pillar4-ai-2-anti-scam.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">LUCA</div>
+                <div class="rich-link-desc">Anti-Scam Agentic LLM Benchmark Testing Framework</div>
+              </div>
+            </a>
+
+            <a href="aade-pillar4-ai-3-rag-janus.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">Janus</div>
+                <div class="rich-link-desc">RAG-based Legal Infrastructure</div>
+              </div>
+            </a>
+
+            <a href="#" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">StarMap (Coming soon)</div>
+                <div class="rich-link-desc">AI-Native Platform for APAC Off-Market Transactions</div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown-col dropdown-col-alt" style="width: 45%;">
+        <div class="dropdown-section">
+          <div class="dropdown-title-row">
+            <svg class="dropdown-title-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"></path>
+            </svg>
+            <span class="dropdown-title-text">Innovation Network</span>
+          </div>
+          
+          <div class="dropdown-rich-links">
+            <a href="https://deai.ink/about" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">DEAI</div>
+                <div class="rich-link-desc">A global action network dedicated to aligning innovative technology with real-world market needs</div>
+              </div>
+            </a>
+            
+            <!---<a href="#" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">AADE Collection</div>
+                <div class="rich-link-desc">Global Digital Intelligence Repository</div>
+              </div>
+            </a>
+
+            <a href="#" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 01-1.125-1.125M3.375 19.5h7.5c.621 0 1.125-.504 1.125-1.125m-9.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-7.5A1.125 1.125 0 0112 18.375m9.75-12.75c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125m19.5 0v1.5c0 .621-.504 1.125-1.125 1.125M2.25 5.625v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125M3.375 8.25v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125m-9.75 0v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">AADE Featured</div>
+                <div class="rich-link-desc">Alternative Semantic Retrieval Database</div>
+              </div>
+            </a>-->
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+        <a href="aade-nav-news.html" class="nav-item">News</a>
+        <a href="aade-nav-contact.html" class="nav-item">Contact</a>
+      </nav>
+
+      <!-- ================= 右侧：社交与移动端 ================= -->
+      <div class="header-actions">
+        <!-- 社交图标 -->
+        <div class="social-actions">
+          <a href="https://www.linkedin.com/company/asia-academy-of-digital-economics" class="action-btn" title="LinkedIn">
+            <svg style="width:16px; height:16px;" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="mailto:contact@aades.academy" class="action-btn" title="Email">
+            <svg style="width:18px; height:18px;" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+        
+        <!-- 移动端汉堡菜单 -->
+        <button id="mobileMenuBtn" class="mobile-menu-btn">
+          <svg id="menuIcon" class="mobile-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          <svg id="closeIcon" class="mobile-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="mobile-menu">
+      
+  <details class="mob-menu-group" open>
+    <summary>
+      <span class="mob-group-title">About us</span>
+      <span class="mob-toggle-icon">▼</span>
+    </summary>
+    
+    <div class="mob-sub-area">
+      
+      <div class="mob-sub-section">
+        <div class="mob-sub-title">
+          <svg class="mob-sub-icon" fill="none" stroke="currentColor" stroke-width="1.25" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16.094 10.158A1.996 1.996 0 0013.842 7.906l-4.582 1.309a.5.5 0 00-.353.353l-1.309 4.582a1.996 1.996 0 002.252 2.252l4.582-1.309a.5.5 0 00.353-.353l1.309-4.582zM12 21a9 9 0 110-18 9 9 0 010 18z"></path></svg>
+          <span class="mob-sub-text">Introduction</span>
+        </div>
+        <div class="mob-rich-links-container">
+          <a href="aade-intro1-now.html" class="mob-rich-link">
+            <div class="mob-rich-icon">
+              <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" /></svg>
+            </div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">What We Do</div>
+              <div class="mob-rich-desc">Now: Missions & Actions</div>
+            </div>
+          </a>
+          <a href="aade-intro2-past.html" class="mob-rich-link">
+            <div class="mob-rich-icon">
+              <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+            </div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">Milestones</div>
+              <div class="mob-rich-desc">Past: Our Journey</div>
+            </div>
+          </a>
+          <a href="aade-intro3-future.html" class="mob-rich-link">
+            <div class="mob-rich-icon">
+              <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" /></svg>
+            </div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">2026 & Beyond</div>
+              <div class="mob-rich-desc">Future: Next Frontier</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="mob-sub-section">
+        <div class="mob-sub-title">
+          <svg class="mob-sub-icon" fill="none" stroke="currentColor" stroke-width="1.25" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19a3 3 0 00-6 0m9-2a4 4 0 00-4-4H10a4 4 0 00-4 4m5-9a3 3 0 110-6 3 3 0 010 6z"></path></svg>
+          <span class="mob-sub-text">Our People</span>
+        </div>
+        <div class="mob-rich-links-container">
+          <a href="aade-council.html" class="mob-rich-link">
+            <div class="mob-rich-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"></path></svg></div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">Council</div>
+              <div class="mob-rich-desc">Leadership and governance</div>
+            </div>
+          </a>
+          <a href="aade-advisor.html" class="mob-rich-link">
+            <div class="mob-rich-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"></path></svg></div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">Advisors</div>
+              <div class="mob-rich-desc">Expert guidance & strategy</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="mob-sub-section">
+        <div class="mob-sub-title">
+          <svg class="mob-sub-icon" fill="none" stroke="currentColor" stroke-width="1.25" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 110-18 9 9 0 010 18zm0 0c2.761 0 5-4.03 5-9s-2.239-9-5-9-5 4.03-5 9 2.239 9 5 9zm9-9H3m14.545-4.5H4.455m14.545 9H4.455"></path></svg>
+          <span class="mob-sub-text">Our Network</span>
+        </div>
+        <div class="mob-rich-links-container">
+          <a href="aade-globalnode.html" class="mob-rich-link">
+            <div class="mob-rich-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"></path></svg></div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">Global Offices & Labs</div>
+              <div class="mob-rich-desc">Our worldwide presence</div>
+            </div>
+          </a>
+          <a href="aade-partnership.html" class="mob-rich-link">
+            <div class="mob-rich-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z"></path></svg></div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">Partnerships</div>
+              <div class="mob-rich-desc">Collaborating for innovation</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </details>
+
+  <a href="aade-pillar1-events.html" class="mob-main-link">Events</a>
+  <a href="aade-pillar2-trainings.html" class="mob-main-link">Training</a>
+  <a href="aade-pillar3-research.html" class="mob-main-link">Research</a>
+
+<details class="mob-menu-group" open>
+    <summary>
+      <span class="mob-group-title">Frontiers</span>
+      <span class="mob-toggle-icon">▼</span>
+    </summary>
+    
+    <div class="mob-sub-area">
+      <div class="mob-sub-section">
+        <div class="mob-sub-title">
+          <svg class="mob-sub-icon" fill="none" stroke="currentColor" stroke-width="1.25" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v1.242c0 .289.268.497.55.447a1.593 1.593 0 00.518-.18 1.558 1.558 0 00.999-1.43V2.25m-3 0h3m-3 0a1.5 1.5 0 00-1.5 1.5V15a1.5 1.5 0 001.5 1.5h1.5m-1.5-13.5v12a1.5 1.5 0 001.5 1.5H12m-2.25 0H12m10.5-11.25a2.25 2.25 0 00-2.25-2.25h-2.25V6a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25h2.25a2.25 2.25 0 002.25-2.25V3.75z"></path></svg>
+          <span class="mob-sub-text">AI+</span>
+        </div>
+        
+        <div class="mob-rich-links-container">
+          <a href="aade-pillar4-ai-1-presence.html" class="mob-rich-link">
+            <div class="mob-rich-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"></path></svg></div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">AI Presence Accelerator</div>
+              <div class="mob-rich-desc">AI-driven International Presence</div>
+            </div>
+          </a>
+          <a href="aade-pillar4-ai-2-anti-scam.html" class="mob-rich-link">
+            <div class="mob-rich-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"></path></svg></div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">LUCA</div>
+              <div class="mob-rich-desc">Anti-Scam Agentic LLM Benchmark Testing Framework</div>
+            </div> 
+          </a>
+          <a href="aade-pillar4-ai-3-rag-janus.html" class="mob-rich-link">
+            <div class="mob-rich-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z"></path></svg></div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">Janus</div>
+              <div class="mob-rich-desc">RAG-based Legal Infrastructure</div>
+            </div>
+          </a>
+          <a href="#" class="mob-rich-link">
+            <div class="mob-rich-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z"></path></svg></div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">StarMap (Coming soon)</div>
+              <div class="mob-rich-desc">AI-Native Platform for APAC Off-Market Transactions</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="mob-sub-section">
+        <div class="mob-sub-title">
+          <svg class="mob-sub-icon" fill="none" stroke="currentColor" stroke-width="1.25" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"></path></svg>
+          <span class="mob-sub-text">Innovation Network</span>
+        </div>
+        <div class="mob-rich-links-container">
+          <a href="https://deai.ink/about" class="mob-rich-link">
+            <div class="mob-rich-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z"></path></svg></div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">DEAI</div>
+              <div class="mob-rich-desc">A global action network dedicated to aligning innovative technology with real-world market needs</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      
+    </div>
+  </details>
+  
+  <a href="aade-nav-news.html" class="mob-main-link">News</a>
+  <a href="aade-nav-contact.html" class="mob-main-link" style="border-bottom: none;">Contact</a>
+  
+  <div class="mob-social-bar">
+    <a href="https://www.linkedin.com/company/asia-academy-of-digital-economics" class="mob-social-btn"><svg style="width:16px; height:16px;" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+    <a href="mailto:contact@aades.academy" class="mob-social-btn"><svg style="width:18px; height:18px;" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
+  </div>
+</div>
+  </header>
+
+  
+<!-- ================= HERO SECTION ================= -->
+<section class="news-hero">
+  <div class="news-hero-bg">
+  <img 
+    src="./hero-pic/digital-hero.png" 
+    alt="AADE Global Lab" 
+    class="news-hero-img" 
+    style="width: 100%; height: 100%; object-fit: cover; object-position: top;"
+  >
+</div>
+
+  <div class="hero-inner-content">
+    <div class="pillar4-hero-inner-text">
+      <span class="pillar4-hero-badge">Pillar IV | Digital Innovation</span>
+      <h1 class="pillar4-hero-title">AI-driven <br>International Presence Accelerator</h1>
+      
+    </div>
+  </div>
+</section>
+
+<!-- ================= Abstract Card SECTION ================= -->
+<section class="aade-summary-section">
+  <div class="summary-container">
+    
+    <div class="summary-tags-wrapper">
+      <button class="summary-tag active" data-target="sum-card-1">
+        Overview
+      </button>
+      <button class="summary-tag" data-target="sum-card-2">
+        Project Architecture
+      </button>
+      <button class="summary-tag" data-target="sum-card-3">
+        Case Studies
+      </button>
+    </div>
+
+    <div class="summary-cards-container">
+      
+      <div class="summary-card active" id="sum-card-1">
+        <svg class="summary-bg-icon" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zm0 7.5l-10-5v10.5l10 5 10-5V4.5l-10 5zm0 10.5l-7.5-3.75V11.5l7.5 3.75 7.5-3.75v4.75L12 20z"/>
+        </svg>
+        <div class="summary-content-inner">
+          <h2 class="summary-title">Overview</h2>
+          <p class="summary-desc">
+            We serve government bodies, international conferences, industry platforms and innovation leaders from developing nations, island economies and emerging markets—those seeking systematic entry into specific overseas regions and access to high-value stakeholder groups. We design and execute AI-driven digital influence campaigns answering three core questions: Who should see you? Why should they trust you? How do you move them to action?
+          </p>
+          <p class="summary-desc">
+            Our methodology places your narrative into the "effective information radius" of key audiences, crystallizing these connections into sustainable partnership pipelines and relational assets.
+          </p>
+        </div>
+      </div>
+
+      <div class="summary-card" id="sum-card-2">
+        <svg class="summary-bg-icon" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+        </svg>
+        <div class="summary-content-inner">
+          <h2 class="summary-title">Project Architecture</h2>
+          <p class="summary-desc">
+            <strong>Strategic Positioning</strong> — Construct international narratives through audience research and iterative refinement. Establish trust anchors via globally recognized institutions and case studies. Secure authoritative first-launch placement across mainstream media, industry platforms and official channels. Optimize search visibility (SEO & GEO).
+          </p>
+          <p class="summary-desc">
+            <strong>Market Activation</strong> — Calibrate messaging across target markets with cultural, legal and industry experts. Deploy StarMap's proprietary NLU intelligence to identify people, media and channels. Execute layered diffusion: static channels (regional media, OOH, influencer placement) + dynamic channels (email, LinkedIn, social CTA) + live formats (webinars, AMAs, briefings).
+          </p>
+          <p class="summary-desc">
+            <strong>Engage & Conversion</strong> — Verify conversion pipelines across devices and regions; identify and eliminate friction points. Organize channel liaisons with universities, institutions, associations and platforms. Design replicable negotiation SOPs. Maintain dedicated follow-through. Build comprehensive Q&A systems with human escalation paths.
+          </p>
+        </div>
+      </div>
+
+      <div class="summary-card" id="sum-card-3">
+        <svg class="summary-bg-icon" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+        </svg>
+        <div class="summary-content-inner">
+          <h2 class="summary-title">Case Studies</h2>
+          <p class="summary-desc">
+            <strong style="color: #bae6fd; font-size: 1.15rem;">Youth Creativity Summit for Belt & Road Initiative (Non-profit)</strong>
+          </p>
+          <p class="summary-desc">
+            Challenged to attract global youth to a public-benefit competition in a compressed timeline. We repositioned the initiative's value proposition, identified 1,000+ potential media partners across 30 countries, secured 67 formal broadcast channels, produced localized content for different cultural contexts, and orchestrated 3 themed AMAs. Result: 70,000 new followers within one month; 2,000 competition entrants advanced to preliminary rounds—validating successful conversion from narrative to participation.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Architecture Title -->
+   <section class="content-section-light">
+    <div class="content-container mt-20">
+
+
+      <div class="section-header-light style-edge-border mb-1">
+        <div class="header-main-group mb-1">
+          <div class="section-icon-light-small">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          </div>
+          <h2 class="section-title-light-oswald">Our Three-Phase Influence Architecture</h2>
+        </div>
+        <p class="section-subtitle-light-inter" style="background-color: #fff;">
+          Using proprietary NLU models to architect influence at scale, precision targeting meets cultural calibration.
+        </p>
+        
+      </div>
+    
+
+    </div>
+  </section>
+
+
+<!-- ═══════════════  PHASE I  ═══════════════ -->
+<section class="phase-section">
+  <p class="phase-eyebrow">Phase I</p>
+  <h2 class="phase-title">Strategic Positioning</h2>
+
+  <!-- International Narrative block -->
+  <div class="p1-outer">
+
+    <!-- Row: tag + description -->
+    <div class="p1-row">
+      <div class="p1-tag-cell"><span class="tag">International<br>Narrative</span></div>
+      <div class="p1-row-body">
+        <h4>Audience Research &amp; Iterative Refinement</h4>
+        <p>Begin with potential audience research and targeted interviews, iterate across multiple rounds, and align with the commissioning party's mechanism — culminating in a finalised master materials set.</p>
+      </div>
+    </div>
+
+    <!-- Flow diagram -->
+    <div class="p1-flow-row">
+      <p class="p1-flow-label">PROCESS FLOW</p>
+      <div class="flow-boxes">
+        <div class="flow-box">Potential audience research<br>&amp; targeted interviews</div>
+        <div class="flow-double">
+          <span class="flow-arrow">›</span>
+          <span class="flow-arrow" style="transform:rotate(180deg)">›</span>
+        </div>
+        <div class="flow-box">Commissioning party mechanism adjustment</div>
+      </div>
+      <p class="p1-flow-label" style="margin-top:4px">After multiple iterations — finalised:</p>
+      <div class="flow-boxes">
+        <div class="flow-box center">Master Materials Set</div>
+      </div>
+    </div>
+
+    <!-- Three pillars -->
+    <div class="pillars">
+      <div class="pillar">
+        <h5>Trust Anchor Construction</h5>
+        <p>Use globally recognised institutions, figures and cases as core reference points to rapidly establish professional credibility and a sound judgement framework.</p>
+      </div>
+      <div class="pillar">
+        <h5>Expression Style Remodelling</h5>
+        <p>Unify visual language, structure and information hierarchy into a coherent international professional communication style.</p>
+      </div>
+      <div class="pillar">
+        <h5>Language Density Calibration</h5>
+        <p>Flexibly control information density and communication cadence for different platforms and audience roles.</p>
+      </div>
+    </div>
+
+    <!-- Footer banner -->
+    <div class="p1-footer">Traffic pathway verification — ensuring seamless flow across all devices</div>
+  </div>
+
+  <!-- Authoritative Launch sub-block -->
+  <div class="p1-sub">
+    <div class="p1-sub-row">
+      <div class="tag-cell"><span class="tag">Authoritative<br>Launch</span></div>
+      <div class="body">
+        <h4>Channel Selection</h4>
+        <ul>
+          <li>Concentrate exposure on international mainstream media, authoritative industry platforms, and government or quasi-official channels to establish source credibility.</li>
+          <li>Publish through AADE's long-term partner media, journals and magazines.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="p1-sub-row">
+      <div class="tag-cell" style="background:transparent;"></div>
+      <div class="body">
+        <h4>Search Environment Construction</h4>
+        <ul>
+          <li>Centre all SEO and Generative Engine Optimisation (GEO) efforts on the authoritative launch content.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="p1-sub-row" style="border-bottom:none">
+      <div class="tag-cell" style="background:transparent;"></div>
+      <div class="body">
+        <h4>Long-term Citability</h4>
+        <ul>
+          <li>Ensure launch content holds lasting referential value for subsequent media, institutions and professionals.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="phase-divider">
+
+<!-- ═══════════════  PHASE II  ═══════════════ -->
+<section class="phase-section">
+  <p class="phase-eyebrow">Phase II</p>
+  <h2 class="phase-title">Market Activation</h2>
+
+  <div class="p2-grid">
+
+    <!-- Local Calibration -->
+    <div class="p2-card">
+      <div class="p2-card-header">
+        <span class="tag">Local Calibration</span>
+      </div>
+      <div class="p2-card-body">
+        <p>Under the guidance of market, cultural and legal experts in the target region, the international narrative undergoes granular refinement:</p>
+        <div class="checker-list">
+          <div class="checker-item">
+            <span class="checker-badge">Checker</span>
+            Adjust narrative angle, case selection and emphasis to align with local professional norms and discussion conventions.
+          </div>
+          <div class="checker-item">
+            <span class="checker-badge">Checker</span>
+            Verify compliance boundaries for communication content and partnership descriptions.
+          </div>
+          <div class="checker-item">
+            <span class="checker-badge">Checker</span>
+            Review for cultural, ethnic, gender and regional sensitivities.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- StarMap -->
+    <div class="starmap-card">
+      <div class="starmap-header">
+        <h3>Star<span class="star">Map</span> ✦</h3>
+        <p>AADE's proprietary NLU-powered global digital economy database — precisely mapping People, Media and Channels across every market.</p>
+      </div>
+      <div class="starmap-layers">
+        <div class="sm-layer">
+          <span class="sm-layer-label app">Application Layer</span>
+          <span class="sm-layer-desc">Match demand &amp; supply · Match new tech &amp; utility · Match youth &amp; digital skills</span>
+        </div>
+        <div class="sm-layer">
+          <span class="sm-layer-label plat">Platform Layer</span>
+          <span class="sm-layer-desc">StarMap Platform — a structured, computable database</span>
+        </div>
+        <div class="sm-layer">
+          <span class="sm-layer-label comp">Computing Layer</span>
+          <span class="sm-layer-desc">Self-developed NLU model (fine-tuned on BERT)</span>
+        </div>
+        <div class="sm-layer">
+          <span class="sm-layer-label data">Data Layer</span>
+          <span class="sm-layer-desc">First-hand data provided by industry practitioners</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Layered Diffusion -->
+  <div class="p2-diffusion">
+    <div class="p2-diffusion-header">
+      <span class="tag">Layered Diffusion</span>
+      <span style="font-size:13px;color:var(--text-muted);">Multi-channel publishing + progress disclosure + node amplification + supporting events</span>
+    </div>
+    <div class="diff-body">
+      <p class="diff-tagline">Sustaining topic heat and professional attention — avoiding post-launch fade-out</p>
+      <div class="diff-cols">
+        <div class="diff-col">
+          <h5>Static Channels · Regional Re-influence</h5>
+          <div class="diff-item"><span class="diff-dot"></span>Regional media (commercial / official)</div>
+          <div class="diff-item"><span class="diff-dot"></span>Airport, billboard, building physical ads</div>
+          <div class="diff-item"><span class="diff-dot"></span>Influencer private content / soft interview placements</div>
+        </div>
+        <div class="diff-divider"></div>
+        <div class="diff-col">
+          <h5>Dynamic Channels · CTA Deep Reach</h5>
+          <div class="diff-item"><span class="diff-dot orange"></span>Email campaigns</div>
+          <div class="diff-item"><span class="diff-dot orange"></span>LinkedIn / X direct messages</div>
+          <div class="diff-item"><span class="diff-dot orange"></span>Social media interactive content</div>
+          <div class="diff-item"><span class="diff-dot orange"></span>Professional community &amp; private group targeted invitations</div>
+        </div>
+      </div>
+      <div class="diff-dynamic">
+        <h5>Live Interactive Formats</h5>
+        <div class="diff-dynamic-pills">
+          <span class="dyn-pill">DC / X Space AMA</span>
+          <span class="dyn-pill">Themed Webinars</span>
+          <span class="dyn-pill">Q&amp;A Briefing Sessions</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="phase-divider">
+
+<!-- ═══════════════  PHASE III  ═══════════════ -->
+<section class="phase-section">
+  <p class="phase-eyebrow">Phase III</p>
+  <h2 class="phase-title">Engage &amp; Conversion</h2>
+
+  <div class="p3-grid">
+
+    <!-- Pipeline Verification -->
+    <div class="p3-card">
+      <div class="p3-icon-col">
+        <div class="p3-check">
+          <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 7.5L5.5 10.5L11.5 4" stroke="#1B3BD6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+      <div class="p3-body">
+        <h3>Pipeline Verification</h3>
+        <p class="subtitle">"Ensuring interested parties can smoothly reach the next step"</p>
+        <ul>
+          <li>Test registration, connection and communication entry points across different regions and devices.</li>
+          <li>Identify and fix bottlenecks caused by information redirects, language comprehension gaps or unclear ownership.</li>
+          <li>Dynamically optimise the process based on real-world feedback to improve overall conversion efficiency.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Channel Liaison -->
+    <div class="p3-card">
+      <div class="p3-icon-col">
+        <div class="p3-check">
+          <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 7.5L5.5 10.5L11.5 4" stroke="#1B3BD6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+      <div class="p3-body">
+        <h3>Channel Liaison</h3>
+        <p class="subtitle">Organising targeted meetings with potential channel partners</p>
+        <ul>
+          <li>Design a clear, replicable negotiation SOP — defining objectives, agendas and decision checkpoints.</li>
+          <li>Configure differentiated engagement materials for each partner type: universities, institutions, associations and platforms.</li>
+          <li>Assign dedicated personnel to manage communication and follow-through, ensuring intent progresses beyond initial contact.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Targeted Q&A -->
+    <div class="p3-card">
+      <div class="p3-icon-col">
+        <div class="p3-check">
+          <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 7.5L5.5 10.5L11.5 4" stroke="#1B3BD6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+      <div class="p3-body">
+        <h3>Targeted Q&amp;A</h3>
+        <p class="subtitle">Q&amp;A consultation design for direct participants</p>
+        <ul>
+          <li>Build a knowledge base covering rules, processes, entitlements and key timelines.</li>
+          <li>For complex or personalised queries, set up human handoff or proxy-response channels to ensure professional, consistent answers.</li>
+          <li>Continuously update Q&amp;A content to reduce repetitive communication overhead and elevate the participant experience.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Tagline banner -->
+    <div class="p3-tagline">
+      Not just "creating noise" — but decomposing complex cross-regional collaboration into an <span>executable, manageable conversion system.</span>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Case Studies Title -->
+   <section class="content-section-light">
+    <div class="content-container mt-20">
+
+
+      <div class="section-header-light style-edge-border mb-1">
+        <div class="header-main-group mb-1">
+          <div class="section-icon-light-small">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          </div>
+          <h2 class="section-title-light-oswald">Case Studies</h2>
+        </div>
+        <p class="section-subtitle-light-inter" style="background-color: #fff;">
+          Using proprietary NLU models to architect influence at scale, precision targeting meets cultural calibration.
+        </p>
+        
+      </div>
+    
+
+    </div>
+  </section>
+  <div class="page">
+
+  <!-- CHALLENGE -->
+  <div class="challenge-block">
+    <div class="challenge-main">
+      <p class="section-label">The Challenge</p>
+      <h2>Scaling a public-benefit competition to a global audience — fast.</h2>
+      <p>Commissioned by a foundation as a non-profit initiative, the campaign had to attract global youth interested in Belt &amp; Road social issues within weeks — while ensuring its philosophy and participation mechanics were understood across diverse cultural contexts, not merely translated.</p>
+    </div>
+    <div class="challenge-tags">
+      <div class="ctag">
+        <div class="ctag-icon red">⚡</div>
+        <div>
+          <h4>Compressed Timeline</h4>
+          <p>Full campaign cycle — from narrative build to conversion — executed within weeks, not months.</p>
+        </div>
+      </div>
+      <div class="ctag">
+        <div class="ctag-icon amber">🌐</div>
+        <div>
+          <h4>Multi-market Cultural Nuance</h4>
+          <p>Translation alone was insufficient. Messaging had to resonate across radically different cultural and academic contexts.</p>
+        </div>
+      </div>
+      <div class="ctag">
+        <div class="ctag-icon blue">📡</div>
+        <div>
+          <h4>No Existing International Channels</h4>
+          <p>No established overseas broadcast infrastructure or partner network at the outset.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PIPELINE -->
+  <div class="pipeline-wrap">
+    <p class="section-label">How We Worked</p>
+    <h2>Three-phase execution from positioning to conversion</h2>
+    <div class="pipeline">
+
+      <!-- Phase I -->
+      <div class="phase-col" style="background: var(--blue-light);">
+        <div class="phase-deco">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>
+            <line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/>
+            <line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/>
+          </svg>
+        </div>
+        <div class="phase-head" style="background: var(--blue-light);">
+          <div class="phase-num">Phase I</div>
+          <h3>Strategic Positioning</h3>
+          <div class="phase-sub">Narrative construction + authority launch</div>
+        </div>
+        <div class="phase-items" style="background: var(--blue-light);">
+          <div class="phase-item">Researched youth motivations; co-developed competition structure and entitlements with the organiser.</div>
+          <div class="phase-item">Secured authoritative first-launch placement through official media to establish credibility.</div>
+          <div class="phase-item">Built SEO and GEO foundation for long-term discoverability.</div>
+        </div>
+        <div class="delivery">→ Deliverable: <span>Master competition materials set</span></div>
+      </div>
+
+      <!-- Phase II -->
+      <div class="phase-col">
+        <div class="phase-deco">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            <path d="M4.93 4.93a15 15 0 0 0 0 14.14M19.07 4.93a15 15 0 0 1 0 14.14"/>
+          </svg>
+        </div>
+        <div class="phase-head" style="background: var(--white);">
+          <div class="phase-num">Phase II</div>
+          <h3>Market Activation</h3>
+          <div class="phase-sub">Local calibration + layered diffusion</div>
+        </div>
+        <div class="phase-items">
+          <div class="phase-item">Mapped 1,000+ potential partners across 30 countries using StarMap intelligence.</div>
+          <div class="phase-item">BD outreach converted 367 liaison contacts into 67 formally committed broadcast channels.</div>
+          <div class="phase-item">Produced localised content per market — language, emphasis and cultural framing all adjusted.</div>
+        </div>
+        <div class="delivery">→ Deliverable: <span>Localised materials per market; partner network activated</span></div>
+      </div>
+
+      <!-- Phase III -->
+      <div class="phase-col" style="background: var(--off-white);">
+        <div class="phase-deco">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 8h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-2v3l-4-3H9a2 2 0 0 1-1.94-1.5"/>
+            <path d="M3 4h10a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H9l-3 3V12H3a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/>
+          </svg>
+        </div>
+        <div class="phase-head" style="background: var(--off-white);">
+          <div class="phase-num">Phase III</div>
+          <h3>Engage &amp; Conversion</h3>
+          <div class="phase-sub">Live activation + pipeline closure</div>
+        </div>
+        <div class="phase-items" style="background: var(--off-white);">
+          <div class="phase-item">3 themed AMAs on X Space and Weixin Video Channel, each hosted with guests matched to the target audience.</div>
+          <div class="phase-item">Continuous follow-up for high-intent audiences to keep conversion pathways unblocked.</div>
+          <div class="phase-item">Verified registration and communication links across devices and regions.</div>
+          <div class="social-matrix">
+            <!-- X (Twitter) -->
+            <div class="soc-pill" title="X Space">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.26 5.632zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </div>
+            <!-- WeChat / Weixin -->
+            <div class="soc-pill" title="Weixin Video Channel">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.5 2C5.36 2 2 4.91 2 8.5c0 2.04 1.03 3.86 2.65 5.07L4.1 16l2.52-1.26c.89.23 1.85.36 2.88.36.17 0 .34 0 .51-.02A6.4 6.4 0 0 1 10 13.5c0-3.31 2.91-6 6.5-6 .09 0 .18 0 .27.01C16.01 4.59 13.04 2 9.5 2zm-2 4.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm4 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm5 3.5c-2.9 0-5.5 1.92-5.5 4.5S13.6 19 16.5 19c.65 0 1.28-.1 1.86-.29L21 19.5l-.62-1.87C21.41 16.67 22 15.15 22 13.5 22 10.92 19.4 10 16.5 10zm-1.5 3a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5zm3 0a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5z"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="delivery" style="background: #e8eef8;">→ Deliverable: <span>Live events, conversion pipeline, 2,000 verified entrants</span></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MATERIALS SHOWCASE -->
+  <div class="materials-showcase">
+    <p class="section-label">Localised Materials</p>
+    <h2>Different languages, different formats — same message</h2>
+    <div class="materials-pair">
+      <div class="material-item">
+        <div class="material-img-wrap">
+          <img src="new-card/23YCIC-1.jpg" alt="English market materials">
+        </div>
+        <div class="material-label">
+          <span class="lang-tag">EN</span>
+          <span class="material-desc">English-market infographic — structured for international university audiences</span>
+        </div>
+      </div>
+      <div class="material-vsbar"></div>
+      <div class="material-item">
+        <div class="material-img-wrap">
+          <img src="new-card/23YCIC-2.png" alt="Chinese market materials">
+        </div>
+        <div class="material-label">
+          <span class="lang-tag zh">中文</span>
+          <span class="material-desc">Chinese-market poster — redesigned for cultural resonance, not merely translated</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESULTS -->
+  <div class="results-wrap">
+    <p class="section-label">Results</p>
+    <h2>From public narrative to verified participation</h2>
+    <div class="results-grid">
+
+      <div class="result-numbers">
+        <div class="rn-item">
+          <div class="rn-num">70K</div>
+          <div class="rn-label">Followers accumulated in one month</div>
+        </div>
+        <div class="rn-item">
+          <div class="rn-num">2,000</div>
+          <div class="rn-label">Entrants advanced to preliminary rounds</div>
+        </div>
+        <div class="rn-item">
+          <div class="rn-num">67</div>
+          <div class="rn-label">Formal channel partners across 30 countries</div>
+        </div>
+      </div>
+
+      <div class="result-narrative">
+        <div class="rn-card">
+          <div class="rn-card-accent blue"></div>
+          <div class="rn-card-body">
+            <h4>Channel network built from scratch</h4>
+            <p>67-partner broadcast network across 30 countries — from zero. Of the 367 organisations that entered liaison, 18% converted to formal partners within the campaign window.</p>
+          </div>
+        </div>
+        <div class="rn-card">
+          <div class="rn-card-accent orange"></div>
+          <div class="rn-card-body">
+            <h4>Narrative translated into participation</h4>
+            <p>2,000 preliminary-round entrants confirmed the conversion from awareness to active commitment — validating that localised messaging resonated beyond surface-level exposure.</p>
+          </div>
+        </div>
+        <div class="rn-card">
+          <div class="rn-card-accent teal"></div>
+          <div class="rn-card-body">
+            <h4>Public-benefit framing held at scale</h4>
+            <p>Across diverse cultural and linguistic contexts, the non-profit ethos was consistently understood and communicated — not diluted by localisation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Partner university logos -->
+    <div class="reach-strip">
+      <div class="reach-strip-label">73 top-tier university talent clubs engaged across 30 countries</div>
+      <img src="new-card/23YCIC-3.jpg" alt="73 top-tier university talent clubs engaged">
+    </div>
+  </div>
+
+  <!-- TAKEAWAY -->
+  <div class="takeaway">
+    <p>Proof that a compressed timeline and zero existing channels are not blockers — when <em>AI-driven targeting, localised narrative and systematic conversion infrastructure</em> are deployed together.</p>
+    <div class="takeaway-label">Key Takeaway</div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-col-brand">
+        <a href="index.html" style="display: inline-block; opacity: 0.9; text-decoration: none; margin-bottom: 15px;">
+            <img src="logo-index-white.png" alt="AADE Logo" style="display: block; height: 60px; width: auto;">
+            
+        </a>
+        <p class="footer-desc">
+          Empowering Sustainable Digital Growth. Based in Singapore, we are building Asia’s most influential platform for digital economic research and exchange.
+        </p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/company/asia-academy-of-digital-economics" class="footer-social-btn">
+            <svg style="width:16px; height:16px;" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="mailto:contact@aades.academy" class="footer-social-btn">
+            <svg style="width:16px; height:16px;" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </a>
+          
+        </div>
+      </div>
+      <div class="footer-col-links">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-link-list">
+          <li><a href="aade-intro1-now.html" class="footer-link-item"><span>About us</span></a></li>
+          
+          <li><a href="aade-nav-news.html" class="footer-link-item"><span>News</span></a></li>
+          <li><a href="aade-nav-contact.html" class="footer-link-item"><span>Contact</span></a></li>
+        </ul>
+      </div>
+      <div class="footer-col-contact">
+        <h4 class="footer-heading">Contact Us</h4>
+        <ul class="footer-contact-list">
+          <li class="footer-contact-item">
+            <svg class="footer-contact-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+            <a href="mailto:contact@aades.academy" class="footer-contact-text">contact@aades.academy</a>
+          </li>
+          <li class="footer-contact-item">
+            <svg class="footer-contact-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+            <span>1 Paya Lebar Link
+#06-08 PLQ 2, Paya Lebar Quarter
+Singapore 408533</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 AADE. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-service.html">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    /* ==========================================================================
+       MOBILE MENU LOGIC
+       ========================================================================== */
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuIcon = document.getElementById('menuIcon');
+    const closeIcon = document.getElementById('closeIcon');
+    let isMobileMenuOpen = false;
+
+    function toggleMobileMenu(forceState) {
+      isMobileMenuOpen = forceState !== undefined ? forceState : !isMobileMenuOpen;
+      
+      if(isMobileMenuOpen) {
+        mobileMenu.classList.add('mobile-menu-active');
+        menuIcon.classList.add('hidden');
+        closeIcon.classList.remove('hidden');
+        document.body.style.overflow = 'hidden'; 
+      } else {
+        mobileMenu.classList.remove('mobile-menu-active');
+        menuIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+        document.body.style.overflow = ''; 
+      }
+    }
+
+    mobileMenuBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleMobileMenu();
+    });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const v5Wrapper = document.querySelector('.aade-hero-v5-nodes-wrapper');
+    
+    // 给一点微小的延迟（300ms），让用户视觉先聚焦，再看到汇聚的过程
+    setTimeout(() => {
+        if (v5Wrapper) {
+            v5Wrapper.classList.add('aade-hero-v5-active');
+        }
+    }, 300);
+});
+
+
+/* ==========================================================================
+   SUMMARY TABS LOGIC
+   ========================================================================== */
+document.addEventListener('DOMContentLoaded', () => {
+    const summaryTags = document.querySelectorAll('.summary-tag');
+    const summaryCards = document.querySelectorAll('.summary-card');
+
+    if (summaryTags.length > 0) {
+        summaryTags.forEach(tag => {
+            tag.addEventListener('click', () => {
+                // 1. 移除所有 Tag 的 active 状态
+                summaryTags.forEach(t => t.classList.remove('active'));
+                
+                // 2. 移除所有 Card 的 active 状态
+                summaryCards.forEach(c => c.classList.remove('active'));
+
+                // 3. 为当前点击的 Tag 添加 active 状态
+                tag.classList.add('active');
+
+                // 4. 根据 data-target 找到对应的 Card 并显示
+                const targetId = tag.getAttribute('data-target');
+                const targetCard = document.getElementById(targetId);
+                if (targetCard) {
+                    targetCard.classList.add('active');
+                }
+            });
+        });
+    }
+});
+
+</script>
+</body>
+</html>

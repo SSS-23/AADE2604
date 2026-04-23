@@ -1,0 +1,1390 @@
+<!doctype html>
+<html lang="en"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AADE - Asia's leading platform for digital economic research and exchange</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- 字体请求合并优化加载 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&family=Share+Tech+Mono&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <link rel="icon" type="image/png" href="small-logo.png">
+</head>
+<body>
+  
+
+  <!-- ================= HEADER SECTION ================= -->
+  <header class="site-header">
+    <div class="header-inner">
+      
+      <!-- ================= 左侧：Logo ================= -->
+      <a href="index.html" class="logo-link">
+        <img src="logo-index.png" alt="AADE Logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <span class="logo-text hidden" style="font-weight: 800; font-size: 1.875rem; color: #0f172a; letter-spacing: 0.05em;">AADE</span>
+      </a>
+
+      <!-- ================= 中间：导航 ================= -->
+      <nav class="desktop-nav">
+        
+        <!-- About us (多列下拉) -->
+        <div class="nav-dropdown-group">
+  <button class="nav-item">
+    About us
+    <svg class="nav-icon-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </button>
+
+  <div class="dropdown-hover-bridge">
+    <div class="dropdown-panel dropdown-large" style="width: 600px;">
+      
+      <div class="dropdown-col" style="width: 55%;">
+        
+        <div class="dropdown-section">
+          <div class="dropdown-title-row">
+            <svg class="dropdown-title-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16.094 10.158A1.996 1.996 0 0013.842 7.906l-4.582 1.309a.5.5 0 00-.353.353l-1.309 4.582a1.996 1.996 0 002.252 2.252l4.582-1.309a.5.5 0 00.353-.353l1.309-4.582zM12 21a9 9 0 110-18 9 9 0 010 18z"></path></svg>
+            <span class="dropdown-title-text">Introduction</span>
+          </div>
+          <div class="dropdown-rich-links">
+            
+            <a href="aade-intro1-now.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" /></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">What We Do</div>
+                <div class="rich-link-desc">Now: Missions & Actions</div>
+              </div>
+            </a>
+
+            <a href="aade-intro2-past.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">Milestones</div>
+                <div class="rich-link-desc">Past: Our Journey</div>
+              </div>
+            </a>
+
+            <a href="aade-intro3-future.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" /></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">2026 & Beyond</div>
+                <div class="rich-link-desc">Future: Next Frontier</div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+
+        
+
+      </div>
+
+      <div class="dropdown-col dropdown-col-alt" style="width: 45%;">
+        <div class="dropdown-section">
+          <div class="dropdown-title-row">
+            <svg class="dropdown-title-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19a3 3 0 00-6 0m9-2a4 4 0 00-4-4H10a4 4 0 00-4 4m5-9a3 3 0 110-6 3 3 0 010 6z"></path></svg>
+            <span class="dropdown-title-text">Our People</span>
+          </div>
+          
+          <div class="dropdown-rich-links">
+            <a href="aade-council.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">Council</div>
+                <div class="rich-link-desc">Leadership and governance</div>
+              </div>
+            </a>
+            <a href="aade-advisor.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">Advisors</div>
+                <div class="rich-link-desc">Expert guidance & strategy</div>
+              </div>
+            </a>
+            
+          </div>
+        </div>
+
+        <div class="dropdown-section">
+          <div class="dropdown-title-row">
+            <svg class="dropdown-title-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 110-18 9 9 0 010 18zm0 0c2.761 0 5-4.03 5-9s-2.239-9-5-9-5 4.03-5 9 2.239 9 5 9zm9-9H3m14.545-4.5H4.455m14.545 9H4.455"></path></svg>
+            <span class="dropdown-title-text">Our Network</span>
+          </div>
+          <div class="dropdown-rich-links">
+            <a href="aade-globalnode.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">Global Offices & Labs</div>
+                <div class="rich-link-desc">Our worldwide presence</div>
+              </div>
+            </a>
+            <a href="aade-partnership.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">Partnerships</div>
+                <div class="rich-link-desc">Collaborating for innovation</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+        <a href="aade-pillar1-events.html" class="nav-item">Events</a>
+        <a href="aade-pillar2-trainings.html" class="nav-item">Training</a>
+        <a href="aade-pillar3-research.html" class="nav-item">Research</a>
+
+        <!-- Digital Innovation (下拉) -->
+<div class="nav-dropdown-group">
+  <button class="nav-item">
+    Frontiers
+    <svg class="nav-icon-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </button>
+
+  <div class="dropdown-hover-bridge">
+    <div class="dropdown-panel dropdown-large" style="width: 500px;"> <div class="dropdown-col" style="width: 55%;">
+        <div class="dropdown-section">
+          <div class="dropdown-title-row">
+            <svg class="dropdown-title-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v1.242c0 .289.268.497.55.447a1.593 1.593 0 00.518-.18 1.558 1.558 0 00.999-1.43V2.25m-3 0h3m-3 0a1.5 1.5 0 00-1.5 1.5V15a1.5 1.5 0 001.5 1.5h1.5m-1.5-13.5v12a1.5 1.5 0 001.5 1.5H12m-2.25 0H12m10.5-11.25a2.25 2.25 0 00-2.25-2.25h-2.25V6a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25h2.25a2.25 2.25 0 002.25-2.25V3.75z"></path>
+            </svg>
+            <span class="dropdown-title-text">AI+</span>
+          </div>
+          
+          <div class="dropdown-rich-links">
+            
+            <a href="aade-pillar4-ai-1-presence.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">AI Presence Accelerator</div>
+                <div class="rich-link-desc">AI-driven International Presence</div>
+              </div>
+            </a>
+
+            <a href="aade-pillar4-ai-2-anti-scam.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">LUCA</div>
+                <div class="rich-link-desc">Anti-Scam Agentic LLM Benchmark Testing Framework</div>
+              </div>
+            </a>
+
+            <a href="aade-pillar4-ai-3-rag-janus.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">Janus</div>
+                <div class="rich-link-desc">RAG-based Legal Infrastructure</div>
+              </div>
+            </a>
+
+            <a href="#" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">StarMap (Coming soon)</div>
+                <div class="rich-link-desc">AI-Native Platform for APAC Off-Market Transactions</div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown-col dropdown-col-alt" style="width: 45%;">
+        <div class="dropdown-section">
+          <div class="dropdown-title-row">
+            <svg class="dropdown-title-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"></path>
+            </svg>
+            <span class="dropdown-title-text">Innovation Network</span>
+          </div>
+          
+          <div class="dropdown-rich-links">
+            <a href="https://deai.ink/about" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">DEAI</div>
+                <div class="rich-link-desc">A global action network dedicated to aligning innovative technology with real-world market needs</div>
+              </div>
+            </a>
+            
+            <!---<a href="#" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">AADE Collection</div>
+                <div class="rich-link-desc">Global Digital Intelligence Repository</div>
+              </div>
+            </a>
+
+            <a href="#" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 01-1.125-1.125M3.375 19.5h7.5c.621 0 1.125-.504 1.125-1.125m-9.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-7.5A1.125 1.125 0 0112 18.375m9.75-12.75c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125m19.5 0v1.5c0 .621-.504 1.125-1.125 1.125M2.25 5.625v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125M3.375 8.25v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125m-9.75 0v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">AADE Featured</div>
+                <div class="rich-link-desc">Alternative Semantic Retrieval Database</div>
+              </div>
+            </a>-->
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+        <a href="aade-nav-news.html" class="nav-item">News</a>
+        <a href="aade-nav-contact.html" class="nav-item">Contact</a>
+      </nav>
+
+      <!-- ================= 右侧：社交与移动端 ================= -->
+      <div class="header-actions">
+        <!-- 社交图标 -->
+        <div class="social-actions">
+          <a href="https://www.linkedin.com/company/asia-academy-of-digital-economics" class="action-btn" title="LinkedIn">
+            <svg style="width:16px; height:16px;" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="mailto:contact@aades.academy" class="action-btn" title="Email">
+            <svg style="width:18px; height:18px;" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+        
+        <!-- 移动端汉堡菜单 -->
+        <button id="mobileMenuBtn" class="mobile-menu-btn">
+          <svg id="menuIcon" class="mobile-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          <svg id="closeIcon" class="mobile-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="mobile-menu">
+      
+  <details class="mob-menu-group" open>
+    <summary>
+      <span class="mob-group-title">About us</span>
+      <span class="mob-toggle-icon">▼</span>
+    </summary>
+    
+    <div class="mob-sub-area">
+      
+      <div class="mob-sub-section">
+        <div class="mob-sub-title">
+          <svg class="mob-sub-icon" fill="none" stroke="currentColor" stroke-width="1.25" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16.094 10.158A1.996 1.996 0 0013.842 7.906l-4.582 1.309a.5.5 0 00-.353.353l-1.309 4.582a1.996 1.996 0 002.252 2.252l4.582-1.309a.5.5 0 00.353-.353l1.309-4.582zM12 21a9 9 0 110-18 9 9 0 010 18z"></path></svg>
+          <span class="mob-sub-text">Introduction</span>
+        </div>
+        <div class="mob-rich-links-container">
+          <a href="aade-intro1-now.html" class="mob-rich-link">
+            <div class="mob-rich-icon">
+              <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" /></svg>
+            </div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">What We Do</div>
+              <div class="mob-rich-desc">Now: Missions & Actions</div>
+            </div>
+          </a>
+          <a href="aade-intro2-past.html" class="mob-rich-link">
+            <div class="mob-rich-icon">
+              <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+            </div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">Milestones</div>
+              <div class="mob-rich-desc">Past: Our Journey</div>
+            </div>
+          </a>
+          <a href="aade-intro3-future.html" class="mob-rich-link">
+            <div class="mob-rich-icon">
+              <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" /></svg>
+            </div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">2026 & Beyond</div>
+              <div class="mob-rich-desc">Future: Next Frontier</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="mob-sub-section">
+        <div class="mob-sub-title">
+          <svg class="mob-sub-icon" fill="none" stroke="currentColor" stroke-width="1.25" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19a3 3 0 00-6 0m9-2a4 4 0 00-4-4H10a4 4 0 00-4 4m5-9a3 3 0 110-6 3 3 0 010 6z"></path></svg>
+          <span class="mob-sub-text">Our People</span>
+        </div>
+        <div class="mob-rich-links-container">
+          <a href="aade-council.html" class="mob-rich-link">
+            <div class="mob-rich-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"></path></svg></div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">Council</div>
+              <div class="mob-rich-desc">Leadership and governance</div>
+            </div>
+          </a>
+          <a href="aade-advisor.html" class="mob-rich-link">
+            <div class="mob-rich-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"></path></svg></div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">Advisors</div>
+              <div class="mob-rich-desc">Expert guidance & strategy</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="mob-sub-section">
+        <div class="mob-sub-title">
+          <svg class="mob-sub-icon" fill="none" stroke="currentColor" stroke-width="1.25" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 110-18 9 9 0 010 18zm0 0c2.761 0 5-4.03 5-9s-2.239-9-5-9-5 4.03-5 9 2.239 9 5 9zm9-9H3m14.545-4.5H4.455m14.545 9H4.455"></path></svg>
+          <span class="mob-sub-text">Our Network</span>
+        </div>
+        <div class="mob-rich-links-container">
+          <a href="aade-globalnode.html" class="mob-rich-link">
+            <div class="mob-rich-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"></path></svg></div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">Global Offices & Labs</div>
+              <div class="mob-rich-desc">Our worldwide presence</div>
+            </div>
+          </a>
+          <a href="aade-partnership.html" class="mob-rich-link">
+            <div class="mob-rich-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z"></path></svg></div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">Partnerships</div>
+              <div class="mob-rich-desc">Collaborating for innovation</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </details>
+
+  <a href="aade-pillar1-events.html" class="mob-main-link">Events</a>
+  <a href="aade-pillar2-trainings.html" class="mob-main-link">Training</a>
+  <a href="aade-pillar3-research.html" class="mob-main-link">Research</a>
+
+<details class="mob-menu-group" open>
+    <summary>
+      <span class="mob-group-title">Frontiers</span>
+      <span class="mob-toggle-icon">▼</span>
+    </summary>
+    
+    <div class="mob-sub-area">
+      <div class="mob-sub-section">
+        <div class="mob-sub-title">
+          <svg class="mob-sub-icon" fill="none" stroke="currentColor" stroke-width="1.25" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v1.242c0 .289.268.497.55.447a1.593 1.593 0 00.518-.18 1.558 1.558 0 00.999-1.43V2.25m-3 0h3m-3 0a1.5 1.5 0 00-1.5 1.5V15a1.5 1.5 0 001.5 1.5h1.5m-1.5-13.5v12a1.5 1.5 0 001.5 1.5H12m-2.25 0H12m10.5-11.25a2.25 2.25 0 00-2.25-2.25h-2.25V6a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25h2.25a2.25 2.25 0 002.25-2.25V3.75z"></path></svg>
+          <span class="mob-sub-text">AI+</span>
+        </div>
+        
+        <div class="mob-rich-links-container">
+          <a href="aade-pillar4-ai-1-presence.html" class="mob-rich-link">
+            <div class="mob-rich-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"></path></svg></div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">AI Presence Accelerator</div>
+              <div class="mob-rich-desc">AI-driven International Presence</div>
+            </div>
+          </a>
+          <a href="aade-pillar4-ai-2-anti-scam.html" class="mob-rich-link">
+            <div class="mob-rich-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"></path></svg></div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">LUCA</div>
+              <div class="mob-rich-desc">Anti-Scam Agentic LLM Benchmark Testing Framework</div>
+            </div> 
+          </a>
+          <a href="aade-pillar4-ai-3-rag-janus.html" class="mob-rich-link">
+            <div class="mob-rich-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z"></path></svg></div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">Janus</div>
+              <div class="mob-rich-desc">RAG-based Legal Infrastructure</div>
+            </div>
+          </a>
+          <a href="#" class="mob-rich-link">
+            <div class="mob-rich-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z"></path></svg></div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">StarMap (Coming soon)</div>
+              <div class="mob-rich-desc">AI-Native Platform for APAC Off-Market Transactions</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="mob-sub-section">
+        <div class="mob-sub-title">
+          <svg class="mob-sub-icon" fill="none" stroke="currentColor" stroke-width="1.25" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"></path></svg>
+          <span class="mob-sub-text">Innovation Network</span>
+        </div>
+        <div class="mob-rich-links-container">
+          <a href="https://deai.ink/about" class="mob-rich-link">
+            <div class="mob-rich-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z"></path></svg></div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">DEAI</div>
+              <div class="mob-rich-desc">A global action network dedicated to aligning innovative technology with real-world market needs</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      
+    </div>
+  </details>
+  
+  <a href="aade-nav-news.html" class="mob-main-link">News</a>
+  <a href="aade-nav-contact.html" class="mob-main-link" style="border-bottom: none;">Contact</a>
+  
+  <div class="mob-social-bar">
+    <a href="https://www.linkedin.com/company/asia-academy-of-digital-economics" class="mob-social-btn"><svg style="width:16px; height:16px;" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+    <a href="mailto:contact@aades.academy" class="mob-social-btn"><svg style="width:18px; height:18px;" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
+  </div>
+</div>
+  </header>
+
+  
+<!-- ================= HERO SECTION ================= -->
+<section class="news-hero">
+  <div class="news-hero-bg">
+  <img 
+    src="./hero-pic/digital-hero-6.jpg" 
+    alt="AADE Global Lab" 
+    class="news-hero-img" 
+    
+  >
+</div>
+
+  <div class="hero-inner-content">
+    <div class="pillar4-hero-inner-text">
+      <span class="pillar4-hero-badge">Pillar IV | Digital Innovation</span>
+      <h1 class="pillar4-hero-title">RAG-based Legal Infrastructure</h1>
+      <p class="pillar4-hero-desc">
+         Janus: A RAG-Powered Legal and Compliance Knowledge Infrastructure</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Abstract Card SECTION ================= -->
+<section class="aade-summary-section">
+  <div class="summary-container">
+    
+    <div class="summary-tags-wrapper">
+      <button class="summary-tag active" data-target="sum-card-1">
+        Pain Points
+      </button>
+      <button class="summary-tag" data-target="sum-card-2">
+        Project Architecture
+      </button>
+      <button class="summary-tag" data-target="sum-card-3">
+        Future Work
+      </button>
+    </div>
+
+    <div class="summary-cards-container">
+      
+      <!-- Card 1 -->
+      <div class="summary-card active" id="sum-card-1">
+        <svg class="summary-bg-icon" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zm0 7.5l-10-5v10.5l10 5 10-5V4.5l-10 5zm0 10.5l-7.5-3.75V11.5l7.5 3.75 7.5-3.75v4.75L12 20z"/>
+        </svg>
+        <div class="summary-content-inner">
+          <h2 class="summary-title">Cross-Jurisdiction Compliance Blind Spot & AI Hallucinations</h2>
+          <p class="summary-desc">
+            Understanding foreign regulations is difficult—even for legal professionals. Legal systems vary widely, and <strong>real enforcement standards are often opaque</strong>.
+          </p>
+          <p class="summary-desc">
+            AI tools worsen the problem: LLMs frequently produce <strong>hallucinated legal answers</strong> without grounding in actual law, making them unreliable for compliance decisions.
+          </p>
+          <p class="summary-desc">
+            Enterprises lack a <strong>trusted, jurisdiction-aware source of truth</strong> for cross-border regulation.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="summary-card" id="sum-card-2">
+        <svg class="summary-bg-icon" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+        </svg>
+        <div class="summary-content-inner">
+          <h2 class="summary-title">Janus: RAG-Based Legal Intelligence</h2>
+          <p class="summary-desc">
+            <strong>What it is:</strong> A legal infrastructure that <strong>encodes laws and local expert annotations</strong> into a structured, machine-readable system.
+          </p>
+          <p class="summary-desc">
+            <strong>How it works:</strong> Queries first trigger <strong>retrieval of jurisdiction-specific laws and expert commentary</strong>, then reasoning is performed on this grounded context—not the open internet.
+          </p>
+          <p class="summary-desc">
+            This ensures outputs that are <strong>traceable, jurisdiction-aware, and hallucination-resistant</strong>.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="summary-card" id="sum-card-3">
+        <svg class="summary-bg-icon" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+        </svg>
+        <div class="summary-content-inner">
+          <h2 class="summary-title">Toward Executable Compliance</h2>
+          <p class="summary-desc">
+            Janus is evolving to <strong>translate law into machine-executable constraints</strong>, starting with on-chain financial activity.
+          </p>
+          <p class="summary-desc">
+            It targets <strong>market integrity risks</strong> (e.g., wash trading, TVL inflation, token manipulation) by combining legal rules, expert input, and on-chain signals.
+          </p>
+          <p class="summary-desc">
+            Outputs are <strong>verifiable PoMI reports</strong>, designed for regulators, law firms, and auditors.
+          </p>
+          <p class="summary-desc">
+            <strong>Differentiation:</strong> Jurisdiction-aware overrides + on-chain native risk detection beyond traditional compliance.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Section -->
+<section class="content-section-light">
+  <div class="content-container mt-20">
+    <div class="section-header-light style-edge-border mb-1">
+      <div class="header-main-group mb-1">
+        <div class="section-icon-light-small">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+        </div>
+        <h2 class="section-title-light-oswald">Modular RAG Architecture</h2>
+      </div>
+      <p class="section-subtitle-light-inter" style="background-color: #fff;">
+        Janus moves beyond standard vector search, adopting a deep architecture optimized for the strict accuracy, traceability, and jurisdictional constraints of the legal domain.
+      </p>
+    </div>
+    
+    <div class="grid md:grid-cols-3 gap-8 mt-10">
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-8 hover:shadow-lg transition-shadow">
+            <div class="text-4xl mb-6 text-indigo-600">&#x2696;</div> <h3 class="text-xl font-bold text-slate-900 mb-3">1. Knowledge Ingestion</h3>
+            <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                Normalizes heterogeneous legal texts and implicit expert knowledge into a unified, machine-interpretable schema, preserving dependencies to build a hybrid Legal Knowledge Graph (LKG).
+            </p>
+            <ul class="space-y-2 text-sm text-slate-700 font-medium border-t border-slate-200 pt-4">
+                <li class="flex items-center"><span class="text-indigo-500 mr-2">&#x25B8;</span> Hierarchical Chunking (Dependencies)</li>
+                <li class="flex items-center"><span class="text-indigo-500 mr-2">&#x25B8;</span> Obligation Classifiers & NER</li>
+                <li class="flex items-center"><span class="text-indigo-500 mr-2">&#x25B8;</span> Expert Annotation Binding</li>
+            </ul>
+        </div>
+
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-8 hover:shadow-lg transition-shadow">
+            <div class="text-4xl mb-6 text-indigo-600">&#x2699;</div> <h3 class="text-xl font-bold text-slate-900 mb-3">2. Hybrid Retrieval Engine</h3>
+            <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                Maximizes recall and precision while strictly adhering to legal constraints (jurisdiction, effective dates). Fuses semantic, keyword, and graph traversal modes.
+            </p>
+            <ul class="space-y-2 text-sm text-slate-700 font-medium border-t border-slate-200 pt-4">
+                <li class="flex items-center"><span class="text-indigo-500 mr-2">&#x25B8;</span> Dense Retrieval (Vector Semantics)</li>
+                <li class="flex items-center"><span class="text-indigo-500 mr-2">&#x25B8;</span> Sparse Retrieval (BM25 Keywords)</li>
+                <li class="flex items-center"><span class="text-indigo-500 mr-2">&#x25B8;</span> Graph-Aware Jurisdictional Filtering</li>
+            </ul>
+        </div>
+
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-8 hover:shadow-lg transition-shadow">
+            <div class="text-4xl mb-6 text-indigo-600">&#x2611;</div> <h3 class="text-xl font-bold text-slate-900 mb-3">3. Generation & Reasoning</h3>
+            <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                Produces highly reliable, grounded, and auditable outputs using retrieved legal evidence. Enforces a "citation-first" reasoning logic to eliminate LLM hallucinations entirely.
+            </p>
+            <ul class="space-y-2 text-sm text-slate-700 font-medium border-t border-slate-200 pt-4">
+                <li class="flex items-center"><span class="text-indigo-500 mr-2">&#x25B8;</span> Citation-Aware Generation</li>
+                <li class="flex items-center"><span class="text-indigo-500 mr-2">&#x25B8;</span> Multi-Jurisdiction Conflict Resolution</li>
+                <li class="flex items-center"><span class="text-indigo-500 mr-2">&#x25B8;</span> Constrained Decoding (Zero-Stochasticity)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="mt-12 bg-indigo-900 rounded-2xl p-8 md:p-12 text-white flex flex-col sm:flex-row items-center justify-between shadow-xl">
+        <div class="mb-6 sm:mb-0 sm:mr-8 text-left">
+            <h4 class="text-2xl font-bold mb-2">The Foundation: Graph + Vector + Schema</h4>
+            <p class="text-indigo-200 text-sm max-w-xl leading-relaxed">
+                Janus's hybrid data model combines vector-based semantic retrieval, graph-based logical traversal, and schema-based absolute filtering (e.g., specific jurisdictions), making traditional static legal databases obsolete.
+            </p>
+        </div>
+        <div class="flex space-x-6 text-3xl font-black opacity-80">
+            <div>&#x25B3;</div>
+            <div>&#x25EF;</div>
+            <div>&#x25A2;</div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section-light pt-8">
+  <div class="content-container">
+    <div class="section-header-light style-edge-border mb-1">
+      <div class="header-main-group mb-1">
+        <div class="section-icon-light-small">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+        </div>
+        <h2 class="section-title-light-oswald">Enterprise Applications</h2>
+      </div>
+      <p class="section-subtitle-light-inter" style="background-color: #fff;">
+        Same real-world query. Three retrieval architectures. Drastically different outcomes. This is why knowledge infrastructure design is the true moat.
+      </p>
+    </div>
+
+    <!-- Single comparison card -->
+    <div class="bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden mt-10">
+
+      <!-- Shared query banner -->
+      <div class="bg-slate-900 px-6 md:px-10 py-5 border-b border-slate-700">
+        <div class="text-slate-500 text-xs font-mono uppercase tracking-widest mb-2">// Live Query — RWA Cross-Border Compliance</div>
+        <div class="font-mono text-sm md:text-base leading-relaxed">
+          <span class="text-slate-400">&gt; USER_INPUT: </span><span class="text-emerald-300">"Can a mainland China enterprise publicly issue RWA tokens to retail investors in Hong Kong?"</span>
+        </div>
+      </div>
+
+      <!-- Three columns — each column is self-contained (header + body) so mobile stacks as h1+c1, h2+c2, h3+c3 -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 divide-y lg:divide-y-0 lg:divide-x divide-slate-200">
+
+        <!-- ═══════════════ Column 1: No RAG ═══════════════ -->
+        <div class="flex flex-col">
+          <!-- Header -->
+          <div class="px-6 py-4 bg-slate-100 border-b border-slate-200 flex items-center gap-3">
+            <span class="flex-shrink-0 w-7 h-7 rounded-full bg-slate-400 text-white text-xs font-black flex items-center justify-center">1</span>
+            <div>
+              <div class="text-xs font-black uppercase tracking-wider text-slate-600">No RAG</div>
+              <div class="text-xs text-slate-500 font-medium">Public Domain Blind Search</div>
+            </div>
+          </div>
+
+          <div class="p-6 md:p-8 flex flex-col gap-5 flex-1 bg-slate-50/40">
+
+            <!-- Technical logic -->
+            <div>
+              <div class="text-slate-600 font-bold text-xs uppercase tracking-wider mb-2">Technical Logic</div>
+              <p class="text-xs text-slate-600 leading-relaxed">LLM has no domain knowledge base. It scrapes fragmented public sources — KOL blogs, news, social media — and summarises whatever surfaces.</p>
+            </div>
+
+            <!-- Flow diagram: 3 entities in simple linear interaction -->
+            <div>
+              <div class="text-slate-500 font-bold text-xs uppercase tracking-wider mb-3">Interaction Flow</div>
+              <div class="space-y-1">
+
+                <div class="bg-white border border-slate-200 rounded-lg px-3 py-2.5 flex items-center gap-2.5">
+                  <div class="flex-shrink-0 w-7 h-7 rounded-full bg-slate-100 flex items-center justify-center">
+                    <svg class="w-4 h-4 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                  </div>
+                  <span class="text-xs font-semibold text-slate-700">User</span>
+                </div>
+                <div class="flex flex-col items-center py-0.5">
+                  <span class="text-[10px] text-slate-500 italic font-medium">asks</span>
+                  <span class="text-slate-400 text-sm leading-none">↓</span>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-lg px-3 py-2.5 flex items-center gap-2.5">
+                  <div class="flex-shrink-0 w-7 h-7 rounded-full bg-slate-200 flex items-center justify-center">
+                    <svg class="w-4 h-4 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2M15 3v2M9 19v2M15 19v2M3 9h2M3 15h2M19 9h2M19 15h2M7 7h10v10H7z"/></svg>
+                  </div>
+                  <span class="text-xs font-semibold text-slate-700">Generic LLM</span>
+                </div>
+                <div class="flex flex-col items-center py-0.5">
+                  <span class="text-[10px] text-slate-500 italic font-medium">scrapes public web</span>
+                  <span class="text-slate-400 text-sm leading-none">↓</span>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-lg px-3 py-2.5 flex items-center gap-2.5">
+                  <div class="flex-shrink-0 w-7 h-7 rounded-full bg-slate-200 flex items-center justify-center">
+                    <svg class="w-4 h-4 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke-width="2"/><path stroke-width="2" d="M3 12h18M12 3a9 9 0 010 18M12 3a9 9 0 000 18"/></svg>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <div class="text-xs font-semibold text-slate-700">Public Web</div>
+                    <div class="text-[10px] text-slate-500">KOL posts · news · social media</div>
+                  </div>
+                </div>
+                <div class="flex flex-col items-center py-0.5">
+                  <span class="text-[10px] text-slate-500 italic font-medium">returns fragments</span>
+                  <span class="text-slate-400 text-sm leading-none">↓</span>
+                </div>
+
+                <div class="bg-slate-600 rounded-lg px-3 py-2.5 flex items-center gap-2.5">
+                  <div class="flex-shrink-0 w-7 h-7 rounded-full bg-slate-700 flex items-center justify-center">
+                    <svg class="w-4 h-4 text-slate-100" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v4M12 17h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg>
+                  </div>
+                  <span class="text-xs font-bold text-white">Hallucinated Answer</span>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Terminal log -->
+            <div>
+              <div class="text-slate-500 font-bold text-xs uppercase tracking-wider mb-2">Execution Log</div>
+              <div class="bg-slate-900 rounded-xl p-4 font-mono text-[11px] leading-relaxed">
+                <div class="text-slate-500 mb-2">// retrieval trace</div>
+                <div class="text-emerald-400">&gt; source: <span class="text-white">public_web_scrape</span></div>
+                <div class="text-emerald-400">&gt; retrieved: [</div>
+                <div class="text-slate-400">&nbsp;&nbsp;"kol_hk_web3_2023.html",</div>
+                <div class="text-slate-400">&nbsp;&nbsp;"news_sfc_opens_retail.txt",</div>
+                <div class="text-slate-400">&nbsp;&nbsp;"telegram_rwa_hype.txt"</div>
+                <div class="text-emerald-400">]</div>
+                <div class="mt-2 text-emerald-400">&gt; jurisdiction_filter: <span class="text-red-400">NONE</span></div>
+                <div class="text-emerald-400">&gt; cn_mainland_rules: <span class="text-red-400">NOT CHECKED</span></div>
+                <div class="text-emerald-400">&gt; forex_control_flag: <span class="text-red-400">NOT CHECKED</span></div>
+                <div class="border-t border-slate-700 mt-3 pt-3">
+                  <div class="text-yellow-400 mb-1">// model output</div>
+                  <div class="text-white leading-relaxed">"Yes — HK embraces Web3. SFC has officially opened retail crypto trading. RWA issuance is broadly feasible..."</div>
+                </div>
+                <div class="mt-2 text-red-400">// ⚠ FATAL: PRC prohibition on</div>
+                <div class="text-red-400">// virtual asset sales to mainland</div>
+                <div class="text-red-400">// residents — IGNORED</div>
+              </div>
+            </div>
+
+            <!-- Outcome -->
+            <div class="bg-slate-700 text-white rounded-xl p-4 text-xs font-semibold mt-auto">
+              <div class="text-slate-300 uppercase tracking-wider text-[10px] mb-1.5">Outcome</div>
+              Acting on this output exposes the enterprise to <strong>criminal &amp; administrative penalties</strong> under PRC regulations. Zero citations. Zero reliability.
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══════════════ Column 2: Pure Legal RAG ═══════════════ -->
+        <div class="flex flex-col">
+          <!-- Header -->
+          <div class="px-6 py-4 bg-sky-50 border-b border-slate-200 flex items-center gap-3">
+            <span class="flex-shrink-0 w-7 h-7 rounded-full bg-sky-500 text-white text-xs font-black flex items-center justify-center">2</span>
+            <div>
+              <div class="text-xs font-black uppercase tracking-wider text-sky-700">Pure Legal RAG</div>
+              <div class="text-xs text-slate-500 font-medium">Dogmatic Retrieval</div>
+            </div>
+          </div>
+
+          <div class="p-6 md:p-8 flex flex-col gap-5 flex-1 bg-sky-50/40">
+
+            <!-- Technical logic -->
+            <div>
+              <div class="text-sky-700 font-bold text-xs uppercase tracking-wider mb-2">Technical Logic</div>
+              <p class="text-xs text-slate-600 leading-relaxed">A pre-built vector KB of raw legal clauses. At query time, the agent fetches the matching clause and assembles a JSON prompt before calling the analysis model.</p>
+            </div>
+
+            <!-- Flow diagram: two phases (setup + runtime) -->
+            <div>
+              <div class="text-slate-500 font-bold text-xs uppercase tracking-wider mb-3">Interaction Flow</div>
+
+              <!-- Setup phase -->
+              <div class="flex items-center gap-2 mb-2">
+                <span class="flex-1 h-px bg-sky-200"></span>
+                <span class="text-[10px] font-black uppercase tracking-widest text-sky-600">① Setup Phase</span>
+                <span class="flex-1 h-px bg-sky-200"></span>
+              </div>
+              <div class="space-y-1">
+                <div class="bg-white border border-sky-200 rounded-lg px-3 py-2.5 flex items-center gap-2.5">
+                  <div class="flex-shrink-0 w-7 h-7 rounded-full bg-sky-100 flex items-center justify-center">
+                    <svg class="w-4 h-4 text-sky-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 19.5A2.5 2.5 0 016.5 17H20M4 19.5A2.5 2.5 0 006.5 22H20V2H6.5A2.5 2.5 0 004 4.5v15z"/></svg>
+                  </div>
+                  <span class="text-xs font-semibold text-slate-700">Raw Legal Corpus</span>
+                </div>
+                <div class="flex flex-col items-center py-0.5">
+                  <span class="text-[10px] text-sky-600 italic font-medium">parse + embed</span>
+                  <span class="text-sky-400 text-sm leading-none">↓</span>
+                </div>
+                <div class="bg-white border border-sky-200 rounded-lg px-3 py-2.5 flex items-center gap-2.5">
+                  <div class="flex-shrink-0 w-7 h-7 rounded-full bg-sky-100 flex items-center justify-center">
+                    <svg class="w-4 h-4 text-sky-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3" stroke-width="2"/><path stroke-width="2" d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
+                  </div>
+                  <span class="text-xs font-semibold text-slate-700">Vector Knowledge Base</span>
+                </div>
+              </div>
+
+              <!-- Query phase -->
+              <div class="flex items-center gap-2 mt-4 mb-2">
+                <span class="flex-1 h-px bg-sky-200"></span>
+                <span class="text-[10px] font-black uppercase tracking-widest text-sky-600">② Query Phase</span>
+                <span class="flex-1 h-px bg-sky-200"></span>
+              </div>
+              <div class="space-y-1">
+                <div class="bg-white border border-sky-200 rounded-lg px-3 py-2.5 flex items-center gap-2.5">
+                  <div class="flex-shrink-0 w-7 h-7 rounded-full bg-sky-100 flex items-center justify-center">
+                    <svg class="w-4 h-4 text-sky-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                  </div>
+                  <span class="text-xs font-semibold text-slate-700">User</span>
+                </div>
+                <div class="flex flex-col items-center py-0.5">
+                  <span class="text-[10px] text-sky-600 italic font-medium">query</span>
+                  <span class="text-sky-400 text-sm leading-none">↓</span>
+                </div>
+                <div class="bg-white border border-sky-200 rounded-lg px-3 py-2.5 flex items-center gap-2.5">
+                  <div class="flex-shrink-0 w-7 h-7 rounded-full bg-sky-100 flex items-center justify-center">
+                    <svg class="w-4 h-4 text-sky-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2M15 3v2M9 19v2M15 19v2M3 9h2M3 15h2M19 9h2M19 15h2M7 7h10v10H7z"/></svg>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <div class="text-xs font-semibold text-slate-700">RAG Agent</div>
+                    <div class="text-[10px] text-slate-500">fetch clause ↔ KB</div>
+                  </div>
+                </div>
+                <div class="flex flex-col items-center py-0.5">
+                  <span class="text-[10px] text-sky-600 italic font-medium">JSON prompt assembly</span>
+                  <span class="text-sky-400 text-sm leading-none">↓</span>
+                </div>
+                <div class="bg-sky-500 rounded-lg px-3 py-2.5 flex items-center gap-2.5">
+                  <div class="flex-shrink-0 w-7 h-7 rounded-full bg-sky-600 flex items-center justify-center">
+                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                  </div>
+                  <span class="text-xs font-bold text-white">Literal-Only Answer</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Terminal log -->
+            <div>
+              <div class="text-slate-500 font-bold text-xs uppercase tracking-wider mb-2">Execution Log</div>
+              <div class="bg-slate-900 rounded-xl p-4 font-mono text-[11px] leading-relaxed">
+                <div class="text-slate-500 mb-2">// kb fetch + prompt assembly</div>
+                <div class="text-emerald-400">&gt; kb.clauses.fetch({</div>
+                <div class="text-slate-300">&nbsp;&nbsp;jurisdiction: <span class="text-yellow-300">"HK"</span>,</div>
+                <div class="text-slate-300">&nbsp;&nbsp;topic: <span class="text-yellow-300">"RWA_issuance"</span></div>
+                <div class="text-emerald-400">})</div>
+                <div class="text-emerald-400 mt-1">&gt; retrieved: <span class="text-yellow-300">["SFC-26EC22"]</span></div>
+                <div class="text-emerald-400">&gt; prompt_payload: {</div>
+                <div class="text-slate-300">&nbsp;&nbsp;"query": user_input,</div>
+                <div class="text-slate-300">&nbsp;&nbsp;"context": [SFC_26EC22.clause_text]</div>
+                <div class="text-emerald-400">}</div>
+                <div class="border-t border-slate-700 mt-3 pt-3">
+                  <div class="text-yellow-400 mb-1">// critical gaps</div>
+                  <div class="text-amber-400">&gt; expert_notes: <span class="text-red-400">null</span></div>
+                  <div class="text-amber-400">&gt; regulator_attitude: <span class="text-red-400">null</span></div>
+                  <div class="text-amber-400">&gt; HKMA-20240220 custody: <span class="text-red-400">MISSED</span></div>
+                  <div class="text-amber-400">&gt; CN_56hao_prereq: <span class="text-red-400">MISSED</span></div>
+                  <div class="text-amber-400">&gt; PI_only_in_practice: <span class="text-red-400">null</span></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Outcome -->
+            <div class="bg-sky-600 text-white rounded-xl p-4 text-xs font-semibold mt-auto">
+              <div class="text-sky-100 uppercase tracking-wider text-[10px] mb-1.5">Outcome</div>
+              Cites SFC-26EC22 accurately. But misses the HKMA custody bottleneck, the 18-month SFC approval cycle, and the PRC forex wall. <strong>Technically correct — operationally useless.</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══════════════ Column 3: Janus RAG ═══════════════ -->
+        <div class="flex flex-col">
+          <!-- Header -->
+          <div class="px-6 py-4 bg-indigo-50 border-b border-slate-200 flex items-center gap-3">
+            <span class="flex-shrink-0 w-7 h-7 rounded-full bg-indigo-600 text-white text-xs font-black flex items-center justify-center">3</span>
+            <div>
+              <div class="text-xs font-black uppercase tracking-wider text-indigo-700">Janus RAG ✦</div>
+              <div class="text-xs text-slate-500 font-medium">Expert Experience Injection</div>
+            </div>
+          </div>
+
+          <div class="p-6 md:p-8 flex flex-col gap-5 flex-1 bg-indigo-50/40">
+
+            <!-- Technical logic -->
+            <div>
+              <div class="text-indigo-700 font-bold text-xs uppercase tracking-wider mb-2">Technical Logic</div>
+              <p class="text-xs text-slate-600 leading-relaxed">Knowledge unit is a <strong>compound vector</strong>: Clause + Expert_Notes + Regulator_Attitude. Senior practitioners review &amp; annotate every statute before indexing. Runtime retrieval pulls all three via graph traversal.</p>
+            </div>
+
+            <!-- Flow diagram: richer two-phase with expert loop -->
+            <div>
+              <div class="text-slate-500 font-bold text-xs uppercase tracking-wider mb-3">Interaction Flow</div>
+
+              <!-- Setup phase -->
+              <div class="flex items-center gap-2 mb-2">
+                <span class="flex-1 h-px bg-indigo-200"></span>
+                <span class="text-[10px] font-black uppercase tracking-widest text-indigo-700">① Setup Phase (Expert-in-the-loop)</span>
+                <span class="flex-1 h-px bg-indigo-200"></span>
+              </div>
+              <div class="space-y-1">
+                <!-- Three parallel sources -->
+                <div class="grid grid-cols-3 gap-1.5">
+                  <div class="bg-white border border-indigo-200 rounded-lg p-2 flex flex-col items-center text-center">
+                    <div class="w-7 h-7 rounded-full bg-indigo-100 flex items-center justify-center mb-1">
+                      <svg class="w-4 h-4 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 19.5A2.5 2.5 0 016.5 17H20M4 19.5A2.5 2.5 0 006.5 22H20V2H6.5A2.5 2.5 0 004 4.5v15z"/></svg>
+                    </div>
+                    <span class="text-[10px] font-semibold text-slate-700 leading-tight">Statutes</span>
+                  </div>
+                  <div class="bg-white border border-indigo-200 rounded-lg p-2 flex flex-col items-center text-center">
+                    <div class="w-7 h-7 rounded-full bg-indigo-100 flex items-center justify-center mb-1">
+                      <svg class="w-4 h-4 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M8.5 11a4 4 0 100-8 4 4 0 000 8zM17 11l2 2 4-4"/></svg>
+                    </div>
+                    <span class="text-[10px] font-semibold text-slate-700 leading-tight">Expert Review</span>
+                  </div>
+                  <div class="bg-white border border-indigo-200 rounded-lg p-2 flex flex-col items-center text-center">
+                    <div class="w-7 h-7 rounded-full bg-indigo-100 flex items-center justify-center mb-1">
+                      <svg class="w-4 h-4 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/></svg>
+                    </div>
+                    <span class="text-[10px] font-semibold text-slate-700 leading-tight">Regulator Signals</span>
+                  </div>
+                </div>
+                <div class="flex flex-col items-center py-0.5">
+                  <span class="text-[10px] text-indigo-600 italic font-medium">fused into compound unit</span>
+                  <span class="text-indigo-400 text-sm leading-none">↓</span>
+                </div>
+                <!-- Compound unit -->
+                <div class="bg-white border border-indigo-200 rounded-lg px-3 py-2.5 flex items-center gap-2.5">
+                  <div class="flex-shrink-0 w-7 h-7 rounded-full bg-indigo-100 flex items-center justify-center">
+                    <svg class="w-4 h-4 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <div class="text-xs font-semibold text-slate-700">Compound Knowledge Unit</div>
+                    <div class="text-[10px] text-slate-500">clause + notes + attitude</div>
+                  </div>
+                </div>
+                <div class="flex flex-col items-center py-0.5">
+                  <span class="text-[10px] text-indigo-600 italic font-medium">indexed into</span>
+                  <span class="text-indigo-400 text-sm leading-none">↓</span>
+                </div>
+                <!-- Janus KG -->
+                <div class="bg-indigo-100 border border-indigo-300 rounded-lg px-3 py-2.5 flex items-center gap-2.5">
+                  <div class="flex-shrink-0 w-7 h-7 rounded-full bg-indigo-200 flex items-center justify-center">
+                    <svg class="w-4 h-4 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="5" cy="5" r="2" stroke-width="2"/><circle cx="19" cy="5" r="2" stroke-width="2"/><circle cx="5" cy="19" r="2" stroke-width="2"/><circle cx="19" cy="19" r="2" stroke-width="2"/><circle cx="12" cy="12" r="2" stroke-width="2"/><path stroke-width="2" d="M7 5l3 6M17 5l-3 6M7 19l3-6M17 19l-3-6"/></svg>
+                  </div>
+                  <span class="text-xs font-semibold text-indigo-900">Janus Knowledge Graph</span>
+                </div>
+              </div>
+
+              <!-- Query phase -->
+              <div class="flex items-center gap-2 mt-4 mb-2">
+                <span class="flex-1 h-px bg-indigo-200"></span>
+                <span class="text-[10px] font-black uppercase tracking-widest text-indigo-700">② Query Phase</span>
+                <span class="flex-1 h-px bg-indigo-200"></span>
+              </div>
+              <div class="space-y-1">
+                <div class="bg-white border border-indigo-200 rounded-lg px-3 py-2.5 flex items-center gap-2.5">
+                  <div class="flex-shrink-0 w-7 h-7 rounded-full bg-indigo-100 flex items-center justify-center">
+                    <svg class="w-4 h-4 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                  </div>
+                  <span class="text-xs font-semibold text-slate-700">User</span>
+                </div>
+                <div class="flex flex-col items-center py-0.5">
+                  <span class="text-[10px] text-indigo-600 italic font-medium">query</span>
+                  <span class="text-indigo-400 text-sm leading-none">↓</span>
+                </div>
+                <div class="bg-white border border-indigo-200 rounded-lg px-3 py-2.5 flex items-center gap-2.5">
+                  <div class="flex-shrink-0 w-7 h-7 rounded-full bg-indigo-100 flex items-center justify-center">
+                    <svg class="w-4 h-4 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2M15 3v2M9 19v2M15 19v2M3 9h2M3 15h2M19 9h2M19 15h2M7 7h10v10H7z"/></svg>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <div class="text-xs font-semibold text-slate-700">Janus Agent</div>
+                    <div class="text-[10px] text-slate-500">dense + sparse + graph retrieval</div>
+                  </div>
+                </div>
+                <div class="flex flex-col items-center py-0.5">
+                  <span class="text-[10px] text-indigo-600 italic font-medium">returns compound units</span>
+                  <span class="text-indigo-400 text-sm leading-none">↓</span>
+                </div>
+                <div class="bg-white border border-indigo-200 rounded-lg px-3 py-2.5 flex items-center gap-2.5">
+                  <div class="flex-shrink-0 w-7 h-7 rounded-full bg-indigo-100 flex items-center justify-center">
+                    <svg class="w-4 h-4 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8zM14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+                  </div>
+                  <span class="text-xs font-semibold text-slate-700">Citation-First LLM</span>
+                </div>
+                <div class="flex flex-col items-center py-0.5">
+                  <span class="text-[10px] text-indigo-600 italic font-medium">cited answer</span>
+                  <span class="text-indigo-400 text-sm leading-none">↓</span>
+                </div>
+                <div class="bg-indigo-700 rounded-lg px-3 py-2.5 flex items-center gap-2.5">
+                  <div class="flex-shrink-0 w-7 h-7 rounded-full bg-indigo-800 flex items-center justify-center">
+                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 11.08V12a10 10 0 11-5.93-9.14M22 4L12 14.01l-3-3"/></svg>
+                  </div>
+                  <span class="text-xs font-bold text-white">Actionable &amp; Auditable</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Terminal log -->
+            <div>
+              <div class="text-slate-500 font-bold text-xs uppercase tracking-wider mb-2">Execution Log</div>
+              <div class="bg-slate-900 rounded-xl p-4 font-mono text-[11px] leading-relaxed">
+                <div class="text-slate-500 mb-2">// janus compound retrieval</div>
+                <div class="text-emerald-400">&gt; janus.graph.query({</div>
+                <div class="text-slate-300">&nbsp;&nbsp;filters: {</div>
+                <div class="text-slate-300">&nbsp;&nbsp;&nbsp;&nbsp;jurisdiction: <span class="text-yellow-300">["HK","CN"]</span>,</div>
+                <div class="text-slate-300">&nbsp;&nbsp;&nbsp;&nbsp;effective_after: <span class="text-yellow-300">"2024-01"</span></div>
+                <div class="text-slate-300">&nbsp;&nbsp;},</div>
+                <div class="text-slate-300">&nbsp;&nbsp;modes: <span class="text-cyan-400">["dense","sparse","graph"]</span></div>
+                <div class="text-emerald-400">})</div>
+                <div class="border-t border-slate-700 mt-2 pt-2">
+                  <div class="text-yellow-400 mb-1">// compound_units retrieved</div>
+                  <div class="text-emerald-400">&gt; unit_1: {</div>
+                  <div class="text-slate-300">&nbsp;&nbsp;clause: <span class="text-yellow-300">"SFC-26EC22 §3.2"</span>,</div>
+                  <div class="text-cyan-400">&nbsp;&nbsp;expert_note: <span class="text-yellow-300">"Retail open in law;</span></div>
+                  <div class="text-yellow-300">&nbsp;&nbsp;&nbsp;&nbsp;PI-only in practice [Partner,</div>
+                  <div class="text-yellow-300">&nbsp;&nbsp;&nbsp;&nbsp;Tier-1 Law Firm, 2025]",</div>
+                  <div class="text-cyan-400">&nbsp;&nbsp;regulator: <span class="text-yellow-300">"sandbox=big-banks-only"</span>,</div>
+                  <div class="text-cyan-400">&nbsp;&nbsp;cross_border: <span class="text-red-400">"56-hao → BLOCKS"</span></div>
+                  <div class="text-emerald-400">}</div>
+                  <div class="text-emerald-400">&gt; unit_2: {</div>
+                  <div class="text-slate-300">&nbsp;&nbsp;clause: <span class="text-yellow-300">"HKMA-20240220-11"</span>,</div>
+                  <div class="text-cyan-400">&nbsp;&nbsp;expert_note: <span class="text-yellow-300">"custody choke-point"</span></div>
+                  <div class="text-emerald-400">}</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Outcome -->
+            <div class="bg-indigo-700 text-white rounded-xl p-4 text-xs font-semibold mt-auto">
+              <div class="text-indigo-100 uppercase tracking-wider text-[10px] mb-1.5">Outcome</div>
+              Flags the PRC <strong>56-hao forex prerequisite</strong>, the HKMA custody bottleneck, and the sandbox reality. Every claim is cited. Output is a <strong>directly actionable compliance strategy</strong>, not a recitation of statute.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom summary bar -->
+      <div class="bg-slate-900 px-6 md:px-10 py-4 flex flex-col sm:flex-row items-center justify-between gap-3 border-t border-slate-700">
+        <div class="text-slate-400 text-xs font-mono">// Janus knowledge unit = clause + expert_notes + regulator_attitude</div>
+        <div class="flex items-center gap-2 text-xs font-semibold">
+          <span class="w-2 h-2 rounded-full bg-slate-400 inline-block"></span><span class="text-slate-300">Hallucination risk</span>
+          <span class="mx-2 text-slate-600">|</span>
+          <span class="w-2 h-2 rounded-full bg-sky-400 inline-block"></span><span class="text-sky-300">Practitioner blind spots</span>
+          <span class="mx-2 text-slate-600">|</span>
+          <span class="w-2 h-2 rounded-full bg-indigo-400 inline-block"></span><span class="text-indigo-300">Actionable &amp; auditable</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="content-section-light pt-8">
+  <div class="content-container">
+    <div class="section-header-light style-edge-border mb-1">
+      <div class="header-main-group mb-1">
+        <div class="section-icon-light-small">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+        </div>
+        <h2 class="section-title-light-oswald">Reliability & Benchmarks</h2>
+      </div>
+      <p class="section-subtitle-light-inter" style="background-color: #fff;">
+        Janus is designed to eliminate hallucinations. Evaluated against curated multi-jurisdictional legal QA datasets, its performance far exceeds generic LLMs and standard RAG models across all critical dimensions.
+      </p>
+    </div>
+    
+    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 md:p-10 shadow-sm max-w-4xl mx-auto mt-10">
+        <h3 class="text-xl font-bold text-center text-slate-800 mb-2">Multi-Dimensional Capability Comparison</h3>
+        <p class="text-center text-sm text-slate-500 mb-8">
+            <em>Illustrative data reflecting the architectural objectives and benchmark targets of the Janus system.</em>
+        </p>
+        
+        <div class="janus-chart-container bg-white p-4 rounded-lg border border-slate-100 flex items-center justify-center">
+            <canvas id="janus-performanceRadarChart"></canvas>
+        </div>
+        
+        <div class="mt-8 text-sm text-slate-600 flex flex-col md:flex-row justify-center gap-6 border-t border-slate-200 pt-6">
+            <div class="flex items-center justify-center">
+                <span class="text-xl mr-2 text-indigo-600">&#x2611;</span>
+                <span><strong>Task Success:</strong> Dramatically improves the precision of resolving compliance queries.</span>
+            </div>
+            <div class="flex items-center justify-center">
+                <span class="text-xl mr-2 text-indigo-600">&#x2611;</span>
+                <span><strong>Expert Validation:</strong> Absolute factual grounding validated by practicing attorneys.</span>
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-col-brand">
+        <a href="index.html" style="display: inline-block; opacity: 0.9; text-decoration: none; margin-bottom: 15px;">
+            <img src="logo-index-white.png" alt="AADE Logo" style="display: block; height: 60px; width: auto;">
+            
+        </a>
+        <p class="footer-desc">
+          Empowering Sustainable Digital Growth. Based in Singapore, we are building Asia’s most influential platform for digital economic research and exchange.
+        </p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/company/asia-academy-of-digital-economics" class="footer-social-btn">
+            <svg style="width:16px; height:16px;" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="mailto:contact@aades.academy" class="footer-social-btn">
+            <svg style="width:16px; height:16px;" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </a>
+          
+        </div>
+      </div>
+      <div class="footer-col-links">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-link-list">
+          <li><a href="aade-intro1-now.html" class="footer-link-item"><span>About us</span></a></li>
+          
+          <li><a href="aade-nav-news.html" class="footer-link-item"><span>News</span></a></li>
+          <li><a href="aade-nav-contact.html" class="footer-link-item"><span>Contact</span></a></li>
+        </ul>
+      </div>
+      <div class="footer-col-contact">
+        <h4 class="footer-heading">Contact Us</h4>
+        <ul class="footer-contact-list">
+          <li class="footer-contact-item">
+            <svg class="footer-contact-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+            <a href="mailto:contact@aades.academy" class="footer-contact-text">contact@aades.academy</a>
+          </li>
+          <li class="footer-contact-item">
+            <svg class="footer-contact-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+            <span>1 Paya Lebar Link
+#06-08 PLQ 2, Paya Lebar Quarter
+Singapore 408533</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 AADE. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-service.html">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    /* ==========================================================================
+       MOBILE MENU LOGIC
+       ========================================================================== */
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuIcon = document.getElementById('menuIcon');
+    const closeIcon = document.getElementById('closeIcon');
+    let isMobileMenuOpen = false;
+
+    function toggleMobileMenu(forceState) {
+      isMobileMenuOpen = forceState !== undefined ? forceState : !isMobileMenuOpen;
+      
+      if(isMobileMenuOpen) {
+        mobileMenu.classList.add('mobile-menu-active');
+        menuIcon.classList.add('hidden');
+        closeIcon.classList.remove('hidden');
+        document.body.style.overflow = 'hidden'; 
+      } else {
+        mobileMenu.classList.remove('mobile-menu-active');
+        menuIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+        document.body.style.overflow = ''; 
+      }
+    }
+
+    mobileMenuBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleMobileMenu();
+    });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const v5Wrapper = document.querySelector('.aade-hero-v5-nodes-wrapper');
+    
+    // 给一点微小的延迟（300ms），让用户视觉先聚焦，再看到汇聚的过程
+    setTimeout(() => {
+        if (v5Wrapper) {
+            v5Wrapper.classList.add('aade-hero-v5-active');
+        }
+    }, 300);
+});
+
+
+/* ==========================================================================
+   SUMMARY TABS LOGIC
+   ========================================================================== */
+document.addEventListener('DOMContentLoaded', () => {
+    const summaryTags = document.querySelectorAll('.summary-tag');
+    const summaryCards = document.querySelectorAll('.summary-card');
+
+    if (summaryTags.length > 0) {
+        summaryTags.forEach(tag => {
+            tag.addEventListener('click', () => {
+                // 1. 移除所有 Tag 的 active 状态
+                summaryTags.forEach(t => t.classList.remove('active'));
+                
+                // 2. 移除所有 Card 的 active 状态
+                summaryCards.forEach(c => c.classList.remove('active'));
+
+                // 3. 为当前点击的 Tag 添加 active 状态
+                tag.classList.add('active');
+
+                // 4. 根据 data-target 找到对应的 Card 并显示
+                const targetId = tag.getAttribute('data-target');
+                const targetCard = document.getElementById(targetId);
+                if (targetCard) {
+                    targetCard.classList.add('active');
+                }
+            });
+        });
+    }
+});
+
+
+/* ==========================================================================
+   JANUS TABS & CHART LOGIC
+   ========================================================================== */
+// Janus Tab Navigation Logic
+function janusShowTab(tabId, btnElement) {
+    // Hide all contents
+    const contents = document.querySelectorAll('.janus-tab-content');
+    contents.forEach(content => {
+        content.classList.remove('block');
+        content.classList.add('hidden');
+    });
+    
+    // Remove active state from all tabs
+    const buttons = document.querySelectorAll('.janus-tab-btn');
+    buttons.forEach(btn => {
+        btn.classList.remove('janus-active');
+        btn.classList.add('bg-transparent', 'text-slate-600');
+    });
+    
+    // Show selected content and set active tab
+    document.getElementById(tabId).classList.remove('hidden');
+    document.getElementById(tabId).classList.add('block');
+    btnElement.classList.add('janus-active');
+    btnElement.classList.remove('text-slate-600');
+}
+
+// Janus Radar Chart Implementation
+document.addEventListener('DOMContentLoaded', function() {
+    const canvasElement = document.getElementById('janus-performanceRadarChart');
+    if(canvasElement) {
+        const ctx = canvasElement.getContext('2d');
+        
+        // Ensure responsive styling inside the container
+        Chart.defaults.font.family = "'Inter', sans-serif";
+        Chart.defaults.color = '#64748b'; // slate-500
+
+        new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: [
+                    'Citation Accuracy', 
+                    'Hallucination Avoidance', 
+                    'Task Success Rate', 
+                    'Jurisdictional Precision', 
+                    'System Auditability'
+                ],
+                datasets: [
+                    {
+                        label: 'Janus Native Infrastructure',
+                        data: [98, 99, 95, 100, 100],
+                        backgroundColor: 'rgba(79, 70, 229, 0.2)', // indigo-600 with opacity
+                        borderColor: 'rgba(79, 70, 229, 1)',
+                        pointBackgroundColor: 'rgba(79, 70, 229, 1)',
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: 'rgba(79, 70, 229, 1)',
+                        borderWidth: 2,
+                        fill: true
+                    },
+                    {
+                        label: 'Standard RAG Architecture',
+                        data: [65, 82, 60, 40, 50],
+                        backgroundColor: 'rgba(148, 163, 184, 0.2)', // slate-400 with opacity
+                        borderColor: 'rgba(148, 163, 184, 1)',
+                        pointBackgroundColor: 'rgba(148, 163, 184, 1)',
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: 'rgba(148, 163, 184, 1)',
+                        borderWidth: 2,
+                        borderDash: [5, 5],
+                        fill: true
+                    },
+                    {
+                        label: 'Base General LLM',
+                        data: [25, 58, 30, 20, 10],
+                        backgroundColor: 'rgba(225, 29, 72, 0.1)', // rose-600 with opacity
+                        borderColor: 'rgba(225, 29, 72, 0.6)',
+                        pointBackgroundColor: 'rgba(225, 29, 72, 1)',
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: 'rgba(225, 29, 72, 1)',
+                        borderWidth: 1,
+                        fill: true
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            usePointStyle: true,
+                            padding: 20,
+                            font: {
+                                weight: 'bold',
+                                size: 13
+                            }
+                        }
+                    },
+                    tooltip: {
+                        backgroundColor: 'rgba(15, 23, 42, 0.9)', // slate-900
+                        titleFont: { size: 14 },
+                        bodyFont: { size: 13 },
+                        padding: 12,
+                        cornerRadius: 8,
+                        callbacks: {
+                            label: function(context) {
+                                return context.dataset.label + ': ' + context.raw + '/100';
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    r: {
+                        angleLines: { color: 'rgba(226, 232, 240, 1)' },
+                        grid: { color: 'rgba(226, 232, 240, 1)' },
+                        pointLabels: {
+                            font: { size: 12, weight: '600' },
+                            color: '#475569'
+                        },
+                        ticks: {
+                            beginAtZero: true,
+                            max: 100,
+                            stepSize: 20,
+                            backdropColor: 'transparent',
+                            color: '#94a3b8'
+                        }
+                    }
+                }
+            }
+        });
+    }
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,973 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service — AADE</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&family=Share+Tech+Mono&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="icon" type="image/png" href="small-logo.png">
+  <style>
+    .legal-hero {
+      background: linear-gradient(135deg, #020c2e 0%, #032da1 50%, #020612 100%);
+      padding: 80px 24px 60px;
+      text-align: center;
+    }
+    .legal-hero-badge {
+      display: inline-block;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #93c5fd;
+      border: 1px solid rgba(147,197,253,0.35);
+      border-radius: 9999px;
+      padding: 4px 16px;
+      margin-bottom: 20px;
+    }
+    .legal-hero h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      font-weight: 600;
+      color: #ffffff;
+      margin: 0 0 16px;
+    }
+    .legal-hero p {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      color: #94a3b8;
+      margin: 0;
+    }
+    .legal-body {
+      background: #f8fafc;
+      padding: 64px 24px 80px;
+    }
+    .legal-container {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+    .legal-toc {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-bottom: 48px;
+    }
+    .legal-toc h2 {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #64748b;
+      margin: 0 0 16px;
+    }
+    .legal-toc ol {
+      list-style: decimal;
+      padding-left: 20px;
+      margin: 0;
+    }
+    .legal-toc li {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      color: #0076d4;
+      line-height: 1.8;
+    }
+    .legal-toc li a { color: #0076d4; text-decoration: none; }
+    .legal-toc li a:hover { text-decoration: underline; }
+    .legal-section {
+      margin-bottom: 48px;
+    }
+    .legal-section h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #0f172a;
+      margin: 0 0 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #0076d4;
+    }
+    .legal-section h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #1e293b;
+      margin: 24px 0 10px;
+    }
+    .legal-section p {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.94rem;
+      color: #334155;
+      line-height: 1.8;
+      margin: 0 0 14px;
+    }
+    .legal-section ul, .legal-section ol {
+      margin: 0 0 14px;
+      padding-left: 22px;
+    }
+    .legal-section li {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.94rem;
+      color: #334155;
+      line-height: 1.8;
+      margin-bottom: 6px;
+    }
+    .legal-section ul li { list-style-type: disc; }
+    .legal-section ol li { list-style-type: decimal; }
+    .legal-highlight {
+      background: #eff6ff;
+      border-left: 4px solid #0076d4;
+      border-radius: 0 8px 8px 0;
+      padding: 16px 20px;
+      margin: 20px 0;
+    }
+    .legal-highlight p { margin: 0; font-size: 0.9rem; color: #1e3a5f; }
+    .legal-warning {
+      background: #fff7ed;
+      border-left: 4px solid #f97316;
+      border-radius: 0 8px 8px 0;
+      padding: 16px 20px;
+      margin: 20px 0;
+    }
+    .legal-warning p { margin: 0; font-size: 0.9rem; color: #7c2d12; }
+    .legal-meta {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      color: #64748b;
+      margin-bottom: 48px;
+    }
+    .legal-meta strong { color: #334155; }
+    .contact-box {
+      background: #0f172a;
+      border-radius: 12px;
+      padding: 28px 32px;
+      color: #e2e8f0;
+    }
+    .contact-box h3 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #ffffff;
+      margin: 0 0 12px;
+    }
+    .contact-box p {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      color: #94a3b8;
+      margin: 0 0 8px;
+      line-height: 1.7;
+    }
+    .contact-box a { color: #60a5fa; text-decoration: none; }
+    .contact-box a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="svg-defs" style="position: absolute; width: 0; height: 0; pointer-events: none;">
+    <defs>
+      <linearGradient id="silverEdgeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:#d1d1d1;stop-opacity:1" />
+        <stop offset="30%" style="stop-color:#ffffff;stop-opacity:1" />
+        <stop offset="50%" style="stop-color:#e5e5e5;stop-opacity:1" />
+        <stop offset="80%" style="stop-color:#ffffff;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#d1d1d1;stop-opacity:1" />
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="header-inner">
+      
+      <!-- ================= 左侧：Logo ================= -->
+      <a href="index.html" class="logo-link">
+        <img src="logo-index.png" alt="AADE Logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <span class="logo-text hidden" style="font-weight: 800; font-size: 1.875rem; color: #0f172a; letter-spacing: 0.05em;">AADE</span>
+      </a>
+
+      <!-- ================= 中间：导航 ================= -->
+      <nav class="desktop-nav">
+        
+        <!-- About us (多列下拉) -->
+        <div class="nav-dropdown-group">
+  <button class="nav-item">
+    About us
+    <svg class="nav-icon-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </button>
+
+  <div class="dropdown-hover-bridge">
+    <div class="dropdown-panel dropdown-large" style="width: 600px;">
+      
+      <div class="dropdown-col" style="width: 55%;">
+        
+        <div class="dropdown-section">
+          <div class="dropdown-title-row">
+            <svg class="dropdown-title-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16.094 10.158A1.996 1.996 0 0013.842 7.906l-4.582 1.309a.5.5 0 00-.353.353l-1.309 4.582a1.996 1.996 0 002.252 2.252l4.582-1.309a.5.5 0 00.353-.353l1.309-4.582zM12 21a9 9 0 110-18 9 9 0 010 18z"></path></svg>
+            <span class="dropdown-title-text">Introduction</span>
+          </div>
+          <div class="dropdown-rich-links">
+            
+            <a href="aade-intro1-now.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" /></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">What We Do</div>
+                <div class="rich-link-desc">Now: Missions & Actions</div>
+              </div>
+            </a>
+
+            <a href="aade-intro2-past.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">Milestones</div>
+                <div class="rich-link-desc">Past: Our Journey</div>
+              </div>
+            </a>
+
+            <a href="aade-intro3-future.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" /></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">2026 & Beyond</div>
+                <div class="rich-link-desc">Future: Next Frontier</div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+
+        
+
+      </div>
+
+      <div class="dropdown-col dropdown-col-alt" style="width: 45%;">
+        <div class="dropdown-section">
+          <div class="dropdown-title-row">
+            <svg class="dropdown-title-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19a3 3 0 00-6 0m9-2a4 4 0 00-4-4H10a4 4 0 00-4 4m5-9a3 3 0 110-6 3 3 0 010 6z"></path></svg>
+            <span class="dropdown-title-text">Our People</span>
+          </div>
+          
+          <div class="dropdown-rich-links">
+            <a href="aade-council.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">Council</div>
+                <div class="rich-link-desc">Leadership and governance</div>
+              </div>
+            </a>
+            <a href="aade-advisor.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">Advisors</div>
+                <div class="rich-link-desc">Expert guidance & strategy</div>
+              </div>
+            </a>
+            
+          </div>
+        </div>
+
+        <div class="dropdown-section">
+          <div class="dropdown-title-row">
+            <svg class="dropdown-title-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 110-18 9 9 0 010 18zm0 0c2.761 0 5-4.03 5-9s-2.239-9-5-9-5 4.03-5 9 2.239 9 5 9zm9-9H3m14.545-4.5H4.455m14.545 9H4.455"></path></svg>
+            <span class="dropdown-title-text">Our Network</span>
+          </div>
+          <div class="dropdown-rich-links">
+            <a href="aade-globalnode.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">Global Offices & Labs</div>
+                <div class="rich-link-desc">Our worldwide presence</div>
+              </div>
+            </a>
+            <a href="aade-partnership.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">Partnerships</div>
+                <div class="rich-link-desc">Collaborating for innovation</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+        <a href="aade-pillar1-events.html" class="nav-item">Events</a>
+        <a href="aade-pillar2-trainings.html" class="nav-item">Training</a>
+        <a href="aade-pillar3-research.html" class="nav-item">Research</a>
+
+        <!-- Digital Innovation (下拉) -->
+<div class="nav-dropdown-group">
+  <button class="nav-item">
+    Frontiers
+    <svg class="nav-icon-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </button>
+
+  <div class="dropdown-hover-bridge">
+    <div class="dropdown-panel dropdown-large" style="width: 500px;"> <div class="dropdown-col" style="width: 55%;">
+        <div class="dropdown-section">
+          <div class="dropdown-title-row">
+            <svg class="dropdown-title-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v1.242c0 .289.268.497.55.447a1.593 1.593 0 00.518-.18 1.558 1.558 0 00.999-1.43V2.25m-3 0h3m-3 0a1.5 1.5 0 00-1.5 1.5V15a1.5 1.5 0 001.5 1.5h1.5m-1.5-13.5v12a1.5 1.5 0 001.5 1.5H12m-2.25 0H12m10.5-11.25a2.25 2.25 0 00-2.25-2.25h-2.25V6a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25h2.25a2.25 2.25 0 002.25-2.25V3.75z"></path>
+            </svg>
+            <span class="dropdown-title-text">AI+</span>
+          </div>
+          
+          <div class="dropdown-rich-links">
+            
+            <a href="aade-pillar4-ai-1-presence.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">AI Presence Accelerator</div>
+                <div class="rich-link-desc">AI-driven International Presence</div>
+              </div>
+            </a>
+
+            <a href="aade-pillar4-ai-2-anti-scam.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">LUCA</div>
+                <div class="rich-link-desc">Anti-Scam Agentic LLM Benchmark Testing Framework</div>
+              </div>
+            </a>
+
+            <a href="aade-pillar4-ai-3-rag-janus.html" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">Janus</div>
+                <div class="rich-link-desc">RAG-based Legal Infrastructure</div>
+              </div>
+            </a>
+
+            <a href="#" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">StarMap (Coming soon)</div>
+                <div class="rich-link-desc">AI-Native Platform for APAC Off-Market Transactions</div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown-col dropdown-col-alt" style="width: 45%;">
+        <div class="dropdown-section">
+          <div class="dropdown-title-row">
+            <svg class="dropdown-title-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"></path>
+            </svg>
+            <span class="dropdown-title-text">Innovation Network</span>
+          </div>
+          
+          <div class="dropdown-rich-links">
+            <a href="https://deai.ink/about" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">DEAI</div>
+                <div class="rich-link-desc">A global action network dedicated to aligning innovative technology with real-world market needs</div>
+              </div>
+            </a>
+            
+            <!---<a href="#" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">AADE Collection</div>
+                <div class="rich-link-desc">Global Digital Intelligence Repository</div>
+              </div>
+            </a>
+
+            <a href="#" class="dropdown-rich-link">
+              <div class="rich-link-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 01-1.125-1.125M3.375 19.5h7.5c.621 0 1.125-.504 1.125-1.125m-9.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-7.5A1.125 1.125 0 0112 18.375m9.75-12.75c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125m19.5 0v1.5c0 .621-.504 1.125-1.125 1.125M2.25 5.625v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125M3.375 8.25v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125m-9.75 0v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125"></path></svg>
+              </div>
+              <div class="rich-link-text">
+                <div class="rich-link-title">AADE Featured</div>
+                <div class="rich-link-desc">Alternative Semantic Retrieval Database</div>
+              </div>
+            </a>-->
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+        <a href="aade-nav-news.html" class="nav-item">News</a>
+        <a href="aade-nav-contact.html" class="nav-item">Contact</a>
+      </nav>
+
+      <!-- ================= 右侧：社交与移动端 ================= -->
+      <div class="header-actions">
+        <!-- 社交图标 -->
+        <div class="social-actions">
+          <a href="https://www.linkedin.com/company/asia-academy-of-digital-economics" class="action-btn" title="LinkedIn">
+            <svg style="width:16px; height:16px;" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="mailto:contact@aades.academy" class="action-btn" title="Email">
+            <svg style="width:18px; height:18px;" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+        
+        <!-- 移动端汉堡菜单 -->
+        <button id="mobileMenuBtn" class="mobile-menu-btn">
+          <svg id="menuIcon" class="mobile-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          <svg id="closeIcon" class="mobile-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="mobile-menu">
+      
+  <details class="mob-menu-group" open>
+    <summary>
+      <span class="mob-group-title">About us</span>
+      <span class="mob-toggle-icon">▼</span>
+    </summary>
+    
+    <div class="mob-sub-area">
+      
+      <div class="mob-sub-section">
+        <div class="mob-sub-title">
+          <svg class="mob-sub-icon" fill="none" stroke="currentColor" stroke-width="1.25" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16.094 10.158A1.996 1.996 0 0013.842 7.906l-4.582 1.309a.5.5 0 00-.353.353l-1.309 4.582a1.996 1.996 0 002.252 2.252l4.582-1.309a.5.5 0 00.353-.353l1.309-4.582zM12 21a9 9 0 110-18 9 9 0 010 18z"></path></svg>
+          <span class="mob-sub-text">Introduction</span>
+        </div>
+        <div class="mob-rich-links-container">
+          <a href="aade-intro1-now.html" class="mob-rich-link">
+            <div class="mob-rich-icon">
+              <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" /></svg>
+            </div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">What We Do</div>
+              <div class="mob-rich-desc">Now: Missions & Actions</div>
+            </div>
+          </a>
+          <a href="aade-intro2-past.html" class="mob-rich-link">
+            <div class="mob-rich-icon">
+              <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+            </div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">Milestones</div>
+              <div class="mob-rich-desc">Past: Our Journey</div>
+            </div>
+          </a>
+          <a href="aade-intro3-future.html" class="mob-rich-link">
+            <div class="mob-rich-icon">
+              <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" /></svg>
+            </div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">2026 & Beyond</div>
+              <div class="mob-rich-desc">Future: Next Frontier</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="mob-sub-section">
+        <div class="mob-sub-title">
+          <svg class="mob-sub-icon" fill="none" stroke="currentColor" stroke-width="1.25" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19a3 3 0 00-6 0m9-2a4 4 0 00-4-4H10a4 4 0 00-4 4m5-9a3 3 0 110-6 3 3 0 010 6z"></path></svg>
+          <span class="mob-sub-text">Our People</span>
+        </div>
+        <div class="mob-rich-links-container">
+          <a href="aade-council.html" class="mob-rich-link">
+            <div class="mob-rich-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"></path></svg></div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">Council</div>
+              <div class="mob-rich-desc">Leadership and governance</div>
+            </div>
+          </a>
+          <a href="aade-advisor.html" class="mob-rich-link">
+            <div class="mob-rich-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"></path></svg></div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">Advisors</div>
+              <div class="mob-rich-desc">Expert guidance & strategy</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="mob-sub-section">
+        <div class="mob-sub-title">
+          <svg class="mob-sub-icon" fill="none" stroke="currentColor" stroke-width="1.25" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 110-18 9 9 0 010 18zm0 0c2.761 0 5-4.03 5-9s-2.239-9-5-9-5 4.03-5 9 2.239 9 5 9zm9-9H3m14.545-4.5H4.455m14.545 9H4.455"></path></svg>
+          <span class="mob-sub-text">Our Network</span>
+        </div>
+        <div class="mob-rich-links-container">
+          <a href="aade-globalnode.html" class="mob-rich-link">
+            <div class="mob-rich-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"></path></svg></div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">Global Offices & Labs</div>
+              <div class="mob-rich-desc">Our worldwide presence</div>
+            </div>
+          </a>
+          <a href="aade-partnership.html" class="mob-rich-link">
+            <div class="mob-rich-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z"></path></svg></div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">Partnerships</div>
+              <div class="mob-rich-desc">Collaborating for innovation</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </details>
+
+  <a href="aade-pillar1-events.html" class="mob-main-link">Events</a>
+  <a href="aade-pillar2-trainings.html" class="mob-main-link">Training</a>
+  <a href="aade-pillar3-research.html" class="mob-main-link">Research</a>
+
+<details class="mob-menu-group" open>
+    <summary>
+      <span class="mob-group-title">Frontiers</span>
+      <span class="mob-toggle-icon">▼</span>
+    </summary>
+    
+    <div class="mob-sub-area">
+      <div class="mob-sub-section">
+        <div class="mob-sub-title">
+          <svg class="mob-sub-icon" fill="none" stroke="currentColor" stroke-width="1.25" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v1.242c0 .289.268.497.55.447a1.593 1.593 0 00.518-.18 1.558 1.558 0 00.999-1.43V2.25m-3 0h3m-3 0a1.5 1.5 0 00-1.5 1.5V15a1.5 1.5 0 001.5 1.5h1.5m-1.5-13.5v12a1.5 1.5 0 001.5 1.5H12m-2.25 0H12m10.5-11.25a2.25 2.25 0 00-2.25-2.25h-2.25V6a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25h2.25a2.25 2.25 0 002.25-2.25V3.75z"></path></svg>
+          <span class="mob-sub-text">AI+</span>
+        </div>
+        
+        <div class="mob-rich-links-container">
+          <a href="aade-pillar4-ai-1-presence.html" class="mob-rich-link">
+            <div class="mob-rich-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"></path></svg></div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">AI Presence Accelerator</div>
+              <div class="mob-rich-desc">AI-driven International Presence</div>
+            </div>
+          </a>
+          <a href="aade-pillar4-ai-2-anti-scam.html" class="mob-rich-link">
+            <div class="mob-rich-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"></path></svg></div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">LUCA</div>
+              <div class="mob-rich-desc">Anti-Scam Agentic LLM Benchmark Testing Framework</div>
+            </div> 
+          </a>
+          <a href="aade-pillar4-ai-3-rag-janus.html" class="mob-rich-link">
+            <div class="mob-rich-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z"></path></svg></div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">Janus</div>
+              <div class="mob-rich-desc">RAG-based Legal Infrastructure</div>
+            </div>
+          </a>
+          <a href="#" class="mob-rich-link">
+            <div class="mob-rich-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z"></path></svg></div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">StarMap (Coming soon)</div>
+              <div class="mob-rich-desc">AI-Native Platform for APAC Off-Market Transactions</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="mob-sub-section">
+        <div class="mob-sub-title">
+          <svg class="mob-sub-icon" fill="none" stroke="currentColor" stroke-width="1.25" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"></path></svg>
+          <span class="mob-sub-text">Innovation Network</span>
+        </div>
+        <div class="mob-rich-links-container">
+          <a href="https://deai.ink/about" class="mob-rich-link">
+            <div class="mob-rich-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z"></path></svg></div>
+            <div class="mob-rich-text">
+              <div class="mob-rich-title">DEAI</div>
+              <div class="mob-rich-desc">A global action network dedicated to aligning innovative technology with real-world market needs</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      
+    </div>
+  </details>
+  
+  <a href="aade-nav-news.html" class="mob-main-link">News</a>
+  <a href="aade-nav-contact.html" class="mob-main-link" style="border-bottom: none;">Contact</a>
+  
+  <div class="mob-social-bar">
+    <a href="https://www.linkedin.com/company/asia-academy-of-digital-economics" class="mob-social-btn"><svg style="width:16px; height:16px;" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+    <a href="mailto:contact@aades.academy" class="mob-social-btn"><svg style="width:18px; height:18px;" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
+  </div>
+</div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <div class="legal-hero">
+    <div class="legal-hero-badge">Legal</div>
+    <h1>Terms of Service</h1>
+    <p>The terms and conditions governing your use of the AADE website and services</p>
+  </div>
+
+  <!-- ================= CONTENT ================= -->
+  <div class="legal-body">
+    <div class="legal-container">
+
+      <p class="legal-meta">
+        <strong>Effective Date:</strong> 23 April 2026 &nbsp;|&nbsp;
+        <strong>Organisation:</strong> Asia Academy of Digital Economics (AADE) &nbsp;|&nbsp;
+        <strong>Governing Law:</strong> Republic of Singapore
+      </p>
+
+      <div class="legal-warning">
+        <p>Please read these Terms of Service carefully before using our website or Services. By accessing or using any part of our Services, you agree to be bound by these Terms. If you do not agree, please do not access or use our Services.</p>
+      </div>
+
+      <!-- Table of Contents -->
+      <div class="legal-toc">
+        <h2>Contents</h2>
+        <ol>
+          <li><a href="#t1">Definitions</a></li>
+          <li><a href="#t2">Acceptance of Terms</a></li>
+          <li><a href="#t3">Description of Services</a></li>
+          <li><a href="#t4">Intellectual Property Rights</a></li>
+          <li><a href="#t5">Permitted Use and Restrictions</a></li>
+          <li><a href="#t6">Research Publications and Academic Content</a></li>
+          <li><a href="#t7">Event Registration and Participation</a></li>
+          <li><a href="#t8">User-Submitted Content</a></li>
+          <li><a href="#t9">Third-Party Links and Resources</a></li>
+          <li><a href="#t10">Disclaimers and No Warranties</a></li>
+          <li><a href="#t11">Limitation of Liability</a></li>
+          <li><a href="#t12">Indemnification</a></li>
+          <li><a href="#t13">Privacy</a></li>
+          <li><a href="#t14">Governing Law and Jurisdiction</a></li>
+          <li><a href="#t15">Dispute Resolution</a></li>
+          <li><a href="#t16">General Provisions</a></li>
+          <li><a href="#t17">Changes to These Terms</a></li>
+          <li><a href="#t18">Contact Us</a></li>
+        </ol>
+      </div>
+
+      <!-- Section 1 -->
+      <div class="legal-section" id="t1">
+        <h2>1. Definitions</h2>
+        <p>In these Terms, unless the context otherwise requires:</p>
+        <ul>
+          <li><strong>"AADE"</strong>, <strong>"we"</strong>, <strong>"us"</strong> or <strong>"our"</strong> means the Asia Academy of Digital Economics, a not-for-profit organisation incorporated in Singapore, with registered address at 1 Paya Lebar Link, #06-08 PLQ 2, Paya Lebar Quarter, Singapore 408533.</li>
+          <li><strong>"Services"</strong> means the website at aades.academy and all sub-pages, as well as events, training programmes, research publications, newsletter distribution, digital tools, and any other services we provide.</li>
+          <li><strong>"Content"</strong> means all text, articles, research reports, graphics, photographs, logos, data, video, audio, software, and other materials published on or through our Services.</li>
+          <li><strong>"User"</strong>, <strong>"you"</strong> or <strong>"your"</strong> means any person who accesses or uses our Services.</li>
+          <li><strong>"User-Submitted Content"</strong> means any content, materials, or information you submit, post, or transmit to us through our Services.</li>
+        </ul>
+      </div>
+
+      <!-- Section 2 -->
+      <div class="legal-section" id="t2">
+        <h2>2. Acceptance of Terms</h2>
+        <p>By accessing our website or using any of our Services, you confirm that:</p>
+        <ul>
+          <li>You are at least 18 years of age, or are accessing the Services under the supervision of a parent or legal guardian who agrees to be bound by these Terms;</li>
+          <li>You have the legal capacity to enter into a binding agreement; and</li>
+          <li>You agree to comply with these Terms in their entirety.</li>
+        </ul>
+        <p>These Terms constitute a legally binding agreement between you and AADE under the laws of Singapore, including the Electronic Transactions Act 2010 (Cap. 88) and the Contracts Act 1950 (Cap. 53A) as applicable in Singapore.</p>
+      </div>
+
+      <!-- Section 3 -->
+      <div class="legal-section" id="t3">
+        <h2>3. Description of Services</h2>
+        <p>AADE is Asia's leading platform for digital economic research and knowledge exchange. Through our Services, we provide:</p>
+        <ul>
+          <li>Research publications, white papers, reports, and analysis on digital economy topics</li>
+          <li>Events, conferences, forums, seminars, and webinars</li>
+          <li>Training and professional development programmes</li>
+          <li>News and insights on digital economy developments</li>
+          <li>Digital innovation tools and AI-related products (including AI Presence Accelerator, LUCA, Janus, and others)</li>
+          <li>Partnership and membership-related information and activities</li>
+        </ul>
+        <p>We reserve the right to modify, suspend, or discontinue any part of our Services at any time, with or without notice, and without liability to you.</p>
+      </div>
+
+      <!-- Section 4 -->
+      <div class="legal-section" id="t4">
+        <h2>4. Intellectual Property Rights</h2>
+        <p>All Content on our Services, including but not limited to research publications, text, graphics, logos, icons, images, audio clips, digital downloads, and software, is the exclusive property of AADE or its licensors and is protected under the <strong>Copyright Act 2021 of Singapore</strong> (Cap. 63) and applicable international intellectual property laws.</p>
+        <h3>What You May Do</h3>
+        <ul>
+          <li>Access and view Content for personal, non-commercial, informational purposes</li>
+          <li>Share links to our published content on social media or other platforms</li>
+          <li>Print or download a single copy of research articles for personal reference, provided all copyright notices remain intact</li>
+          <li>Quote brief excerpts of our research publications for the purpose of commentary, criticism, or academic citation, provided proper attribution to AADE and the relevant publication is included</li>
+        </ul>
+        <h3>What You May Not Do</h3>
+        <ul>
+          <li>Reproduce, republish, or distribute our Content in any medium without our prior written consent</li>
+          <li>Use our Content for commercial purposes, including resale or incorporation into commercial products</li>
+          <li>Remove, alter, or obscure any copyright, trademark, or other proprietary notices</li>
+          <li>Create derivative works from our Content without express authorisation</li>
+          <li>Use AADE's name, logos, or trademarks without prior written permission</li>
+        </ul>
+        <p>Requests for reproduction or licencing of our Content should be directed to <a href="mailto:contact@aades.academy" style="color:#0076d4;">contact@aades.academy</a>.</p>
+      </div>
+
+      <!-- Section 5 -->
+      <div class="legal-section" id="t5">
+        <h2>5. Permitted Use and Restrictions</h2>
+        <p>You agree to use our Services only for lawful purposes and in a manner that does not infringe the rights of any third party. You must not:</p>
+        <ul>
+          <li>Use our Services in any way that violates applicable Singapore law or regulation, including the <strong>Computer Misuse Act 1993</strong> (Cap. 50A) or the <strong>Cybersecurity Act 2018</strong></li>
+          <li>Attempt to gain unauthorised access to any part of our Services, servers, or networks</li>
+          <li>Introduce any virus, malicious code, or harmful components that may damage our Services or systems</li>
+          <li>Use automated scripts, bots, crawlers, or scrapers to extract data from our Services without our prior written consent</li>
+          <li>Use our Services to transmit unsolicited commercial communications (spam)</li>
+          <li>Engage in any conduct that is fraudulent, deceptive, harassing, defamatory, or otherwise harmful to AADE or any third party</li>
+          <li>Impersonate AADE or any person, or misrepresent your affiliation with any person or entity</li>
+        </ul>
+        <p>Violation of these restrictions may result in immediate termination of your access to our Services and may expose you to civil or criminal liability.</p>
+      </div>
+
+      <!-- Section 6 -->
+      <div class="legal-section" id="t6">
+        <h2>6. Research Publications and Academic Content</h2>
+        <p>AADE publishes research, analysis, and commentary on digital economy topics. All such Content is provided for <strong>informational and educational purposes only</strong> and does not constitute professional advice, including legal, financial, investment, regulatory, or policy advice.</p>
+        <p>Research publications represent the views and analysis of the authors at the time of publication and may not reflect the current state of law, market conditions, or technological developments. AADE does not warrant the accuracy, completeness, or fitness for purpose of any research content.</p>
+        <p>If you intend to rely on any research content for decision-making, you should seek independent professional advice appropriate to your specific circumstances.</p>
+        <div class="legal-highlight">
+          <p>Academic citation of AADE research is welcomed. Citations should include the author name(s), publication title, AADE as the publishing organisation, the publication date, and the full URL where the content is accessible.</p>
+        </div>
+      </div>
+
+      <!-- Section 7 -->
+      <div class="legal-section" id="t7">
+        <h2>7. Event Registration and Participation</h2>
+        <p>Where you register for an AADE event, conference, training programme, or webinar:</p>
+        <ul>
+          <li>Registration constitutes a binding agreement to attend and comply with the event's terms and code of conduct</li>
+          <li>Cancellations and refunds (where applicable) are subject to the specific terms communicated at the time of registration</li>
+          <li>AADE reserves the right to cancel, postpone, or modify events and will endeavour to provide reasonable notice in such circumstances</li>
+          <li>Photography, video, and audio recording may be conducted at events; by attending, you consent to your image or voice being captured and used by AADE for legitimate organisational purposes, including promotional materials and event documentation</li>
+          <li>Participants are expected to conduct themselves professionally; AADE reserves the right to remove any participant whose conduct is disruptive, offensive, or harmful to others</li>
+        </ul>
+      </div>
+
+      <!-- Section 8 -->
+      <div class="legal-section" id="t8">
+        <h2>8. User-Submitted Content</h2>
+        <p>Where you submit any content to us (e.g., through contact forms, event feedback, or other channels), you represent and warrant that:</p>
+        <ul>
+          <li>You own or have the right to submit such content</li>
+          <li>The content does not infringe any third party's intellectual property, privacy, or other rights</li>
+          <li>The content is not defamatory, fraudulent, misleading, obscene, or otherwise unlawful under Singapore law including the <strong>Defamation Act 1957</strong> (Cap. 75) and the <strong>Protection from Harassment Act 2014</strong></li>
+        </ul>
+        <p>By submitting content to us, you grant AADE a non-exclusive, royalty-free, perpetual licence to use, reproduce, and publish that content for the purposes for which it was submitted. We reserve the right to remove any content that we determine, in our sole discretion, violates these Terms or is otherwise objectionable.</p>
+      </div>
+
+      <!-- Section 9 -->
+      <div class="legal-section" id="t9">
+        <h2>9. Third-Party Links and Resources</h2>
+        <p>Our Services may contain links to third-party websites, publications, or resources that are not owned or controlled by AADE. We provide these links for convenience only and do not endorse or assume any responsibility for the content, accuracy, privacy practices, or views of any linked third-party sites.</p>
+        <p>Your use of any third-party website or resource is subject to that party's own terms and privacy policies. We encourage you to review the terms and privacy policies of any third-party sites you visit.</p>
+      </div>
+
+      <!-- Section 10 -->
+      <div class="legal-section" id="t10">
+        <h2>10. Disclaimers and No Warranties</h2>
+        <p>To the fullest extent permitted by law, our Services and all Content are provided on an <strong>"as is" and "as available"</strong> basis, without any express or implied warranties of any kind, including but not limited to:</p>
+        <ul>
+          <li>Warranties of merchantability, fitness for a particular purpose, or non-infringement</li>
+          <li>Warranties that the Services will be uninterrupted, timely, secure, error-free, or free from viruses or other harmful components</li>
+          <li>Warranties as to the accuracy, completeness, currency, or reliability of any Content</li>
+        </ul>
+        <p>Nothing in these Terms shall exclude or limit any warranties that cannot be excluded or limited under applicable Singapore law, including the <strong>Consumer Protection (Fair Trading) Act 2003</strong> (Cap. 52A) to the extent applicable.</p>
+      </div>
+
+      <!-- Section 11 -->
+      <div class="legal-section" id="t11">
+        <h2>11. Limitation of Liability</h2>
+        <p>To the fullest extent permitted by applicable Singapore law, AADE and its officers, directors, employees, advisers, and partners shall not be liable to you for any:</p>
+        <ul>
+          <li>Indirect, incidental, special, consequential, or punitive loss or damage</li>
+          <li>Loss of profits, revenue, data, goodwill, or business opportunity</li>
+          <li>Loss or corruption of data or information</li>
+          <li>Damage arising from your use of, or inability to use, our Services or any third-party sites linked from our Services</li>
+        </ul>
+        <p>These limitations apply whether the claim is based in contract, tort (including negligence), statute, or any other legal theory, even if AADE has been advised of the possibility of such damages.</p>
+        <p>Where liability cannot be excluded by law, our total aggregate liability to you shall not exceed <strong>SGD 500</strong> or the amount you paid to us (if any) in connection with the specific Services giving rise to the claim in the 12 months preceding the claim, whichever is lower.</p>
+      </div>
+
+      <!-- Section 12 -->
+      <div class="legal-section" id="t12">
+        <h2>12. Indemnification</h2>
+        <p>You agree to indemnify, defend, and hold harmless AADE, its officers, directors, employees, advisers, and partners from and against any claims, liabilities, damages, losses, costs, and expenses (including reasonable legal fees) arising out of or in connection with:</p>
+        <ul>
+          <li>Your breach of these Terms</li>
+          <li>Your violation of any applicable law or regulation</li>
+          <li>Your infringement of any third party's intellectual property, privacy, or other rights</li>
+          <li>Any User-Submitted Content you provide to us</li>
+        </ul>
+      </div>
+
+      <!-- Section 13 -->
+      <div class="legal-section" id="t13">
+        <h2>13. Privacy</h2>
+        <p>The collection, use, and protection of personal data through our Services is governed by our <a href="privacy-policy.html" style="color:#0076d4;">Privacy Policy</a>, which is incorporated into and forms part of these Terms. By using our Services, you acknowledge that you have read and understood our Privacy Policy.</p>
+      </div>
+
+      <!-- Section 14 -->
+      <div class="legal-section" id="t14">
+        <h2>14. Governing Law and Jurisdiction</h2>
+        <p>These Terms, and any dispute or claim arising out of or in connection with them or their subject matter or formation (including non-contractual disputes or claims), shall be governed by and construed in accordance with the <strong>laws of the Republic of Singapore</strong>, without regard to its conflict of law principles.</p>
+        <p>Subject to Section 15 below, you irrevocably submit to the non-exclusive jurisdiction of the courts of Singapore to settle any dispute or claim arising under or in connection with these Terms.</p>
+      </div>
+
+      <!-- Section 15 -->
+      <div class="legal-section" id="t15">
+        <h2>15. Dispute Resolution</h2>
+        <p>In the event of any dispute arising out of or in connection with these Terms, the parties agree to first attempt to resolve the dispute through good-faith negotiation within 30 days of one party notifying the other of the dispute in writing.</p>
+        <p>If the dispute cannot be resolved through negotiation, either party may refer the dispute to mediation administered by the <strong>Singapore Mediation Centre</strong> in accordance with its applicable mediation procedures, before commencing formal legal proceedings. Participation in mediation is a condition precedent to litigation, except where a party seeks urgent injunctive or other interim relief.</p>
+        <p>Nothing in this clause prevents either party from seeking urgent equitable relief (including injunctions) from a court of competent jurisdiction.</p>
+      </div>
+
+      <!-- Section 16 -->
+      <div class="legal-section" id="t16">
+        <h2>16. General Provisions</h2>
+        <h3>Severability</h3>
+        <p>If any provision of these Terms is found to be invalid, illegal, or unenforceable by a court of competent jurisdiction, that provision shall be modified to the minimum extent necessary to make it enforceable, or severed from these Terms if modification is not possible. The remaining provisions shall continue in full force and effect.</p>
+        <h3>Waiver</h3>
+        <p>No failure or delay by AADE in exercising any right under these Terms shall constitute a waiver of that right. Any waiver must be in writing to be effective and shall not be deemed a waiver of any subsequent breach or default.</p>
+        <h3>Entire Agreement</h3>
+        <p>These Terms, together with our Privacy Policy and any additional terms notified to you at the point of registration for specific Services, constitute the entire agreement between you and AADE relating to your use of our Services and supersede all prior agreements, representations, or understandings.</p>
+        <h3>No Agency</h3>
+        <p>Nothing in these Terms creates any partnership, joint venture, agency, franchise, or employment relationship between you and AADE. You have no authority to bind AADE in any manner whatsoever.</p>
+        <h3>Assignment</h3>
+        <p>You may not assign or transfer your rights or obligations under these Terms without AADE's prior written consent. AADE may assign its rights and obligations under these Terms freely, including in connection with a merger, acquisition, or sale of assets.</p>
+      </div>
+
+      <!-- Section 17 -->
+      <div class="legal-section" id="t17">
+        <h2>17. Changes to These Terms</h2>
+        <p>We reserve the right to amend these Terms at any time. Updated Terms will be posted on this page with a revised effective date. We will endeavour to provide reasonable notice of material changes via email (where we hold your contact information) or through a notice on our website.</p>
+        <p>Your continued use of our Services after the effective date of revised Terms constitutes your acceptance of those Terms. If you do not agree to the revised Terms, you must cease using our Services.</p>
+      </div>
+
+      <!-- Section 18 -->
+      <div class="legal-section" id="t18">
+        <h2>18. Contact Us</h2>
+        <div class="contact-box">
+          <h3>Get in Touch</h3>
+          <p>For any questions, concerns, or notices regarding these Terms of Service, please contact us:</p>
+          <p>
+            <strong style="color:#e2e8f0;">Asia Academy of Digital Economics (AADE)</strong><br>
+            1 Paya Lebar Link, #06-08 PLQ 2<br>
+            Paya Lebar Quarter, Singapore 408533
+          </p>
+          <p>
+            Email: <a href="mailto:contact@aades.academy">contact@aades.academy</a>
+          </p>
+          <p style="margin-top:16px; font-size:0.8rem; color:#64748b;">
+            For data protection enquiries specifically, please refer to our <a href="privacy-policy.html" style="color:#60a5fa;">Privacy Policy</a>.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-col-brand">
+        <a href="index.html" style="display: inline-block; opacity: 0.9; text-decoration: none; margin-bottom: 15px;">
+          <img src="logo-index-white.png" alt="AADE Logo" style="display: block; height: 60px; width: auto;">
+        </a>
+        <p class="footer-desc">Empowering Sustainable Digital Growth. Based in Singapore, we are building Asia's most influential platform for digital economic research and exchange.</p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/company/asia-academy-of-digital-economics" class="footer-social-btn"><svg style="width:16px; height:16px;" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+          <a href="mailto:contact@aades.academy" class="footer-social-btn"><svg style="width:16px; height:16px;" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col-links">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-link-list">
+          <li><a href="aade-intro1-now.html" class="footer-link-item"><span>About us</span></a></li>
+          <li><a href="aade-nav-news.html" class="footer-link-item"><span>News</span></a></li>
+          <li><a href="aade-nav-contact.html" class="footer-link-item"><span>Contact</span></a></li>
+        </ul>
+      </div>
+      <div class="footer-col-contact">
+        <h4 class="footer-heading">Contact Us</h4>
+        <ul class="footer-contact-list">
+          <li class="footer-contact-item">
+            <svg class="footer-contact-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+            <a href="mailto:contact@aades.academy" class="footer-contact-text">contact@aades.academy</a>
+          </li>
+          <li class="footer-contact-item">
+            <svg class="footer-contact-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+            <span>1 Paya Lebar Link<br>#06-08 PLQ 2, Paya Lebar Quarter<br>Singapore 408533</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 AADE. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-service.html">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuIcon = document.getElementById('menuIcon');
+    const closeIcon = document.getElementById('closeIcon');
+    let isMobileMenuOpen = false;
+
+    function toggleMobileMenu(forceState) {
+      isMobileMenuOpen = forceState !== undefined ? forceState : !isMobileMenuOpen;
+      if (isMobileMenuOpen) {
+        mobileMenu.classList.add('mobile-menu-active');
+        menuIcon.classList.add('hidden');
+        closeIcon.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      } else {
+        mobileMenu.classList.remove('mobile-menu-active');
+        menuIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+    }
+
+    mobileMenuBtn.addEventListener('click', (e) => { e.stopPropagation(); toggleMobileMenu(); });
+    document.addEventListener('click', (e) => {
+      if (isMobileMenuOpen && !mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+        toggleMobileMenu(false);
+      }
+    });
+  </script>
+</body>
+</html>
