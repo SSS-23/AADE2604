@@ -705,14 +705,14 @@ canvas#globeCanvas { z-index: 1; }
     ========================================================================== */
 .site-footer {
     background-color: var(--primary-hover);
-    border-top: 1px solid rgba(30, 41, 59, 0.6);
+    border-top: 1px solid rgba(148, 163, 184, 0.15); /* 原来太深，改浅线更精致 */
     padding: 4rem 1.5rem;
-    color: var(--slate-400);
+    color: #94a3b8; /* slate-400 作为基准色保留，但下面会覆写关键元素 */
     position: relative;
     z-index: 10;
     margin-top: auto;
 }
-@media (min-width: 640px) { .site-footer { padding-left: 3rem; padding-right: 3rem; } }
+@media (min-width: 640px)  { .site-footer { padding-left: 3rem; padding-right: 3rem; } }
 @media (min-width: 1024px) { .site-footer { padding-left: 6rem; padding-right: 6rem; } }
 
 .footer-grid {
@@ -727,19 +727,18 @@ canvas#globeCanvas { z-index: 1; }
 }
 
 .footer-col-brand { grid-column: span 1; }
-@media (min-width: 768px) { .footer-col-brand { grid-column: span 5; } }
+@media (min-width: 768px)  { .footer-col-brand { grid-column: span 5; } }
 @media (min-width: 1024px) { .footer-col-brand { grid-column: span 4; } }
 
 .footer-col-links { grid-column: span 1; }
-@media (min-width: 768px) { .footer-col-links { grid-column: span 3; } }
-@media (min-width: 1024px) { 
-    .footer-col-links { grid-column-start: 7; grid-column-end: span 2; } 
-}
+@media (min-width: 768px)  { .footer-col-links { grid-column: span 3; } }
+@media (min-width: 1024px) { .footer-col-links { grid-column-start: 7; grid-column-end: span 2; } }
 
 .footer-col-contact { grid-column: span 1; }
-@media (min-width: 768px) { .footer-col-contact { grid-column: span 4; } }
+@media (min-width: 768px)  { .footer-col-contact { grid-column: span 4; } }
 @media (min-width: 1024px) { .footer-col-contact { grid-column: span 3; } }
 
+/* ── Brand ── */
 .footer-brand-name {
     font-size: 1.5rem;
     font-weight: 900;
@@ -750,44 +749,48 @@ canvas#globeCanvas { z-index: 1; }
 }
 .footer-desc {
     font-size: 0.875rem;
-    line-height: 1.625;
+    line-height: 1.7;
     max-width: 24rem;
-    margin-bottom: 1.5rem;
-    color: var(--slate-400);
-    margin-top: 0;
+    margin: 0 0 1.5rem;
+    color: #cbd5e1; /* ↑ slate-300，比 slate-400 更易读 */
 }
+
+/* ── Socials ── */
 .footer-socials {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.875rem;
 }
 .footer-social-btn {
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 9999px;
-    background-color: rgba(30, 41, 59, 0.5);
+    background-color: rgba(255, 255, 255, 0.06); /* 微亮背景，区分于背景 */
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--slate-400);
-    border: 1px solid rgba(51, 65, 85, 0.5);
-    transition: all 0.3s;
+    color: #cbd5e1; /* ↑ 更亮 */
+    border: 1px solid rgba(148, 163, 184, 0.25); /* 更可见的边框 */
+    transition: all 0.25s;
 }
 .footer-social-btn:hover {
     background-color: var(--primary);
     border-color: var(--primary);
     color: #fff;
+    transform: translateY(-2px);
 }
 
+/* ── Column Headings ── */
 .footer-heading {
-    color: #fff;
-    font-weight: 600;
-    margin-bottom: 1.25rem;
-    font-size: 0.875rem;
+    color: #f1f5f9; /* slate-100，接近白但不刺眼 */
+    font-weight: 700;
+    margin: 0 0 1.25rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-top: 0;
+    letter-spacing: 0.1em;
 }
+
+/* ── Quick Links ── */
 .footer-link-list {
     display: flex;
     flex-direction: column;
@@ -798,11 +801,12 @@ canvas#globeCanvas { z-index: 1; }
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    color: var(--slate-400);
-    transition: color 0.3s;
+    color: #b0bec5; /* 介于 slate-300/400 之间，清晰可读 */
+    transition: color 0.2s;
 }
 .footer-link-item:hover { color: #fff; }
 
+/* ── Contact ── */
 .footer-contact-list {
     display: flex;
     flex-direction: column;
@@ -813,27 +817,34 @@ canvas#globeCanvas { z-index: 1; }
     display: flex;
     align-items: flex-start;
     gap: 0.75rem;
+    color: #b0bec5; /* ↑ 正文色提亮 */
+    line-height: 1.6;
 }
 .footer-contact-icon {
-    width: 1.25rem;
-    height: 1.25rem;
-    color: var(--slate-500);
-    margin-top: 0.125rem;
+    width: 1.125rem;
+    height: 1.125rem;
+    color: #7dd3fc; /* 淡蓝色图标，形成层次感，避免与文字混淆 */
+    margin-top: 0.2rem;
     flex-shrink: 0;
 }
-.footer-contact-text:hover { color: #fff; transition: color 0.3s; }
+.footer-contact-text {
+    color: #b0bec5;
+    transition: color 0.2s;
+}
+.footer-contact-text:hover { color: #fff; }
 
+/* ── Bottom Bar ── */
 .footer-bottom {
     max-width: 85rem;
     margin: 4rem auto 0;
     padding-top: 2rem;
-    border-top: 1px solid rgba(30, 41, 59, 0.6);
+    border-top: 1.05px solid rgba(148, 163, 184, 0.5);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     font-size: 0.75rem;
-    color: var(--slate-500);
+    color: #94a3b8; /* slate-400，底部说明文字稍暗但仍可读 */
 }
 .footer-bottom p { margin: 0; }
 @media (min-width: 768px) {
@@ -843,12 +854,17 @@ canvas#globeCanvas { z-index: 1; }
     display: flex;
     gap: 1.5rem;
     margin-top: 1rem;
+    color: #94a3b8;
 }
 @media (min-width: 768px) {
     .footer-bottom-links { margin-top: 0; }
 }
-.footer-bottom-links a { transition: color 0.3s; }
+.footer-bottom-links a {
+    transition: color 0.2s;
+    color: #94a3b8;
+}
 .footer-bottom-links a:hover { color: #fff; }
+
 
 /* 字体引入 */
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
