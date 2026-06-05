@@ -83,6 +83,88 @@
     background: #fff;
     transform: scale(1.35);
   }
+
+  .deai-report-banner{
+    display:block; text-decoration:none; color:inherit;
+    margin:2.75rem 0; border-radius:18px; overflow:hidden;
+    position:relative; isolation:isolate;
+    background:linear-gradient(125deg,#0d3da8 0%,#1451cc 46%,#216eff 100%);
+    box-shadow:0 12px 32px -10px rgba(13,61,168,.48);
+    border:1px solid rgba(255,255,255,.10);
+    transition:transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s ease;
+    font-family:Inter,'Segoe UI','Microsoft YaHei',Arial,sans-serif;
+  }
+  .deai-report-banner::before{
+    content:''; position:absolute; right:-90px; top:-100px;
+    width:340px; height:340px; border-radius:50%;
+    background:radial-gradient(circle,rgba(233,168,60,.38) 0%,transparent 65%);
+    z-index:0; pointer-events:none;
+  }
+  .deai-report-banner::after{
+    content:''; position:absolute; left:-70px; bottom:-110px;
+    width:260px; height:260px; border-radius:50%;
+    background:radial-gradient(circle,rgba(255,255,255,.07) 0%,transparent 70%);
+    z-index:0; pointer-events:none;
+  }
+  .deai-report-banner:hover{
+    transform:translateY(-4px);
+    box-shadow:0 24px 52px -12px rgba(13,61,168,.58);
+  }
+  .drb-inner{
+    position:relative; z-index:1;
+    display:flex; align-items:center; gap:34px;
+    padding:28px 34px;
+  }
+  /* ---- 左侧：报告缩略图 ---- */
+  .drb-thumb{ flex:0 0 38%; max-width:300px; perspective:1100px; }
+  .drb-thumb-doc{
+    background:#fff; border-radius:12px; overflow:hidden;
+    box-shadow:0 16px 38px -8px rgba(0,0,0,.42);
+    transform:rotate(-2.2deg) scale(.97);
+    transition:transform .45s cubic-bezier(.2,.7,.2,1);
+    border:1px solid rgba(255,255,255,.55);
+  }
+  .deai-report-banner:hover .drb-thumb-doc{ transform:rotate(0deg) scale(1); }
+  .drb-mini-hero{
+    background:linear-gradient(135deg,#216eff 0%,#1451cc 60%,#0d3da8 100%);
+    color:#fff; padding:13px 13px 12px; position:relative; overflow:hidden;
+  }
+  .drb-mini-hero::before{content:'';position:absolute;right:-30px;top:-34px;width:115px;height:115px;border-radius:50%;background:radial-gradient(circle,rgba(192,129,16,.38) 0%,transparent 70%);}
+  .drb-mini-tag{display:inline-block;font-size:7px;letter-spacing:.1em;border:1px solid rgba(255,255,255,.4);border-radius:10px;padding:2px 7px;opacity:.9;position:relative;text-transform:uppercase;}
+  .drb-mini-title{font-size:14px;font-weight:800;line-height:1.18;margin-top:7px;position:relative;}
+  .drb-mini-theme{font-size:7.5px;opacity:.78;margin-top:4px;position:relative;line-height:1.3;}
+  .drb-mini-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;padding:9px 8px;background:#f7f9ff;border-bottom:1px solid #e4e8f0;}
+  .drb-mini-stat{background:#fff;border:1px solid #e4e8f0;border-radius:5px;padding:6px 2px;text-align:center;}
+  .drb-mini-stat b{display:block;font-size:14px;font-weight:800;color:#216eff;line-height:1;letter-spacing:-.02em;}
+  .drb-mini-stat b.gold{color:#c08110;}
+  .drb-mini-stat span{display:block;font-size:6px;color:#555;margin-top:2px;font-weight:600;}
+  .drb-mini-charts{display:flex;align-items:center;gap:13px;padding:11px 13px 13px;}
+  .drb-mini-donut{width:48px;height:48px;border-radius:50%;flex-shrink:0;position:relative;
+    background:conic-gradient(#216eff 0 38%,#4a8eff 38% 60%,#c08110 60% 80%,#e9a83c 80% 100%);}
+  .drb-mini-donut::after{content:'';position:absolute;inset:14px;background:#fff;border-radius:50%;}
+  .drb-mini-bars{flex:1;display:flex;align-items:flex-end;gap:5px;height:48px;}
+  .drb-mini-bars span{flex:1;border-radius:2px 2px 0 0;background:linear-gradient(#4a8eff,#216eff);}
+  .drb-mini-bars span:nth-child(even){background:linear-gradient(#e9a83c,#c08110);}
+  /* ---- 右侧：文案 + CTA ---- */
+  .drb-content{flex:1;min-width:0;color:#fff;}
+  .drb-eyebrow{display:inline-flex;align-items:center;gap:7px;font-size:.72rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#ffe199;background:rgba(192,129,16,.22);border:1px solid rgba(255,215,140,.45);padding:5px 12px;border-radius:20px;}
+  .drb-eyebrow svg{width:14px;height:14px;flex-shrink:0;}
+  .drb-title{font-size:1.95rem;font-weight:800;line-height:1.12;margin:15px 0 0;letter-spacing:-.01em;color:#fff;}
+  .drb-title .zh{display:block;font-size:1rem;font-weight:500;opacity:.85;margin-top:6px;letter-spacing:0;}
+  .drb-desc{font-size:.92rem;line-height:1.55;color:rgba(255,255,255,.82);margin:13px 0 19px;max-width:48ch;}
+  .drb-cta{display:inline-flex;align-items:center;gap:9px;font-size:.95rem;font-weight:700;color:#0d3da8;background:#fff;padding:11px 23px;border-radius:30px;box-shadow:0 8px 18px -6px rgba(0,0,0,.35);transition:gap .25s ease,background .25s ease,color .25s ease;}
+  .drb-cta svg{width:17px;height:17px;transition:transform .25s ease;}
+  .deai-report-banner:hover .drb-cta{background:#ffe199;color:#5a3c00;}
+  .deai-report-banner:hover .drb-cta svg{transform:translateX(4px);}
+  @media (max-width:680px){
+    .drb-inner{flex-direction:column;gap:22px;padding:24px 22px;}
+    .drb-thumb{flex:none;width:100%;max-width:330px;}
+    .drb-thumb-doc{transform:rotate(0) scale(1);}
+    .drb-content{text-align:center;}
+    .drb-desc{margin-left:auto;margin-right:auto;}
+    .drb-title{font-size:1.6rem;}
+    .drb-eyebrow{letter-spacing:.1em;}
+  }
 </style>
 </head>
 <body>
@@ -553,8 +635,53 @@
       <article class="news-main-article">
         <span class="news-hero-date">May 19, 2026 | Singapore</span>
         <figure class="news-article-image-wrapper">
-          <img src="../new-card/2605deai/start2.jpg" class="news-article-image">
+          <img src="../new-card/2605deai/start2.jpg" class="news-banner-image">
         </figure>
+
+                <a href="../deai26.html" target="_blank" rel="noopener" class="deai-report-banner"
+   aria-label="View the DEAI 2026 Summit visual data report">
+  <div class="drb-inner">
+
+    <!-- 报告缩略图 (HTML/CSS 还原报告样式，无需额外图片) -->
+    <div class="drb-thumb" aria-hidden="true">
+      <div class="drb-thumb-doc">
+        <div class="drb-mini-hero">
+          <span class="drb-mini-tag">DEAI 2026 International Summit</span>
+          <div class="drb-mini-title">Smarter AI,<br>Safer Digital Wealth</div>
+          <div class="drb-mini-theme">更聪明的人工智能，更安全的数字资产</div>
+        </div>
+        <div class="drb-mini-stats">
+          <div class="drb-mini-stat"><b>249</b><span>GUESTS</span></div>
+          <div class="drb-mini-stat"><b class="gold">24</b><span>SPEAKERS</span></div>
+          <div class="drb-mini-stat"><b>10</b><span>DIPLOMATS</span></div>
+          <div class="drb-mini-stat"><b class="gold">8</b><span>NATIONS</span></div>
+        </div>
+        <div class="drb-mini-charts">
+          <div class="drb-mini-donut"></div>
+          <div class="drb-mini-bars">
+            <span style="height:55%"></span><span style="height:82%"></span><span style="height:42%"></span><span style="height:68%"></span><span style="height:95%"></span><span style="height:60%"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 文案 + 行动召唤 -->
+    <div class="drb-content">
+      <span class="drb-eyebrow">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 3a1 1 0 0 1 1 1v15h16a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><rect x="6" y="10" width="3" height="7" rx="1"/><rect x="11" y="6" width="3" height="11" rx="1"/><rect x="16" y="12" width="3" height="5" rx="1"/></svg>
+        Visual Data Report · 可视化数据报告
+      </span>
+      <h3 class="drb-title">Explore the Summit in Data
+        <span class="zh">点击查看 DEAI 2026 峰会可视化数据报告</span>
+      </h3>
+      <p class="drb-desc">Speakers, diplomatic representation, audience composition, media reach and key takeaways — the full DEAI 2026 International Summit at a glance.</p>
+      <span class="drb-cta">View the Full Report 查看完整报告
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </span>
+    </div>
+
+  </div>
+</a>
         
         <p class="news-article-text">
           <strong>Singapore, May 19, 2026</strong> — The Digital Economy Action Initiative 2026 International Summit (DEAI 2026), organised by the Asia Academy of Digital Economics (AADE), was held at the Shaw Foundation Alumni House of the National University of Singapore.
@@ -571,6 +698,8 @@
         <figure class="news-article-image-wrapper">
           <img src="../new-card/2605deai/start3.jpg" alt="Summit Overview" class="news-article-image">
         </figure>
+
+
 
         <h2 class="news-article-title">High-Level Parliamentary, International Security and Diplomatic Representation</h2>
         
